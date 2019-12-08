@@ -21,7 +21,7 @@
       ]
     },
     {
-      "value": 0,
+      "value": 1,
       "min": 0,
       "max": 1,
       "layer": "motive",
@@ -40,14 +40,14 @@
     },
     {
       "uri": "julius/sword.png",
-      "x": 0,
-      "y": 0,
+      "x": 478,
+      "y": 340,
       "id": "component-1"
     },
     {
       "uri": "julius/shield.png",
-      "x": 0,
-      "y": 0,
+      "x": 410,
+      "y": 150,
       "id": "component-2"
     }
   ]
