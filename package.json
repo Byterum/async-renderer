@@ -1,0 +1,22 @@
+{
+  "name": "async",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conlan/async.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conlan/async/issues"
+  },
+  "homepage": "https://github.com/conlan/async#readme",
+  "dependencies": {
+    "jimp": "^0.9.3"
+  }
+}
