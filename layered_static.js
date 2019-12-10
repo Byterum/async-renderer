@@ -1,11 +1,9 @@
 var Jimp = require('jimp');
 
-function render(layout, currentImage, layerIndex) {
-	if (layerIndex >= layout.layers.length) {
-		currentImage.write('output.jpg'); // save
-
-		console.log("Wrote to output.jpg")
-		return;
+function render(layout, currentImage, layerIndex, callback) {
+	if (layerIndex >= layout.layers.length) {		
+		callback(currentImage)
+		return		
 	}
 
 	var baseLayerImage = null;
@@ -18,12 +16,6 @@ function render(layout, currentImage, layerIndex) {
 	if (layerType === "dynamic") {
 		layer = layer.options[layer.index]
 	}
-
-	// var control = layout.controls.filter(x => x.layer === layer.id)[0];
-
-	// var selectedComponentID = control.component_options[control.value]
-	
-	// var selectedComponent = layout.components.filter(x => x.id === selectedComponentID)[0];
 
 	Jimp.read(layer.uri, (err, layerImage) => {
 		if (err) throw err;			
@@ -42,9 +34,9 @@ function render(layout, currentImage, layerIndex) {
 
 			currentImage.composite(layerImage, x, y);
 
-			render(layout, currentImage, layerIndex + 1)
+			render(layout, currentImage, layerIndex + 1, callback)
 		} else {
-			render(layout, layerImage, layerIndex + 1)
+			render(layout, layerImage, layerIndex + 1, callback)
 		}
 	})	
 }
