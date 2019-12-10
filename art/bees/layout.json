@@ -16,13 +16,49 @@
         "token": "bee_0"
       },
       "y": {
-        "value": 405,
+        "value": 0,
         "min": 0,
         "max": 405,
         "id": "bee_0_y",
         "token": "bee_0"
       },
       "uri": "art/bees/bee-0.png",
+      "type": "static"
+    },
+    {
+      "x": {
+        "value": 300,
+        "min": 0,
+        "max": 300,
+        "id": "bee_1_x",
+        "token": "bee_1"
+      },
+      "y": {
+        "value": 1000,
+        "min": 500,
+        "max": 1000,
+        "id": "bee_1_y",
+        "token": "bee_1"
+      },
+      "uri": "art/bees/bee-1.png",
+      "type": "static"
+    },
+    {
+      "x": {
+        "value": 750,
+        "min": 750,
+        "max": 900,
+        "id": "bee_2_x",
+        "token": "bee_2"
+      },
+      "y": {
+        "value": -100,
+        "min": -100,
+        "max": 400,
+        "id": "bee_2_y",
+        "token": "bee_2"
+      },
+      "uri": "art/bees/bee-2.png",
       "type": "static"
     }
   ]
