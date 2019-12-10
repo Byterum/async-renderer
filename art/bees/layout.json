@@ -1,0 +1,29 @@
+{
+  "type": "layered-static",
+  "layers": [
+    {
+      "x": 0,
+      "y": 0,
+      "uri": "art/bees/bg.jpg",
+      "type": "static"
+    },
+    {
+      "x": {
+        "value": 5,
+        "min": 0,
+        "max": 372,
+        "id": "bee_0_x",
+        "token": "bee_0"
+      },
+      "y": {
+        "value": 405,
+        "min": 0,
+        "max": 405,
+        "id": "bee_0_y",
+        "token": "bee_0"
+      },
+      "uri": "art/bees/bee-0.png",
+      "type": "static"
+    }
+  ]
+}

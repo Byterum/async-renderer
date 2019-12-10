@@ -1,0 +1,27 @@
+{
+  "type": "layered-static",
+  "layers": [
+    {
+      "x": 0,
+      "y": 0,
+      "uri": "art/hubris/bg.jpg",
+      "type": "static"
+    },
+    {
+      "type": "dynamic",
+      "options": [
+        {
+          "x": 478,
+          "y": 340,
+          "uri": "art/hubris/sword.png"
+        },
+        {
+          "x": 410,
+          "y": 150,
+          "uri": "art/hubris/shield.png"
+        }
+      ],
+      "index": 1
+    }
+  ]
+}

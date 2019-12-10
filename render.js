@@ -2,7 +2,7 @@ const fs = require('fs');
 const layered_static = require('./layered_static.js')
 
 // TODO get file name from parameters
-var file = "julius"
+var file = "art/bees"
 
 var layoutRaw = fs.readFileSync(file + "/layout.json")
 let layout = JSON.parse(layoutRaw);
