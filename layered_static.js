@@ -30,16 +30,12 @@ async function OnImageRead(contract, currentImage, layout, layer, layerImage, la
 		var y = layer.y;			
 
 		if (typeof x === "object") {
-			var controlToken = await contract.controlTokens(layer.x.token)
-			
-			x = parseInt(controlToken.currentValue.toString())
+			x = parseInt((await contract.getControlLeverValue(layer.x.control_token, layer.x.control_lever)).toString());
 			console.log(x)
 		}
 
 		if (typeof y === "object") {
-			var controlToken = await contract.controlTokens(layer.y.token)
-
-			y = parseInt(controlToken.currentValue.toString())
+			y = parseInt((await contract.getControlLeverValue(layer.y.control_token, layer.y.control_lever)).toString());
 			console.log(y)
 		}
 

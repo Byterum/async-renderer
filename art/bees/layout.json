@@ -12,47 +12,17 @@
         "min": 0,
         "max": 372,
         "id": "bee_0_x",
-        "token": 2
+        "control_token": 1,
+        "control_lever" : 0
       },
       "y": {
         "min": 0,
         "max": 405,
         "id": "bee_0_y",
-        "token": 2
+        "control_token": 1,
+        "control_lever" : 1
       },
       "uri": "art/bees/bee-0.png",
-      "type": "static"
-    },
-    {
-      "x": {
-        "min": 0,
-        "max": 300,
-        "id": "bee_1_x",
-        "token": 3
-      },
-      "y": {
-        "min": 500,
-        "max": 1000,
-        "id": "bee_1_y",
-        "token": 3
-      },
-      "uri": "art/bees/bee-1.png",
-      "type": "static"
-    },
-    {
-      "x": {
-        "min": 750,
-        "max": 900,
-        "id": "bee_2_x",
-        "token": 4
-      },
-      "y": {
-        "min": -100,
-        "max": 400,
-        "id": "bee_2_y",
-        "token": 4
-      },
-      "uri": "art/bees/bee-2.png",
       "type": "static"
     }
   ]
