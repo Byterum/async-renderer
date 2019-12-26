@@ -1,6 +1,6 @@
 var Jimp = require('jimp');
 
-function render(contract, layout, currentImage, layerIndex, callback) {
+async function render(contract, layout, currentImage, layerIndex, callback) {
 	if (layerIndex >= layout.layers.length) {		
 		callback(currentImage)
 		return		
@@ -14,7 +14,9 @@ function render(contract, layout, currentImage, layerIndex, callback) {
 	var layerType = layer.type;
 
 	if (layerType === "dynamic") {
-		layer = layer.options[layer.index]
+		var currentIndex = parseInt((await contract.getControlLeverValue(layer.control_token, layer.control_lever)).toString())
+
+		layer = layer.options[currentIndex];
 	}
 
 	Jimp.read(layer.uri, (err, layerImage) => {

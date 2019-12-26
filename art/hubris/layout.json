@@ -21,7 +21,8 @@
           "uri": "art/hubris/shield.png"
         }
       ],
-      "index": 1
+      "control_token": 1,
+      "control_lever": 0
     }
   ]
 }
