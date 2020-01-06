@@ -1,5 +1,6 @@
 {
   "type": "layered-static",
+  "version" : 1,
   "layers": [
     {
       "x": 0,
