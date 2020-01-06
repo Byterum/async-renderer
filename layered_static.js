@@ -14,7 +14,7 @@ async function render(contract, layout, currentImage, layerIndex, callback) {
 	var layerType = layer.type;
 
 	if (layerType === "dynamic") {
-		var currentIndex = parseInt((await contract.getControlLeverValue(layer.control_token, layer.control_lever)).toString())
+		var currentIndex = parseInt((await contract.getControlLeverValue(layer.token_id, layer.lever_id)).toString())
 
 		layer = layer.options[currentIndex];
 	}
@@ -28,17 +28,28 @@ async function render(contract, layout, currentImage, layerIndex, callback) {
 
 async function OnImageRead(contract, currentImage, layout, layer, layerImage, layerIndex, callback) {
 	if (currentImage !== null) {
+		// rotate the layer
+		var rotation = layer.rotation;
+
+		if (typeof rotation === "object") {
+			rotation = parseInt((await contract.getControlLeverValue(layer.rotation.token_id, layer.rotation.lever_id)).toString());
+			console.log("Rotation = " + rotation);
+		}
+
+		layerImage.rotate(rotation, false);
+
+		// position the layer
 		var x = layer.x;
 		var y = layer.y;			
 
 		if (typeof x === "object") {
-			x = parseInt((await contract.getControlLeverValue(layer.x.control_token, layer.x.control_lever)).toString());
-			console.log(x)
+			x = parseInt((await contract.getControlLeverValue(layer.x.token_id, layer.x.lever_id)).toString());
+			console.log("X = " + x)
 		}
 
 		if (typeof y === "object") {
-			y = parseInt((await contract.getControlLeverValue(layer.y.control_token, layer.y.control_lever)).toString());
-			console.log(y)
+			y = parseInt((await contract.getControlLeverValue(layer.y.token_id, layer.y.lever_id)).toString());
+			console.log("Y = " + y)
 		}
 
 		currentImage.composite(layerImage, x, y);

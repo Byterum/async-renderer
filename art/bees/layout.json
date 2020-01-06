@@ -11,16 +11,20 @@
       "x": {
         "min": 0,
         "max": 372,
-        "id": "bee_0_x",
-        "control_token": 1,
-        "control_lever" : 0
+        "token_id": 3,
+        "lever_id" : 0
       },
       "y": {
         "min": 0,
         "max": 405,
-        "id": "bee_0_y",
-        "control_token": 1,
-        "control_lever" : 1
+        "token_id": 3,
+        "lever_id" : 1
+      },
+      "rotation" : {
+        "min": 0,
+        "max": 359,
+        "token_id": 3,
+        "lever_id" : 2
       },
       "uri": "art/bees/bee-0.png",
       "type": "static"

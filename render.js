@@ -29,9 +29,6 @@ provider.getNetwork().then((network) => {
 })
 
 async function Process(contract) {
-	let name = await contract.name()
-	let symbol = await contract.symbol()
-
 	if (imageType === "layered-static") {
 		layered_static.render(contract, layout, null, 0, (finalImage) => {
 			path = "renders/" + file + ".png";
