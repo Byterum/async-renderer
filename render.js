@@ -7,7 +7,7 @@ const provider = new ethers.providers.JsonRpcProvider('http://localhost:7545');
 
 // enforce that a file and contract address was provided
 if (process.argv.length < 4) {
-	console.log("Please provide a file and contract address")
+	console.log("Please provide a file and contract address, ie 'node render.js [name] [address]'")
 	return
 }
 
