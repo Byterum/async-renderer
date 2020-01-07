@@ -39,16 +39,16 @@ async function OnImageRead(contract, currentImage, layout, layer, layerImage, la
 		layerImage.rotate(rotation, false);
 
 		// position the layer
-		var x = layer.x;
-		var y = layer.y;			
+		var x = layer.position.x;
+		var y = layer.position.y;			
 
 		if (typeof x === "object") {
-			x = parseInt((await contract.getControlLeverValue(layer.x.token_id, layer.x.lever_id)).toString());
+			x = parseInt((await contract.getControlLeverValue(layer.position.x.token_id, layer.position.x.lever_id)).toString());
 			console.log("X = " + x)
 		}
 
 		if (typeof y === "object") {
-			y = parseInt((await contract.getControlLeverValue(layer.y.token_id, layer.y.lever_id)).toString());
+			y = parseInt((await contract.getControlLeverValue(layer.position.y.token_id, layer.position.y.lever_id)).toString());
 			console.log("Y = " + y)
 		}
 
