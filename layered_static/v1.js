@@ -1,5 +1,11 @@
 var Jimp = require('jimp');
 
+const KEY_ROTATION = "rotation";
+const KEY_SCALE = "scale";
+const KEY_POSITION = "position";
+const KEY_X = "x";
+const KEY_Y = "y"
+
 async function render(contract, layout, currentImage, layerIndex, callback) {
 	if (layerIndex >= layout.layers.length) {		
 		callback(currentImage)
@@ -41,29 +47,41 @@ async function readIntProperty(contract, object, key, label) {
 
 async function OnImageRead(contract, currentImage, layout, layer, layerImage, layerIndex, callback) {
 	if (currentImage !== null) {
-		// scale the layer
-		var scale_x = (await readIntProperty(contract, layer.scale, "x", "Layer Scale X")) / 100;
-		var scale_y = (await readIntProperty(contract, layer.scale, "y", "Layer Scale Y")) / 100;
-	
-		// determine the new width
-		var newWidth = layerImage.bitmap.width * scale_x;
-		var newHeight = layerImage.bitmap.height * scale_y;
-		// determine the offset to maintain our position
-		var x_offset = (layerImage.bitmap.width - newWidth) / 2;
-		var y_offset = (layerImage.bitmap.height - newHeight) / 2;
-		// resize the image
-		layerImage.resize(newWidth, newHeight);
+		// scale the layer (optionally)
+		var x_offset = 0;
+		var y_offset = 0;
 
-		// rotate the layer
-		var rotation = await readIntProperty(contract, layer, "rotation", "Layer Rotation");
-		layerImage.rotate(rotation, false);
+		if (KEY_SCALE in layer) {
+			var scale_x = (await readIntProperty(contract, layer[KEY_SCALE], KEY_X, "Layer Scale X")) / 100;
+			var scale_y = (await readIntProperty(contract, layer[KEY_SCALE], KEY_Y, "Layer Scale Y")) / 100;
+		
+			// determine the new width
+			var newWidth = layerImage.bitmap.width * scale_x;
+			var newHeight = layerImage.bitmap.height * scale_y;
+			// determine the offset to maintain our position
+			x_offset = (layerImage.bitmap.width - newWidth) / 2;
+			y_offset = (layerImage.bitmap.height - newHeight) / 2;
+			// resize the image
+			layerImage.resize(newWidth, newHeight);
+		}
 
-		// position the layer
-		var x = await readIntProperty(contract, layer.position, "x", "Layer Position X");
-		var y = await readIntProperty(contract, layer.position, "y", "Layer Position Y");
+		// rotate the layer (optionally)
+		if (KEY_ROTATION in layer) {
+			var rotation = await readIntProperty(contract, layer, KEY_ROTATION, "Layer Rotation");
+			layerImage.rotate(rotation, false);
+		}
 
-		x += x_offset;
-		y += y_offset;
+		var x = 0;
+		var y = 0;
+
+		// position the layer (optionally)
+		if (KEY_POSITION in layer) {
+			x = await readIntProperty(contract, layer[KEY_POSITION], KEY_X, "Layer Position X");
+			y = await readIntProperty(contract, layer[KEY_POSITION], KEY_Y, "Layer Position Y");
+
+			x += x_offset;
+			y += y_offset;
+		}
 
 		// composite this layer onto the current image
 		currentImage.composite(layerImage, x, y);
