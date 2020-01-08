@@ -42,24 +42,17 @@ async function readIntProperty(contract, object, key, label) {
 async function OnImageRead(contract, currentImage, layout, layer, layerImage, layerIndex, callback) {
 	if (currentImage !== null) {
 		// scale the layer
-		var scale_x = await readIntProperty(contract, layer.scale, "x", "Layer Scale X");
-		var scale_y = await readIntProperty(contract, layer.scale, "y", "Layer Scale Y");
-		
-		// if we scale the layer, we have to calculate an offset to maintain the layer's position
-		var x_offset = 0;
-		var y_offset = 0;		
-
-		// if a scaleX or scaleY is non-1
-		if ((scale_x !== 1) || (scale_y !== 1)) {
-			// determine the new width
-			var newWidth = layerImage.bitmap.width * scale_x;
-			var newHeight = layerImage.bitmap.height * scale_y;
-			// determine the offset to maintain our position
-			x_offset = (layerImage.bitmap.width - newWidth) / 2;
-			y_offset = (layerImage.bitmap.height - newHeight) / 2;
-			// resize the image
-			layerImage.resize(newWidth, newHeight);
-		}
+		var scale_x = (await readIntProperty(contract, layer.scale, "x", "Layer Scale X")) / 100;
+		var scale_y = (await readIntProperty(contract, layer.scale, "y", "Layer Scale Y")) / 100;
+	
+		// determine the new width
+		var newWidth = layerImage.bitmap.width * scale_x;
+		var newHeight = layerImage.bitmap.height * scale_y;
+		// determine the offset to maintain our position
+		var x_offset = (layerImage.bitmap.width - newWidth) / 2;
+		var y_offset = (layerImage.bitmap.height - newHeight) / 2;
+		// resize the image
+		layerImage.resize(newWidth, newHeight);
 
 		// rotate the layer
 		var rotation = await readIntProperty(contract, layer, "rotation", "Layer Rotation");
