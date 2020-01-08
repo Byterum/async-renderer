@@ -23,6 +23,7 @@
           "x" : 100,
           "y" : 100
       },
+      "visible" : 1,
       "rotation" : {        
         "token_id": 3,
         "lever_id" : 2
