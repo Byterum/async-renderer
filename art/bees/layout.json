@@ -1,35 +1,31 @@
 {
   "type": "layered-static",
-  "version" : 1,
+  "version": 1,
   "layers": [
     {
-      "x": 0,
-      "y": 0,
-      "uri": "art/bees/bg.jpg",
-      "type": "static"
+      "uri": "art/bees/bg.jpg"
     },
     {
-      "position" : {
+      "position": {
         "x": {
           "token_id": 3,
-          "lever_id" : 0
+          "lever_id": 0
         },
         "y": {
           "token_id": 3,
-          "lever_id" : 1
+          "lever_id": 1
         }
       },
-      "scale" : {
-          "x" : 100,
-          "y" : 100
+      "scale": {
+        "x": 100,
+        "y": 100
       },
-      "visible" : 1,
-      "rotation" : {        
+      "visible": 1,
+      "rotation": {
         "token_id": 3,
-        "lever_id" : 2
+        "lever_id": 2
       },
-      "uri": "art/bees/bee-0.png",
-      "type": "static"
+      "uri": "art/bees/bee-0.png"
     }
   ]
 }

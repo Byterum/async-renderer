@@ -1,28 +1,31 @@
 {
   "type": "layered-static",
+  "version": 1,
   "layers": [
     {
-      "x": 0,
-      "y": 0,
-      "uri": "art/hubris/bg.jpg",
-      "type": "static"
+      "uri": "art/hubris/bg.jpg"
     },
     {
-      "type": "dynamic",
-      "options": [
-        {
-          "x": 478,
-          "y": 340,
-          "uri": "art/hubris/sword.png"
-        },
-        {
-          "x": 410,
-          "y": 150,
-          "uri": "art/hubris/shield.png"
-        }
-      ],
-      "control_token": 1,
-      "control_lever": 0
+      "uri": {
+        "options": [
+          {
+            "uri": "art/hubris/sword.png",
+            "position": {
+              "x": 478,
+              "y": 340
+            }
+          },
+          {
+            "uri": "art/hubris/shield.png",
+            "position": {
+              "x": 410,
+              "y": 150
+            }
+          }
+        ],
+        "token_id": 1,
+        "lever_id": 0
+      }
     }
-  ]
+  ]  
 }

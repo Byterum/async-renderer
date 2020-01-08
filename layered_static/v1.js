@@ -6,6 +6,7 @@ const KEY_POSITION = "position";
 const KEY_X = "x";
 const KEY_Y = "y";
 const KEY_VISIBLE = "visible";
+const KEY_URI = "uri";
 
 async function render(contract, layout, currentImage, layerIndex, callback) {
 	if (layerIndex >= layout.layers.length) {		
@@ -13,17 +14,13 @@ async function render(contract, layout, currentImage, layerIndex, callback) {
 		return		
 	}
 
-	var baseLayerImage = null;
+	// TODO sort layers by z_order?
+	var layer = layout.layers[layerIndex];
 
-	// TODO sort layers by z_order
-	var layer = layout.layers[layerIndex]
+	if (typeof layer.uri === "object") {
+		var uriIndex = await readIntProperty(contract, layer, KEY_URI, "Layer Index");
 
-	var layerType = layer.type;
-
-	if (layerType === "dynamic") {
-		var currentIndex = parseInt((await contract.getControlLeverValue(layer.token_id, layer.lever_id)).toString())
-
-		layer = layer.options[currentIndex];
+		layer = layer.uri.options[uriIndex];
 	}
 
 	Jimp.read(layer.uri, (err, layerImage) => {
@@ -48,8 +45,8 @@ async function readIntProperty(contract, object, key, label) {
 
 async function OnImageRead(contract, currentImage, layout, layer, layerImage, layerIndex, callback) {
 	if (currentImage !== null) {
-
-		var isVisible = false;
+		// each layer visible by default
+		var isVisible = true;		
 		// check if this layer has visbility controls
 		if (KEY_VISIBLE in layer) {
 			isVisible = (await readIntProperty(contract, layer, KEY_VISIBLE, "Layer Visible")) === 1;
