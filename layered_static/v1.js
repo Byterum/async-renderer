@@ -26,32 +26,53 @@ async function render(contract, layout, currentImage, layerIndex, callback) {
 	})	
 }
 
+async function readIntProperty(contract, object, key, label) {
+	var value = object[key];
+
+	// check if value is an object. If so then we need to check the contract value
+	if (typeof value === "object") {
+		value = parseInt((await contract.getControlLeverValue(object[key]["token_id"], object[key]["lever_id"])).toString());		
+		console.log("Fetching " + label + " value from contract...");
+	}
+	console.log(label + " = " + value);
+
+	return value;
+}
+
 async function OnImageRead(contract, currentImage, layout, layer, layerImage, layerIndex, callback) {
 	if (currentImage !== null) {
-		// rotate the layer
-		var rotation = layer.rotation;
+		// scale the layer
+		var scale_x = await readIntProperty(contract, layer.scale, "x", "Layer Scale X");
+		var scale_y = await readIntProperty(contract, layer.scale, "y", "Layer Scale Y");
+		
+		// if we scale the layer, we have to calculate an offset to maintain the layer's position
+		var x_offset = 0;
+		var y_offset = 0;		
 
-		if (typeof rotation === "object") {
-			rotation = parseInt((await contract.getControlLeverValue(layer.rotation.token_id, layer.rotation.lever_id)).toString());
-			console.log("Rotation = " + rotation);
+		// if a scaleX or scaleY is non-1
+		if ((scale_x !== 1) || (scale_y !== 1)) {
+			// determine the new width
+			var newWidth = layerImage.bitmap.width * scale_x;
+			var newHeight = layerImage.bitmap.height * scale_y;
+			// determine the offset to maintain our position
+			x_offset = (layerImage.bitmap.width - newWidth) / 2;
+			y_offset = (layerImage.bitmap.height - newHeight) / 2;
+			// resize the image
+			layerImage.resize(newWidth, newHeight);
 		}
 
+		// rotate the layer
+		var rotation = await readIntProperty(contract, layer, "rotation", "Layer Rotation");
 		layerImage.rotate(rotation, false);
 
 		// position the layer
-		var x = layer.position.x;
-		var y = layer.position.y;			
+		var x = await readIntProperty(contract, layer.position, "x", "Layer Position X");
+		var y = await readIntProperty(contract, layer.position, "y", "Layer Position Y");
 
-		if (typeof x === "object") {
-			x = parseInt((await contract.getControlLeverValue(layer.position.x.token_id, layer.position.x.lever_id)).toString());
-			console.log("X = " + x)
-		}
+		x += x_offset;
+		y += y_offset;
 
-		if (typeof y === "object") {
-			y = parseInt((await contract.getControlLeverValue(layer.position.y.token_id, layer.position.y.lever_id)).toString());
-			console.log("Y = " + y)
-		}
-
+		// composite this layer onto the current image
 		currentImage.composite(layerImage, x, y);
 
 		render(contract, layout, currentImage, layerIndex + 1, callback)

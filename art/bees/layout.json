@@ -11,21 +11,19 @@
     {
       "position" : {
         "x": {
-          "min": 0,
-          "max": 372,
           "token_id": 3,
           "lever_id" : 0
         },
         "y": {
-          "min": 0,
-          "max": 405,
           "token_id": 3,
           "lever_id" : 1
         }
       },
-      "rotation" : {
-        "min": 0,
-        "max": 359,
+      "scale" : {
+          "x" : 1,
+          "y" : 2          
+      },
+      "rotation" : {        
         "token_id": 3,
         "lever_id" : 2
       },
