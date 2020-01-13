@@ -14,6 +14,8 @@ async function render(contract, layout, currentImage, layerIndex, callback) {
 		return		
 	}
 
+	console.log("rendering layer: " + (layerIndex + 1) + " of " + layout.layers.length);
+
 	// TODO sort layers by z_order?
 	var layer = layout.layers[layerIndex];
 
@@ -35,10 +37,14 @@ async function readIntProperty(contract, object, key, label) {
 
 	// check if value is an object. If so then we need to check the contract value
 	if (typeof value === "object") {
-		value = parseInt((await contract.getControlLeverValue(object[key]["token_id"], object[key]["lever_id"])).toString());		
-		console.log("Fetching " + label + " value from contract...");
+		var tokenId = object[key]["token_id"];
+		var leverId = object[key]["lever_id"];
+
+		value = parseInt((await contract.getControlLeverValue(tokenId, leverId)).toString());		
+		
+		console.log("Fetching " + label + " value from contract. TokenId=" + tokenId + ", LeverId=" + leverId);
 	}
-	console.log(label + " = " + value);
+	console.log("	" + label + " = " + value);
 
 	return value;
 }
@@ -54,21 +60,17 @@ async function OnImageRead(contract, currentImage, layout, layer, layerImage, la
 
 		if (isVisible) {
 			// scale the layer (optionally)
-			var x_offset = 0;
-			var y_offset = 0;
+			var bitmapWidth = layerImage.bitmap.width;
+			var bitmapHeight = layerImage.bitmap.height;
 
 			if (KEY_SCALE in layer) {
 				var scale_x = (await readIntProperty(contract, layer[KEY_SCALE], KEY_X, "Layer Scale X")) / 100;
 				var scale_y = (await readIntProperty(contract, layer[KEY_SCALE], KEY_Y, "Layer Scale Y")) / 100;
-			
 				// determine the new width
-				var newWidth = layerImage.bitmap.width * scale_x;
-				var newHeight = layerImage.bitmap.height * scale_y;
-				// determine the offset to maintain our position
-				x_offset = (layerImage.bitmap.width - newWidth) / 2;
-				y_offset = (layerImage.bitmap.height - newHeight) / 2;
+				bitmapWidth = layerImage.bitmap.width * scale_x;
+				bitmapHeight = layerImage.bitmap.height * scale_y;
 				// resize the image
-				layerImage.resize(newWidth, newHeight);
+				layerImage.resize(bitmapWidth, bitmapHeight);
 			}
 
 			// rotate the layer (optionally)
@@ -77,16 +79,17 @@ async function OnImageRead(contract, currentImage, layout, layer, layerImage, la
 				layerImage.rotate(rotation, false);
 			}
 
-			var x = 0;
-			var y = 0;
-
+			// offset x and y so that layers are drawn at the center of their image
+			var x = -bitmapWidth / 2;
+			var y = -bitmapHeight / 2;
+			
 			// position the layer (optionally)
 			if (KEY_POSITION in layer) {
 				x = await readIntProperty(contract, layer[KEY_POSITION], KEY_X, "Layer Position X");
 				y = await readIntProperty(contract, layer[KEY_POSITION], KEY_Y, "Layer Position Y");
 
-				x += x_offset;
-				y += y_offset;
+				x -= bitmapWidth / 2;
+				y -= bitmapHeight / 2;
 			}
 
 			// composite this layer onto the current image
