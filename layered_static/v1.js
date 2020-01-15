@@ -2,6 +2,8 @@ var Jimp = require('jimp');
 
 const KEY_ROTATION = "rotation";
 const KEY_SCALE = "scale";
+const KEY_COLOR = "color";
+const KEY_ALPHA = "alpha";
 const KEY_POSITION = "position";
 const KEY_X = "x";
 const KEY_Y = "y";
@@ -92,6 +94,13 @@ async function OnImageRead(contract, currentImage, layout, layer, layerImage, la
 
 				x -= bitmapWidth / 2;
 				y -= bitmapHeight / 2;
+			}
+
+			// adjust the color
+			if (KEY_COLOR in layer) {
+				var alpha = await readIntProperty(contract, layer[KEY_COLOR], KEY_ALPHA, "Layer Alpha"); 
+
+				layerImage.opacity(alpha / 100);
 			}
 
 			// composite this layer onto the current image
