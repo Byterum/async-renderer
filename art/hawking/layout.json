@@ -3,10 +3,10 @@
   "version": 1,
   "layers": [
     {
-      "uri": "art/hawking/000.png"
+      "uri": "art/hawking/base.png"
     },
     {
-      "uri": "art/hawking/001.png",
+      "uri": "art/hawking/0.png",
       "position": {
         "x": {
           "token_id": 1,
@@ -33,28 +33,190 @@
       }
     },
     {
-      "uri": "art/hawking/002.png",
+      "uri": "art/hawking/1.png",
       "position": {
         "x": {
-          "token_id": 2,
+          "token_id": 1,
           "lever_id": 0
         },
         "y": {
-          "token_id": 2,
+          "token_id": 1,
           "lever_id": 1
         }
       },
       "rotation": {
-        "token_id": 2,
+        "token_id": 1,
         "lever_id": 2
       },
       "scale": {
         "x": {
-        	"token_id": 2,
+        	"token_id": 1,
         	"lever_id": 3
         },
         "y": {
-        	"token_id": 2,
+        	"token_id": 1,
+        	"lever_id": 4
+        }
+      }
+    },
+    {
+      "uri": "art/hawking/2.png",
+      "position": {
+        "x": {
+          "token_id": 1,
+          "lever_id": 0
+        },
+        "y": {
+          "token_id": 1,
+          "lever_id": 1
+        }
+      },
+      "rotation": {
+        "token_id": 1,
+        "lever_id": 2
+      },
+      "scale": {
+        "x": {
+        	"token_id": 1,
+        	"lever_id": 3
+        },
+        "y": {
+        	"token_id": 1,
+        	"lever_id": 4
+        }
+      }
+    },
+    {
+      "uri": "art/hawking/3.png",
+      "position": {
+        "x": {
+          "token_id": 1,
+          "lever_id": 0
+        },
+        "y": {
+          "token_id": 1,
+          "lever_id": 1
+        }
+      },
+      "rotation": {
+        "token_id": 1,
+        "lever_id": 2
+      },
+      "scale": {
+        "x": {
+        	"token_id": 1,
+        	"lever_id": 3
+        },
+        "y": {
+        	"token_id": 1,
+        	"lever_id": 4
+        }
+      }
+    },
+    {
+      "uri": "art/hawking/4.png",
+      "position": {
+        "x": {
+          "token_id": 1,
+          "lever_id": 0
+        },
+        "y": {
+          "token_id": 1,
+          "lever_id": 1
+        }
+      },
+      "rotation": {
+        "token_id": 1,
+        "lever_id": 2
+      },
+      "scale": {
+        "x": {
+        	"token_id": 1,
+        	"lever_id": 3
+        },
+        "y": {
+        	"token_id": 1,
+        	"lever_id": 4
+        }
+      }
+    },
+    {
+      "uri": "art/hawking/5.png",
+      "position": {
+        "x": {
+          "token_id": 1,
+          "lever_id": 0
+        },
+        "y": {
+          "token_id": 1,
+          "lever_id": 1
+        }
+      },
+      "rotation": {
+        "token_id": 1,
+        "lever_id": 2
+      },
+      "scale": {
+        "x": {
+        	"token_id": 1,
+        	"lever_id": 3
+        },
+        "y": {
+        	"token_id": 1,
+        	"lever_id": 4
+        }
+      }
+    },
+    {
+      "uri": "art/hawking/6.png",
+      "position": {
+        "x": {
+          "token_id": 1,
+          "lever_id": 0
+        },
+        "y": {
+          "token_id": 1,
+          "lever_id": 1
+        }
+      },
+      "rotation": {
+        "token_id": 1,
+        "lever_id": 2
+      },
+      "scale": {
+        "x": {
+        	"token_id": 1,
+        	"lever_id": 3
+        },
+        "y": {
+        	"token_id": 1,
+        	"lever_id": 4
+        }
+      }
+    },
+    {
+      "uri": "art/hawking/7.png",
+      "position": {
+        "x": {
+          "token_id": 1,
+          "lever_id": 0
+        },
+        "y": {
+          "token_id": 1,
+          "lever_id": 1
+        }
+      },
+      "rotation": {
+        "token_id": 1,
+        "lever_id": 2
+      },
+      "scale": {
+        "x": {
+        	"token_id": 1,
+        	"lever_id": 3
+        },
+        "y": {
+        	"token_id": 1,
         	"lever_id": 4
         }
       }

@@ -39,10 +39,12 @@ async function readIntProperty(contract, object, key, label) {
 	if (typeof value === "object") {
 		var tokenId = object[key]["token_id"];
 		var leverId = object[key]["lever_id"];
-
-		value = parseInt((await contract.getControlLeverValue(tokenId, leverId)).toString());		
 		
 		console.log("Fetching " + label + " value from contract. TokenId=" + tokenId + ", LeverId=" + leverId);
+
+		var controlLever = (await contract.getControlLever(tokenId, leverId));
+		
+		value = parseInt(controlLever[2].toString());
 	}
 	console.log("	" + label + " = " + value);
 
