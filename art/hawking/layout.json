@@ -3,10 +3,10 @@
   "version": 1,
   "layers": [
     {
-      "uri": "art/hawking/base.png"
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307617/goerli/hawking/base_oyfb2x.png"
     },
     {
-      "uri": "art/hawking/1.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307661/goerli/hawking/1_jxyyvn.png",
       "position": {
         "x": {
           "token_id": 1,
@@ -33,7 +33,7 @@
       }
     },
     {
-      "uri": "art/hawking/2.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307738/goerli/hawking/2_qlfaru.png",
       "position": {
         "x": {
           "token_id": 2,
@@ -60,7 +60,7 @@
       }
     },
     {
-      "uri": "art/hawking/3.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307751/goerli/hawking/3_oatucp.png",
       "position": {
         "x": {
           "token_id": 3,
@@ -87,7 +87,7 @@
       }
     },
     {
-      "uri": "art/hawking/4.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307778/goerli/hawking/4_j5usi2.png",
       "position": {
         "x": {
           "token_id": 4,
@@ -114,7 +114,7 @@
       }
     },
     {
-      "uri": "art/hawking/5.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307788/goerli/hawking/5_zocgdc.png",
       "position": {
         "x": {
           "token_id": 5,
@@ -141,7 +141,7 @@
       }
     },
     {
-      "uri": "art/hawking/6.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307827/goerli/hawking/6_dsdprd.png",
       "position": {
         "x": {
           "token_id": 6,
@@ -168,7 +168,7 @@
       }
     },
     {
-      "uri": "art/hawking/7.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307838/goerli/hawking/7_xh6dky.png",
       "position": {
         "x": {
           "token_id": 7,
@@ -195,7 +195,7 @@
       }
     },
     {
-      "uri": "art/hawking/8.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307847/goerli/hawking/8_dwzls8.png",
       "position": {
         "x": {
           "token_id": 8,
@@ -222,7 +222,7 @@
       }
     },
     {
-      "uri": "art/hawking/9.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307857/goerli/hawking/9_om5cgm.png",
       "position": {
         "x": {
           "token_id": 9,
@@ -249,7 +249,7 @@
       }
     },
     {
-      "uri": "art/hawking/10.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307879/goerli/hawking/10_ayiqhx.png",
       "position": {
         "x": {
           "token_id": 10,
@@ -276,7 +276,7 @@
       }
     },
     {
-      "uri": "art/hawking/11.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307890/goerli/hawking/11_z2e4jl.png",
       "position": {
         "x": {
           "token_id": 11,
@@ -303,7 +303,7 @@
       }
     },
     {
-      "uri": "art/hawking/12.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307899/goerli/hawking/12_etvzh8.png",
       "position": {
         "x": {
           "token_id": 12,
@@ -330,7 +330,7 @@
       }
     },
     {
-      "uri": "art/hawking/13.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307911/goerli/hawking/13_q7zlyd.png",
       "position": {
         "x": {
           "token_id": 13,
@@ -357,7 +357,7 @@
       }
     },
     {
-      "uri": "art/hawking/14.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307921/goerli/hawking/14_rmbc7y.png",
       "position": {
         "x": {
           "token_id": 14,
@@ -384,7 +384,7 @@
       }
     },
     {
-      "uri": "art/hawking/15.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307930/goerli/hawking/15_xmmrhu.png",
       "position": {
         "x": {
           "token_id": 15,
@@ -411,7 +411,7 @@
       }
     },
     {
-      "uri": "art/hawking/16.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307947/goerli/hawking/16_rm2mzn.png",
       "position": {
         "x": {
           "token_id": 16,
@@ -438,7 +438,7 @@
       }
     },
     {
-      "uri": "art/hawking/17.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307957/goerli/hawking/17_giyolm.png",
       "position": {
         "x": {
           "token_id": 17,
@@ -465,7 +465,7 @@
       }
     },
     {
-      "uri": "art/hawking/18.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307969/goerli/hawking/18_k7nwnm.png",
       "position": {
         "x": {
           "token_id": 18,
@@ -492,7 +492,7 @@
       }
     },
     {
-      "uri": "art/hawking/19.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307984/goerli/hawking/19_ftverh.png",
       "position": {
         "x": {
           "token_id": 19,
@@ -519,7 +519,7 @@
       }
     },
     {
-      "uri": "art/hawking/20.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308005/goerli/hawking/20_ddvasq.png",
       "position": {
         "x": {
           "token_id": 20,
@@ -546,7 +546,7 @@
       }
     },
     {
-      "uri": "art/hawking/21.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308042/goerli/hawking/21_ofxoar.png",
       "position": {
         "x": {
           "token_id": 21,
@@ -573,7 +573,7 @@
       }
     },
     {
-      "uri": "art/hawking/22.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308052/goerli/hawking/22_hl7kf0.png",
       "position": {
         "x": {
           "token_id": 22,
@@ -600,7 +600,7 @@
       }
     },
     {
-      "uri": "art/hawking/23.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308132/goerli/hawking/23_bszoha.png",
       "position": {
         "x": {
           "token_id": 23,
@@ -627,7 +627,7 @@
       }
     },
     {
-      "uri": "art/hawking/24.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308141/goerli/hawking/24_mjioso.png",
       "position": {
         "x": {
           "token_id": 24,
@@ -654,7 +654,7 @@
       }
     },
     {
-      "uri": "art/hawking/25.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308152/goerli/hawking/25_jbtbi4.png",
       "position": {
         "x": {
           "token_id": 25,
@@ -681,7 +681,7 @@
       }
     },
     {
-      "uri": "art/hawking/26.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308163/goerli/hawking/26_jv6set.png",
       "position": {
         "x": {
           "token_id": 26,
@@ -708,7 +708,7 @@
       }
     },
     {
-      "uri": "art/hawking/27.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308176/goerli/hawking/27_zyacsm.png",
       "position": {
         "x": {
           "token_id": 27,
@@ -735,7 +735,7 @@
       }
     },
     {
-      "uri": "art/hawking/28.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308233/goerli/hawking/28_cin8bx.png",
       "position": {
         "x": {
           "token_id": 28,
@@ -762,7 +762,7 @@
       }
     },
     {
-      "uri": "art/hawking/29.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308244/goerli/hawking/29_juagcg.png",
       "position": {
         "x": {
           "token_id": 29,
@@ -789,7 +789,7 @@
       }
     },
     {
-      "uri": "art/hawking/30.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308254/goerli/hawking/30_ooad9u.png",
       "position": {
         "x": {
           "token_id": 30,
@@ -816,7 +816,7 @@
       }
     },
     {
-      "uri": "art/hawking/31.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308264/goerli/hawking/31_lkmoef.png",
       "position": {
         "x": {
           "token_id": 31,
@@ -843,7 +843,7 @@
       }
     },
     {
-      "uri": "art/hawking/32.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308273/goerli/hawking/32_lzqkde.png",
       "position": {
         "x": {
           "token_id": 32,
