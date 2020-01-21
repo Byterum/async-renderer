@@ -12,7 +12,7 @@ const KEY_URI = "uri";
 
 async function render(contract, layout, currentImage, layerIndex, callback) {
 	if (layerIndex >= layout.layers.length) {		
-		callback(currentImage)
+		callback(currentImage)		
 		return		
 	}
 
