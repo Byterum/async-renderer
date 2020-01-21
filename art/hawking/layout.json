@@ -3,10 +3,10 @@
   "version": 1,
   "layers": [
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307617/goerli/hawking/base_oyfb2x.png"
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307617/goerli/assets/hawking/base_oyfb2x.png"
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307661/goerli/hawking/1_jxyyvn.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307661/goerli/assets/hawking/1_jxyyvn.png",
       "position": {
         "x": {
           "token_id": 1,
@@ -33,7 +33,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307738/goerli/hawking/2_qlfaru.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307738/goerli/assets/hawking/2_qlfaru.png",
       "position": {
         "x": {
           "token_id": 2,
@@ -60,7 +60,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307751/goerli/hawking/3_oatucp.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307751/goerli/assets/hawking/3_oatucp.png",
       "position": {
         "x": {
           "token_id": 3,
@@ -87,7 +87,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307778/goerli/hawking/4_j5usi2.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307778/goerli/assets/hawking/4_j5usi2.png",
       "position": {
         "x": {
           "token_id": 4,
@@ -114,7 +114,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307788/goerli/hawking/5_zocgdc.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307788/goerli/assets/hawking/5_zocgdc.png",
       "position": {
         "x": {
           "token_id": 5,
@@ -141,7 +141,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307827/goerli/hawking/6_dsdprd.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307827/goerli/assets/hawking/6_dsdprd.png",
       "position": {
         "x": {
           "token_id": 6,
@@ -168,7 +168,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307838/goerli/hawking/7_xh6dky.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307838/goerli/assets/hawking/7_xh6dky.png",
       "position": {
         "x": {
           "token_id": 7,
@@ -195,7 +195,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307847/goerli/hawking/8_dwzls8.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307847/goerli/assets/hawking/8_dwzls8.png",
       "position": {
         "x": {
           "token_id": 8,
@@ -222,7 +222,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307857/goerli/hawking/9_om5cgm.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307857/goerli/assets/hawking/9_om5cgm.png",
       "position": {
         "x": {
           "token_id": 9,
@@ -249,7 +249,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307879/goerli/hawking/10_ayiqhx.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307879/goerli/assets/hawking/10_ayiqhx.png",
       "position": {
         "x": {
           "token_id": 10,
@@ -276,7 +276,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307890/goerli/hawking/11_z2e4jl.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307890/goerli/assets/hawking/11_z2e4jl.png",
       "position": {
         "x": {
           "token_id": 11,
@@ -303,7 +303,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307899/goerli/hawking/12_etvzh8.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307899/goerli/assets/hawking/12_etvzh8.png",
       "position": {
         "x": {
           "token_id": 12,
@@ -330,7 +330,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307911/goerli/hawking/13_q7zlyd.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307911/goerli/assets/hawking/13_q7zlyd.png",
       "position": {
         "x": {
           "token_id": 13,
@@ -357,7 +357,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307921/goerli/hawking/14_rmbc7y.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307921/goerli/assets/hawking/14_rmbc7y.png",
       "position": {
         "x": {
           "token_id": 14,
@@ -384,7 +384,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307930/goerli/hawking/15_xmmrhu.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307930/goerli/assets/hawking/15_xmmrhu.png",
       "position": {
         "x": {
           "token_id": 15,
@@ -411,7 +411,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307947/goerli/hawking/16_rm2mzn.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307947/goerli/assets/hawking/16_rm2mzn.png",
       "position": {
         "x": {
           "token_id": 16,
@@ -438,7 +438,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307957/goerli/hawking/17_giyolm.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307957/goerli/assets/hawking/17_giyolm.png",
       "position": {
         "x": {
           "token_id": 17,
@@ -465,7 +465,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307969/goerli/hawking/18_k7nwnm.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307969/goerli/assets/hawking/18_k7nwnm.png",
       "position": {
         "x": {
           "token_id": 18,
@@ -492,7 +492,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307984/goerli/hawking/19_ftverh.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307984/goerli/assets/hawking/19_ftverh.png",
       "position": {
         "x": {
           "token_id": 19,
@@ -519,7 +519,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308005/goerli/hawking/20_ddvasq.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308005/goerli/assets/hawking/20_ddvasq.png",
       "position": {
         "x": {
           "token_id": 20,
@@ -546,7 +546,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308042/goerli/hawking/21_ofxoar.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308042/goerli/assets/hawking/21_ofxoar.png",
       "position": {
         "x": {
           "token_id": 21,
@@ -573,7 +573,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308052/goerli/hawking/22_hl7kf0.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308052/goerli/assets/hawking/22_hl7kf0.png",
       "position": {
         "x": {
           "token_id": 22,
@@ -600,7 +600,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308132/goerli/hawking/23_bszoha.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308132/goerli/assets/hawking/23_bszoha.png",
       "position": {
         "x": {
           "token_id": 23,
@@ -627,7 +627,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308141/goerli/hawking/24_mjioso.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308141/goerli/assets/hawking/24_mjioso.png",
       "position": {
         "x": {
           "token_id": 24,
@@ -654,7 +654,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308152/goerli/hawking/25_jbtbi4.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308152/goerli/assets/hawking/25_jbtbi4.png",
       "position": {
         "x": {
           "token_id": 25,
@@ -681,7 +681,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308163/goerli/hawking/26_jv6set.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308163/goerli/assets/hawking/26_jv6set.png",
       "position": {
         "x": {
           "token_id": 26,
@@ -708,7 +708,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308176/goerli/hawking/27_zyacsm.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308176/goerli/assets/hawking/27_zyacsm.png",
       "position": {
         "x": {
           "token_id": 27,
@@ -735,7 +735,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308233/goerli/hawking/28_cin8bx.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308233/goerli/assets/hawking/28_cin8bx.png",
       "position": {
         "x": {
           "token_id": 28,
@@ -762,7 +762,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308244/goerli/hawking/29_juagcg.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308244/goerli/assets/hawking/29_juagcg.png",
       "position": {
         "x": {
           "token_id": 29,
@@ -789,7 +789,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308254/goerli/hawking/30_ooad9u.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308254/goerli/assets/hawking/30_ooad9u.png",
       "position": {
         "x": {
           "token_id": 30,
@@ -816,7 +816,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308264/goerli/hawking/31_lkmoef.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308264/goerli/assets/hawking/31_lkmoef.png",
       "position": {
         "x": {
           "token_id": 31,
@@ -843,7 +843,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308273/goerli/hawking/32_lzqkde.png",
+      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308273/goerli/assets/hawking/32_lzqkde.png",
       "position": {
         "x": {
           "token_id": 32,
