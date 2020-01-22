@@ -13,16 +13,14 @@ if (process.argv.length < 4) {
 }
 
 // get the filename from the 3rd argument
+// TODO read the layout from the token ID
 var file = process.argv[2];
-var path = "art/" + file + "/layout.json"
-
 // get the contract address from the 4th argument
 var contractAddress = process.argv[3];
 
-var layoutRaw = fs.readFileSync(path)
-let layout = JSON.parse(layoutRaw);
-var imageType = layout.type;
-var imageVersion = layout.version;
+var path = "art/" + file + "/layout.json"
+
+let layout = JSON.parse(fs.readFileSync(path));
 
 provider.getNetwork().then((network) => {
 	let contract = new ethers.Contract(contractAddress, CONTRACT_ABI, provider);
@@ -33,8 +31,8 @@ provider.getNetwork().then((network) => {
 async function Process(contract) {
 	var renderer = null;
 
-	if (imageType === "layered-static") {
-		if (imageVersion === 1) {
+	if (layout.type === "layered-static") {
+		if (layout.version === 1) {
 			renderer = layered_static_v1;
 		}		
 	}
