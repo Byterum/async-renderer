@@ -1,4 +1,5 @@
 var Jimp = require('jimp');
+var ethers = require("ethers");
 
 const KEY_ROTATION = "rotation";
 const KEY_SCALE = "scale";
@@ -10,7 +11,11 @@ const KEY_Y = "y";
 const KEY_VISIBLE = "visible";
 const KEY_URI = "uri";
 
-async function render(contract, layout, currentImage, layerIndex, callback) {
+var blockNum = -1;
+
+async function render(contract, layout, currentImage, layerIndex, _blockNum, callback) {
+	blockNum = parseInt(_blockNum);
+
 	if (layerIndex >= layout.layers.length) {		
 		callback(currentImage)		
 		return		
@@ -44,9 +49,26 @@ async function readIntProperty(contract, object, key, label) {
 		
 		console.log("Fetching " + label + " value from contract. TokenId=" + tokenId + ", LeverId=" + leverId);
 
-		var controlLever = (await contract.getControlLever(tokenId, leverId));
+		var info = contract.interface.functions.getControlLever.encode([tokenId, leverId]);
+
+		var tx = {
+			from: contract.address,
+    		to: contract.address,
+    		data: info.data
+		}
+
+		var controlLeverResults = null;
+
+		// retrieve results as of a specific block number (use -1 for latest)
+		if (blockNum >= 0) {
+			controlLeverResults = await contract.getControlLever(tokenId, leverId, {blockTag : blockNum});
+		} else {
+			controlLeverResults = await contract.getControlLever(tokenId, leverId);
+		}
 		
-		value = parseInt(controlLever[2].toString());
+		var currentLeverValue = controlLeverResults[2].toString();
+		
+		value = parseInt(currentLeverValue);
 	}
 	console.log("	" + label + " = " + value);
 
@@ -56,7 +78,7 @@ async function readIntProperty(contract, object, key, label) {
 async function OnImageRead(contract, currentImage, layout, layer, layerImage, layerIndex, callback) {
 	if (currentImage !== null) {
 		// each layer visible by default
-		var isVisible = true;		
+		var isVisible = true;
 		// check if this layer has visbility controls
 		if (KEY_VISIBLE in layer) {
 			isVisible = (await readIntProperty(contract, layer, KEY_VISIBLE, "Layer Visible")) === 1;
@@ -107,9 +129,9 @@ async function OnImageRead(contract, currentImage, layout, layer, layerImage, la
 			currentImage.composite(layerImage, x, y);
 		}
 
-		render(contract, layout, currentImage, layerIndex + 1, callback)
+		render(contract, layout, currentImage, layerIndex + 1, blockNum, callback)
 	} else {
-		render(contract, layout, layerImage, layerIndex + 1, callback)
+		render(contract, layout, layerImage, layerIndex + 1, blockNum, callback)
 	}
 }
 
