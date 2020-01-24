@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/conlan/async#readme",
   "dependencies": {
+    "@google-cloud/storage": "^4.3.0",
     "ethers": "^4.0.40",
     "jimp": "^0.9.3"
   }

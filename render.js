@@ -5,6 +5,11 @@ var Jimp = require('jimp');
 // Renderer variants
 const layered_static_v1 = require('./layered_static/v1.js')
 
+// Connector variants
+// Override here with custome buffer connectors
+const bufferConnector = require('./connectors/google_cloud_buffer.js')
+
+
 const CONTRACT_ABI = JSON.parse(fs.readFileSync("ABI.json"))
 
 // const provider = new ethers.providers.JsonRpcProvider('http://localhost:7545');
@@ -52,9 +57,11 @@ async function Process(contract) {
 			renderer = layered_static_v1;
 		}		
 	}
+
+	// set the buffer connector on the renderer
+	renderer.setBufferConnector(bufferConnector);
 	
-	renderer.render(contract, layout, null, 0, blockNum, (finalImage) => {
-		
+	renderer.render(contract, layout, null, 0, blockNum, (finalImage) => {		
 		stampBlockNumber(finalImage, () => {
 			path = "renders/" + file + "_" + blockNum + ".png";
 	

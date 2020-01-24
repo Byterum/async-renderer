@@ -12,9 +12,15 @@ const KEY_VISIBLE = "visible";
 const KEY_URI = "uri";
 
 var blockNum = -1;
+var bufferConnector = null;
+
+function setBufferConnector(_bufferConnector) {
+	bufferConnector = _bufferConnector;
+}
 
 async function render(contract, layout, currentImage, layerIndex, _blockNum, callback) {
 	blockNum = parseInt(_blockNum);
+	
 
 	if (layerIndex >= layout.layers.length) {		
 		callback(currentImage)		
@@ -31,12 +37,14 @@ async function render(contract, layout, currentImage, layerIndex, _blockNum, cal
 
 		layer = layer.uri.options[uriIndex];
 	}
+	
+	bufferConnector.loadFromURI(layer.uri, (imageBuffer) => {
+		Jimp.read(imageBuffer, (err, layerImage) => {
+			if (err) throw err;			
 
-	Jimp.read(layer.uri, (err, layerImage) => {
-		if (err) throw err;			
-
-		OnImageRead(contract, currentImage, layout, layer, layerImage, layerIndex, callback);
-	})	
+			OnImageRead(contract, currentImage, layout, layer, layerImage, layerIndex, callback);
+		})
+	});
 }
 
 async function readIntProperty(contract, object, key, label) {
@@ -135,4 +143,5 @@ async function OnImageRead(contract, currentImage, layout, layer, layerImage, la
 	}
 }
 
-exports.render = render
+exports.render = render;
+exports.setBufferConnector = setBufferConnector;

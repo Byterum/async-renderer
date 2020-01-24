@@ -3,10 +3,10 @@
   "version": 1,
   "layers": [
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307617/goerli/assets/hawking/base_oyfb2x.png"
+      "uri": "base"
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307661/goerli/assets/hawking/1_jxyyvn.png",
+      "uri": "1",
       "position": {
         "x": {
           "token_id": 1,
@@ -33,7 +33,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307738/goerli/assets/hawking/2_qlfaru.png",
+      "uri": "2",
       "position": {
         "x": {
           "token_id": 2,
@@ -60,7 +60,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307751/goerli/assets/hawking/3_oatucp.png",
+      "uri": "3",
       "position": {
         "x": {
           "token_id": 3,
@@ -87,7 +87,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307778/goerli/assets/hawking/4_j5usi2.png",
+      "uri": "4",
       "position": {
         "x": {
           "token_id": 4,
@@ -114,7 +114,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307788/goerli/assets/hawking/5_zocgdc.png",
+      "uri": "5",
       "position": {
         "x": {
           "token_id": 5,
@@ -141,7 +141,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307827/goerli/assets/hawking/6_dsdprd.png",
+      "uri": "6",
       "position": {
         "x": {
           "token_id": 6,
@@ -168,7 +168,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307838/goerli/assets/hawking/7_xh6dky.png",
+      "uri": "7",
       "position": {
         "x": {
           "token_id": 7,
@@ -195,7 +195,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307847/goerli/assets/hawking/8_dwzls8.png",
+      "uri": "8",
       "position": {
         "x": {
           "token_id": 8,
@@ -222,7 +222,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307857/goerli/assets/hawking/9_om5cgm.png",
+      "uri": "9",
       "position": {
         "x": {
           "token_id": 9,
@@ -249,7 +249,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307879/goerli/assets/hawking/10_ayiqhx.png",
+      "uri": "10",
       "position": {
         "x": {
           "token_id": 10,
@@ -276,7 +276,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307890/goerli/assets/hawking/11_z2e4jl.png",
+      "uri": "11",
       "position": {
         "x": {
           "token_id": 11,
@@ -303,7 +303,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307899/goerli/assets/hawking/12_etvzh8.png",
+      "uri": "12",
       "position": {
         "x": {
           "token_id": 12,
@@ -330,7 +330,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307911/goerli/assets/hawking/13_q7zlyd.png",
+      "uri": "13",
       "position": {
         "x": {
           "token_id": 13,
@@ -357,7 +357,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307921/goerli/assets/hawking/14_rmbc7y.png",
+      "uri": "14",
       "position": {
         "x": {
           "token_id": 14,
@@ -384,7 +384,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307930/goerli/assets/hawking/15_xmmrhu.png",
+      "uri": "15",
       "position": {
         "x": {
           "token_id": 15,
@@ -411,7 +411,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307947/goerli/assets/hawking/16_rm2mzn.png",
+      "uri": "16",
       "position": {
         "x": {
           "token_id": 16,
@@ -438,7 +438,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307957/goerli/assets/hawking/17_giyolm.png",
+      "uri": "17",
       "position": {
         "x": {
           "token_id": 17,
@@ -465,7 +465,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307969/goerli/assets/hawking/18_k7nwnm.png",
+      "uri": "18",
       "position": {
         "x": {
           "token_id": 18,
@@ -492,7 +492,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579307984/goerli/assets/hawking/19_ftverh.png",
+      "uri": "19",
       "position": {
         "x": {
           "token_id": 19,
@@ -519,7 +519,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308005/goerli/assets/hawking/20_ddvasq.png",
+      "uri": "20",
       "position": {
         "x": {
           "token_id": 20,
@@ -546,7 +546,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308042/goerli/assets/hawking/21_ofxoar.png",
+      "uri": "21",
       "position": {
         "x": {
           "token_id": 21,
@@ -573,7 +573,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308052/goerli/assets/hawking/22_hl7kf0.png",
+      "uri": "22",
       "position": {
         "x": {
           "token_id": 22,
@@ -600,7 +600,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308132/goerli/assets/hawking/23_bszoha.png",
+      "uri": "23",
       "position": {
         "x": {
           "token_id": 23,
@@ -627,7 +627,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308141/goerli/assets/hawking/24_mjioso.png",
+      "uri": "24",
       "position": {
         "x": {
           "token_id": 24,
@@ -654,7 +654,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308152/goerli/assets/hawking/25_jbtbi4.png",
+      "uri": "25",
       "position": {
         "x": {
           "token_id": 25,
@@ -681,7 +681,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308163/goerli/assets/hawking/26_jv6set.png",
+      "uri": "26",
       "position": {
         "x": {
           "token_id": 26,
@@ -708,7 +708,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308176/goerli/assets/hawking/27_zyacsm.png",
+      "uri": "27",
       "position": {
         "x": {
           "token_id": 27,
@@ -735,7 +735,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308233/goerli/assets/hawking/28_cin8bx.png",
+      "uri": "28",
       "position": {
         "x": {
           "token_id": 28,
@@ -762,7 +762,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308244/goerli/assets/hawking/29_juagcg.png",
+      "uri": "29",
       "position": {
         "x": {
           "token_id": 29,
@@ -789,7 +789,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308254/goerli/assets/hawking/30_ooad9u.png",
+      "uri": "30",
       "position": {
         "x": {
           "token_id": 30,
@@ -816,7 +816,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308264/goerli/assets/hawking/31_lkmoef.png",
+      "uri": "31",
       "position": {
         "x": {
           "token_id": 31,
@@ -843,7 +843,7 @@
       }
     },
     {
-      "uri": "https://res.cloudinary.com/asynchronous-art-inc/image/upload/v1579308273/goerli/assets/hawking/32_lzqkde.png",
+      "uri": "32",
       "position": {
         "x": {
           "token_id": 32,
