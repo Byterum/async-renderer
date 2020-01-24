@@ -23,4 +23,10 @@ if (process.argv.length > 4) {
 }
 
 // TODO use a token id
-renderer.process(tokenAddress, blockNum, 0, layout)
+renderer.process(tokenAddress, 0, blockNum, layout, (finalImage, blockNum) => {
+	path = "renders/" + file + "_" + blockNum + ".png";
+	
+	finalImage.write(path)
+
+	console.log("Wrote to " + path)
+});

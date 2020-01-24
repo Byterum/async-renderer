@@ -16,13 +16,13 @@ const CONTRACT_ABI = JSON.parse(fs.readFileSync("ABI.json"))
 const provider = new ethers.providers.InfuraProvider('goerli');
 
 // TODO load the layout from the Token URI instead of being passed in
-function process(tokenAddress, tokenId, blockNum, layout) {	
+function process(tokenAddress, tokenId, blockNum, layout, callback) {	
 	provider.getNetwork().then((network) => {
-		onNetworkLoaded(tokenAddress, tokenId, blockNum, layout);		
+		onNetworkLoaded(tokenAddress, tokenId, blockNum, layout, callback);		
 	});
 }
 
-async function onNetworkLoaded(tokenAddress, tokenId, blockNum, layout) {
+async function onNetworkLoaded(tokenAddress, tokenId, blockNum, layout, callback) {
 	let contract = new ethers.Contract(tokenAddress, CONTRACT_ABI, provider);
 
 	// if no block num was provided then use the latest block number (minus 2 so we don't use a block that is pending currently)
@@ -44,17 +44,13 @@ async function onNetworkLoaded(tokenAddress, tokenId, blockNum, layout) {
 	renderer.setBufferConnector(bufferConnector);
 	
 	renderer.render(contract, layout, null, 0, blockNum, (finalImage) => {		
-		stampBlockNumber(finalImage, () => {
-			path = "renders/" + file + "_" + blockNum + ".png";
-	
-			finalImage.write(path)
-
-			console.log("Wrote to " + path)
+		stampBlockNumber(finalImage, blockNum, () => {
+			callback(finalImage, blockNum)
 		});
 	});
 }
 
-async function stampBlockNumber(image, callback) {
+async function stampBlockNumber(image, blockNum, callback) {
 	var stampX = image.bitmap.width - 350;
 	var stampY = image.bitmap.height - 50;
 
