@@ -55,7 +55,9 @@ async function stampBlockNumber(image, blockNum, callback) {
 	var stampY = image.bitmap.height - 50;
 
 	image.scan(stampX, stampY, 350, 50, function (x, y, offset) {
-		image.setPixelColor(0, x, y)
+		var color = Jimp.rgbaToInt(255, 255, 255, 255);
+
+		image.setPixelColor(color, x, y)
 	});
 
 	Jimp.loadFont(Jimp.FONT_SANS_32_BLACK).then(font => {
