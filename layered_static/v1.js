@@ -57,24 +57,18 @@ async function readIntProperty(contract, object, key, label) {
 		
 		console.log("Fetching " + label + " value from contract. TokenId=" + tokenId + ", LeverId=" + leverId);
 
-		var info = contract.interface.functions.getControlLever.encode([tokenId, leverId]);
-
-		var tx = {
-			from: contract.address,
-    		to: contract.address,
-    		data: info.data
-		}
-
 		var controlLeverResults = null;
 
 		// retrieve results as of a specific block number (use -1 for latest)
 		if (blockNum >= 0) {
-			controlLeverResults = await contract.getControlLever(tokenId, leverId, {blockTag : blockNum});
+			controlLeverResults = await contract.getControlToken(tokenId, {blockTag : blockNum});
 		} else {
-			controlLeverResults = await contract.getControlLever(tokenId, leverId);
+			controlLeverResults = await contract.getControlToken(tokenId);
 		}
-		
-		var currentLeverValue = controlLeverResults[2].toString();
+
+		// controlLeverResults is in format [minValue, maxValue, currentValue, ..., ..., ...]
+		// so currentValue for the lever we want will be index 2, 5, 8, 11, etc.
+		var currentLeverValue = controlLeverResults[2 + (leverId * 3)];
 		
 		value = parseInt(currentLeverValue);
 	}

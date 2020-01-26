@@ -77,31 +77,6 @@
       },
       {
         "indexed": false,
-        "internalType": "address",
-        "name": "newArtistAddress",
-        "type": "address"
-      }
-    ],
-    "name": "ArtistAddressUpdated",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": false,
-        "internalType": "address",
-        "name": "bidder",
-        "type": "address"
-      },
-      {
-        "indexed": false,
-        "internalType": "uint256",
-        "name": "tokenId",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
         "internalType": "uint256",
         "name": "bidAmount",
         "type": "uint256"
@@ -113,12 +88,6 @@
   {
     "anonymous": false,
     "inputs": [
-      {
-        "indexed": false,
-        "internalType": "address",
-        "name": "bidder",
-        "type": "address"
-      },
       {
         "indexed": false,
         "internalType": "uint256",
@@ -151,12 +120,6 @@
   {
     "anonymous": false,
     "inputs": [
-      {
-        "indexed": false,
-        "internalType": "address",
-        "name": "updater",
-        "type": "address"
-      },
       {
         "indexed": false,
         "internalType": "uint256",
@@ -204,19 +167,19 @@
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "newPlatformFirstSaleRoyaltyPercentage",
+        "name": "platformFirstPercentage",
         "type": "uint256"
       },
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "newPlatformSecondaryRoyaltyPercentage",
+        "name": "platformSecondPercentage",
         "type": "uint256"
       },
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "newArtistSecondaryRoyaltyPercentage",
+        "name": "artistSecondPercentage",
         "type": "uint256"
       }
     ],
@@ -237,15 +200,8 @@
     "type": "event"
   },
   {
-    "name": "TokenSale",
     "anonymous": false,
     "inputs": [
-      {
-        "indexed": false,
-        "internalType": "address",
-        "name": "buyer",
-        "type": "address"
-      },
       {
         "indexed": false,
         "internalType": "uint256",
@@ -257,8 +213,15 @@
         "internalType": "uint256",
         "name": "salePrice",
         "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "buyer",
+        "type": "address"
       }
     ],
+    "name": "TokenSale",
     "type": "event"
   },
   {
@@ -308,76 +271,8 @@
   },
   {
     "constant": true,
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "name": "artistAddressMapping",
-    "outputs": [
-      {
-        "internalType": "address payable",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "name": "artistMintBalances",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": true,
     "inputs": [],
-    "name": "artistSecondaryRoyaltyPercentage",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "name": "artworkControlTokensMapping",
+    "name": "artistSecondSalePercentage",
     "outputs": [
       {
         "internalType": "uint256",
@@ -425,37 +320,6 @@
         "internalType": "uint256",
         "name": "",
         "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "name": "controlTokenIdMapping",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "containingArtworkTokenId",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "numControlLevers",
-        "type": "uint256"
-      },
-      {
-        "internalType": "bool",
-        "name": "exists",
-        "type": "bool"
       }
     ],
     "payable": false,
@@ -600,7 +464,22 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "platformFirstSaleRoyaltyPercentage",
+    "name": "platformAddress",
+    "outputs": [
+      {
+        "internalType": "address payable",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "platformFirstSalePercentage",
     "outputs": [
       {
         "internalType": "uint256",
@@ -615,7 +494,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "platformSecondaryRoyaltyPercentage",
+    "name": "platformSecondSalePercentage",
     "outputs": [
       {
         "internalType": "uint256",
@@ -763,6 +642,48 @@
     "constant": true,
     "inputs": [
       {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "tokenDidHaveFirstSale",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "tokenIsConfirmed",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
         "internalType": "address",
         "name": "owner",
         "type": "address"
@@ -847,6 +768,47 @@
     "type": "function"
   },
   {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "whitelistedCreators",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "state",
+        "type": "bool"
+      }
+    ],
+    "name": "updateWhitelist",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
     "constant": false,
     "inputs": [
       {
@@ -866,37 +828,17 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "tokenId",
-        "type": "uint256"
-      },
-      {
-        "internalType": "address payable",
-        "name": "newArtistAddress",
-        "type": "address"
-      }
-    ],
-    "name": "updateArtistAddress",
-    "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_platformFirstSaleRoyaltyPercentage",
+        "name": "_platformFirstSalePercentage",
         "type": "uint256"
       },
       {
         "internalType": "uint256",
-        "name": "_platformSecondaryRoyaltyPercentage",
+        "name": "_platformSecondSalePercentage",
         "type": "uint256"
       },
       {
         "internalType": "uint256",
-        "name": "_artistSecondaryRoyaltyPercentage",
+        "name": "_artistSecondSalePercentage",
         "type": "uint256"
       }
     ],
@@ -904,47 +846,6 @@
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "artist",
-        "type": "address"
-      },
-      {
-        "internalType": "uint256",
-        "name": "newBalance",
-        "type": "uint256"
-      }
-    ],
-    "name": "setArtistMintBalance",
-    "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "artworkOrControlTokenId",
-        "type": "uint256"
-      }
-    ],
-    "name": "isContainingArtworkConfirmed",
-    "outputs": [
-      {
-        "internalType": "bool",
-        "name": "",
-        "type": "bool"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -1099,14 +1000,9 @@
         "internalType": "uint256",
         "name": "controlTokenId",
         "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "leverId",
-        "type": "uint256"
       }
     ],
-    "name": "getControlLever",
+    "name": "getControlToken",
     "outputs": [
       {
         "internalType": "int256[]",

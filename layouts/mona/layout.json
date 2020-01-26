@@ -7,7 +7,10 @@
     },
     {
       "uri": "mona_frown.png",
-      "visible": 1,
+      "visible": {
+          "token_id": 1,
+          "lever_id": 0
+      },
       "position": {
         "x": 673,
         "y": 554
