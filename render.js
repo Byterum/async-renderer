@@ -12,8 +12,8 @@ const bufferConnector = require('./connectors/google_cloud_buffer.js')
 const CONTRACT_ABI = JSON.parse(fs.readFileSync("ABI.json"))
 
 // TODO move provider into a separate module too
-const provider = new ethers.providers.JsonRpcProvider('http://localhost:7545');
-// const provider = new ethers.providers.InfuraProvider('goerli');
+// const provider = new ethers.providers.JsonRpcProvider('http://localhost:7545');
+const provider = new ethers.providers.InfuraProvider('goerli');
 
 // TODO load the layout from the Token URI instead of being passed in
 function process(tokenAddress, tokenId, blockNum, layout, callback) {	
