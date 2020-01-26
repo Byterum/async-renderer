@@ -3,10 +3,10 @@
   "version": 1,
   "layers": [
     {
-      "uri": "base"
+      "uri": "base.png"
     },
     {
-      "uri": "1",
+      "uri": "1.png",
       "position": {
         "x": {
           "token_id": 1,
@@ -33,7 +33,7 @@
       }
     },
     {
-      "uri": "2",
+      "uri": "2.png",
       "position": {
         "x": {
           "token_id": 2,
@@ -60,7 +60,7 @@
       }
     },
     {
-      "uri": "3",
+      "uri": "3.png",
       "position": {
         "x": {
           "token_id": 3,
@@ -87,7 +87,7 @@
       }
     },
     {
-      "uri": "4",
+      "uri": "4.png",
       "position": {
         "x": {
           "token_id": 4,
@@ -114,7 +114,7 @@
       }
     },
     {
-      "uri": "5",
+      "uri": "5.png",
       "position": {
         "x": {
           "token_id": 5,
@@ -141,7 +141,7 @@
       }
     },
     {
-      "uri": "6",
+      "uri": "6.png",
       "position": {
         "x": {
           "token_id": 6,
@@ -168,7 +168,7 @@
       }
     },
     {
-      "uri": "7",
+      "uri": "7.png",
       "position": {
         "x": {
           "token_id": 7,
@@ -195,7 +195,7 @@
       }
     },
     {
-      "uri": "8",
+      "uri": "8.png",
       "position": {
         "x": {
           "token_id": 8,
@@ -222,7 +222,7 @@
       }
     },
     {
-      "uri": "9",
+      "uri": "9.png",
       "position": {
         "x": {
           "token_id": 9,
@@ -249,7 +249,7 @@
       }
     },
     {
-      "uri": "10",
+      "uri": "10.png",
       "position": {
         "x": {
           "token_id": 10,
@@ -276,7 +276,7 @@
       }
     },
     {
-      "uri": "11",
+      "uri": "11.png",
       "position": {
         "x": {
           "token_id": 11,
@@ -303,7 +303,7 @@
       }
     },
     {
-      "uri": "12",
+      "uri": "12.png",
       "position": {
         "x": {
           "token_id": 12,
@@ -330,7 +330,7 @@
       }
     },
     {
-      "uri": "13",
+      "uri": "13.png",
       "position": {
         "x": {
           "token_id": 13,
@@ -357,7 +357,7 @@
       }
     },
     {
-      "uri": "14",
+      "uri": "14.png",
       "position": {
         "x": {
           "token_id": 14,
@@ -384,7 +384,7 @@
       }
     },
     {
-      "uri": "15",
+      "uri": "15.png",
       "position": {
         "x": {
           "token_id": 15,
@@ -411,7 +411,7 @@
       }
     },
     {
-      "uri": "16",
+      "uri": "16.png",
       "position": {
         "x": {
           "token_id": 16,
@@ -438,7 +438,7 @@
       }
     },
     {
-      "uri": "17",
+      "uri": "17.png",
       "position": {
         "x": {
           "token_id": 17,
@@ -465,7 +465,7 @@
       }
     },
     {
-      "uri": "18",
+      "uri": "18.png",
       "position": {
         "x": {
           "token_id": 18,
@@ -492,7 +492,7 @@
       }
     },
     {
-      "uri": "19",
+      "uri": "19.png",
       "position": {
         "x": {
           "token_id": 19,
@@ -519,7 +519,7 @@
       }
     },
     {
-      "uri": "20",
+      "uri": "20.png",
       "position": {
         "x": {
           "token_id": 20,
@@ -546,7 +546,7 @@
       }
     },
     {
-      "uri": "21",
+      "uri": "21.png",
       "position": {
         "x": {
           "token_id": 21,
@@ -573,7 +573,7 @@
       }
     },
     {
-      "uri": "22",
+      "uri": "22.png",
       "position": {
         "x": {
           "token_id": 22,
@@ -600,7 +600,7 @@
       }
     },
     {
-      "uri": "23",
+      "uri": "23.png",
       "position": {
         "x": {
           "token_id": 23,
@@ -627,7 +627,7 @@
       }
     },
     {
-      "uri": "24",
+      "uri": "24.png",
       "position": {
         "x": {
           "token_id": 24,
@@ -654,7 +654,7 @@
       }
     },
     {
-      "uri": "25",
+      "uri": "25.png",
       "position": {
         "x": {
           "token_id": 25,
@@ -681,7 +681,7 @@
       }
     },
     {
-      "uri": "26",
+      "uri": "26.png",
       "position": {
         "x": {
           "token_id": 26,
@@ -708,7 +708,7 @@
       }
     },
     {
-      "uri": "27",
+      "uri": "27.png",
       "position": {
         "x": {
           "token_id": 27,
@@ -735,7 +735,7 @@
       }
     },
     {
-      "uri": "28",
+      "uri": "28.png",
       "position": {
         "x": {
           "token_id": 28,
@@ -762,7 +762,7 @@
       }
     },
     {
-      "uri": "29",
+      "uri": "29.png",
       "position": {
         "x": {
           "token_id": 29,
@@ -789,7 +789,7 @@
       }
     },
     {
-      "uri": "30",
+      "uri": "30.png",
       "position": {
         "x": {
           "token_id": 30,
@@ -816,7 +816,7 @@
       }
     },
     {
-      "uri": "31",
+      "uri": "31.png",
       "position": {
         "x": {
           "token_id": 31,
@@ -843,7 +843,7 @@
       }
     },
     {
-      "uri": "32",
+      "uri": "32.png",
       "position": {
         "x": {
           "token_id": 32,

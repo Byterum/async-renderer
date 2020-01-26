@@ -5,7 +5,7 @@ const storage = new Storage();
 const bucketName='async-art-renderer.appspot.com';
 
 async function loadFromURI(uri, callback) {
-	const file = storage.bucket(bucketName).file(uri + ".png");	
+	const file = storage.bucket(bucketName).file(uri);	
 
 	file.download(function(err, contents) {
 		if (err) throw err;
