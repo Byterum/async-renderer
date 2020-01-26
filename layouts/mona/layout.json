@@ -1,0 +1,17 @@
+{
+  "type": "layered-static",
+  "version": 1,
+  "layers": [
+    {
+      "uri": "mona_base.jpg"
+    },
+    {
+      "uri": "mona_frown.png",
+      "visible": 1,
+      "position": {
+        "x": 673,
+        "y": 554
+      }
+    }
+  ]  
+}
