@@ -2,14 +2,17 @@ var Jimp = require('jimp');
 var ethers = require("ethers");
 
 const KEY_ROTATION = "rotation";
+const KEY_ANCHOR = "anchor";
 const KEY_SCALE = "scale";
 const KEY_COLOR = "color";
 const KEY_ALPHA = "alpha";
-const KEY_POSITION = "position";
+const KEY_FIXED_POSITION = "fixed-position";
+const KEY_RELATIVE_POSITION = "relative-position";
 const KEY_X = "x";
 const KEY_Y = "y";
 const KEY_VISIBLE = "visible";
 const KEY_URI = "uri";
+const KEY_ID = "id";
 
 var blockNum = -1;
 var bufferConnector = null;
@@ -22,15 +25,15 @@ async function render(contract, layout, currentImage, layerIndex, _blockNum, cal
 	blockNum = parseInt(_blockNum);
 	
 
-	if (layerIndex >= layout.layers.length) {		
+	if (layerIndex >= layout.layers.length) {	
 		callback(currentImage)		
 		return		
 	}
 
-	console.log("rendering layer: " + (layerIndex + 1) + " of " + layout.layers.length);
-
 	// TODO sort layers by z_order?
 	var layer = layout.layers[layerIndex];
+
+	console.log("rendering layer: " + (layerIndex + 1) + " of " + layout.layers.length + " (" + layer.id + ")")
 
 	if (typeof layer.uri === "object") {
 		var uriIndex = await readIntProperty(contract, layer, KEY_URI, "Layer Index");
@@ -77,6 +80,15 @@ async function readIntProperty(contract, object, key, label) {
 	return value;
 }
 
+function getLayerWithId(layout, layerId) {
+	for (var i = 0; i < layout.layers.length; i++) {
+		if (layout.layers[i].id == layerId) {
+			return layout.layers[i];
+		}
+	}
+	return null;
+}
+
 async function OnImageRead(contract, currentImage, layout, layer, layerImage, layerIndex, callback) {
 	if (currentImage !== null) {
 		// each layer visible by default
@@ -112,18 +124,46 @@ async function OnImageRead(contract, currentImage, layout, layer, layerImage, la
 				bitmapHeight = layerImage.bitmap.height;
 			}
 
-			// offset x and y so that layers are drawn at the center of their image
-			var x = -bitmapWidth / 2;
-			var y = -bitmapHeight / 2;
+			var x = 0;
+			var y = 0;
+
+			if (KEY_ANCHOR in layer) {				
+				var anchorLayerId = layer[KEY_ANCHOR].id;
+
+				if (typeof anchorLayerId === "object") {
+					// TODO test this
+					var anchorLayerIndex = await readIntProperty(contract, layer[KEY_ANCHOR], KEY_ID, "Anchor Layer Index");
+
+					anchorLayerId = layer[KEY_ANCHOR].options[anchorLayerIndex];
+				}
+
+				var anchorLayor = getLayerWithId(layout, anchorLayerId);
+				
+				console.log("	Anchor Layer Id: " + layer[KEY_ANCHOR].id);
+				
+				x = anchorLayor.finalCenterX;
+				y = anchorLayor.finalCenterY;
+			}
 			
 			// position the layer (optionally)
-			if (KEY_POSITION in layer) {
-				x = await readIntProperty(contract, layer[KEY_POSITION], KEY_X, "Layer Position X");
-				y = await readIntProperty(contract, layer[KEY_POSITION], KEY_Y, "Layer Position Y");
+			if (KEY_FIXED_POSITION in layer) {
+				x = await readIntProperty(contract, layer[KEY_FIXED_POSITION], KEY_X, "Layer Fixed Position X");
+				y = await readIntProperty(contract, layer[KEY_FIXED_POSITION], KEY_Y, "Layer Fixed Position Y");
+			} else if (KEY_RELATIVE_POSITION in layer) {
+				var relativeX = await readIntProperty(contract, layer[KEY_RELATIVE_POSITION], KEY_X, "Layer Relative Position X");
+				var relativeY = await readIntProperty(contract, layer[KEY_RELATIVE_POSITION], KEY_Y, "Layer Relative Position Y");
 
-				x -= bitmapWidth / 2;
-				y -= bitmapHeight / 2;
+				x += relativeX;
+				y += relativeY;
 			}
+
+			// stamp the final center X and Y that this layer was rendered at (for any follow-up layers that might be anchored here)
+			layer.finalCenterX = x;
+			layer.finalCenterY = y;
+
+			// offset x and y so that layers are drawn at the center of their image
+			x -= (bitmapWidth / 2);
+			y -= (bitmapHeight / 2);
 
 			// adjust the color
 			if (KEY_COLOR in layer) {
