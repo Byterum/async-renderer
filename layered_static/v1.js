@@ -104,7 +104,12 @@ async function OnImageRead(contract, currentImage, layout, layer, layerImage, la
 			// rotate the layer (optionally)
 			if (KEY_ROTATION in layer) {
 				var rotation = await readIntProperty(contract, layer, KEY_ROTATION, "Layer Rotation");
-				layerImage.rotate(rotation, false);
+
+				layerImage.rotate(rotation, true);
+
+				// adjust for the new width and height based on the rotation
+				bitmapWidth = layerImage.bitmap.width;
+				bitmapHeight = layerImage.bitmap.height;
 			}
 
 			// offset x and y so that layers are drawn at the center of their image

@@ -4,24 +4,24 @@
   "layers": [
     {
       "uri": "layouts/bitcoin-makes-world-go-around/Background-white@2x.png"
-    },    
+    },
     {
       "uri": "layouts/bitcoin-makes-world-go-around/Background-grey-stains@2x.png",
-      "position" : {
-      		"x" : 3002,
-      		"y" : 3002
+      "position": {
+        "x": 3002,
+        "y": 3002
       }
     },
     {
-      	"uri": "layouts/bitcoin-makes-world-go-around/City@2x.png",
-  		"position" : {
-      		"x" : 3002,
-      		"y" : 3002
-      	},
-		"scale" : {
-			"x": 65,
-			"y": 65
-		}
+      "uri": "layouts/bitcoin-makes-world-go-around/City@2x.png",
+      "position": {
+        "x": 3002,
+        "y": 3002
+      },
+      "scale": {
+        "x": 67,
+        "y": 67
+      }
     },
     {
       "uri": {
@@ -32,9 +32,9 @@
               "x": 3002,
               "y": 3002
             },
-            "scale" : {
-            	"x": 65,
-		        "y": 65
+            "scale": {
+              "x": 67,
+              "y": 67
             }
           },
           {
@@ -43,10 +43,10 @@
               "x": 3002,
               "y": 3002
             },
-            "scale" : {
-				"x": 100,
-				"y": 100
-			}
+            "scale": {
+              "x": 100,
+              "y": 100
+            }
           },
           {
             "uri": "layouts/bitcoin-makes-world-go-around/Bitcoin-red@2x.png",
@@ -54,10 +54,10 @@
               "x": 3002,
               "y": 3002
             },
-            "scale" : {
-				"x": 100,
-				"y": 100
-			}
+            "scale": {
+              "x": 100,
+              "y": 100
+            }
           }
         ],
         "token_id": 1,
@@ -65,82 +65,138 @@
       }
     },
     {
-      	"uri": "layouts/bitcoin-makes-world-go-around/Black-plant1@2x.png",
-  		"position" : {
-      		"x" : 4750,
-      		"y" : 3002
-      	},
-		"scale" : {
-			"x": 40,
-			"y": 40
-		},
-		"rotation" : 45
+      "uri": "layouts/bitcoin-makes-world-go-around/Red-A@2x.png",
+      "position": {
+        "x": 5000,
+        "y": 1000
+      },
+      "scale": {
+        "x": 50,
+        "y": 50
+      }
     },
     {
-      	"uri": "layouts/bitcoin-makes-world-go-around/Black-plant2@2x.png",
-  		"position" : {
-      		"x" : 3000,
-      		"y" : 4700
-      	},
-		"scale" : {
-			"x": 40,
-			"y": 40
-		}
+      "uri": "layouts/bitcoin-makes-world-go-around/Red-B@2x.png",
+      "position": {
+        "x" : 1000,
+      	"y" : 700
+      },
+      "scale": {
+        "x": 65,
+        "y": 65
+      }
     },
     {
-      	"uri": "layouts/bitcoin-makes-world-go-around/Black-shapes1@2x.png",
-  		"position" : {
-      		"x" : 1500,
-      		"y" : 5200
-      	},
-		"scale" : {
-			"x": 60,
-			"y": 60
-		}
-    },    
-    {
-      	"uri": "layouts/bitcoin-makes-world-go-around/Black-shapes2@2x.png",
-  		"position" : {
-      		"x" : 5200,
-      		"y" : 1000
-      	},
-		"scale" : {
-			"x": 45,
-			"y": 45
-		}
+      "uri": "layouts/bitcoin-makes-world-go-around/Red-C@2x.png",
+      "position": {
+        "x": 1000,
+        "y": 5000
+      },
+      "rotation": -20,
+      "scale": {
+        "x": 60,
+        "y": 60
+      }
     },
     {
-      	"uri": "layouts/bitcoin-makes-world-go-around/Black-shapes3@2x.png",
-  		"position" : {
-      		"x" : 1000,
-      		"y" : 1000
-      	},
-		"scale" : {
-			"x": 50,
-			"y": 50
-		}
+      "uri": "layouts/bitcoin-makes-world-go-around/Red-D@2x.png",
+      "position": {
+        "x": 5000,
+        "y": 5000
+      },
+      "scale": {
+        "x": 65,
+        "y": 65
+      }
     },
     {
-      	"uri": "layouts/bitcoin-makes-world-go-around/Black-shapes4@2x.png",
-  		"position" : {
-      		"x" : 5000,
-      		"y" : 5000
-      	},
-		"scale" : {
-			"x": 50,
-			"y": 50
-		}
+      "uri": "layouts/bitcoin-makes-world-go-around/Black-plant1@2x.png",
+      "position": {
+        "x": 4750,
+        "y": 3002
+      },
+      "scale": {
+        "x": 40,
+        "y": 40
+      },
+      "rotation": 45
     },
     {
-      	"uri": "layouts/bitcoin-makes-world-go-around/Infinity-falls@2x.png",
-  		"position" : {
-      		"x" : 3002,
-      		"y" : 3002
-      	},
-		"scale" : {
-			"x": 100,
-			"y": 100
-		}
+      "uri": "layouts/bitcoin-makes-world-go-around/Black-plant2@2x.png",
+      "position": {
+        "x": 3000,
+        "y": 4700
+      },
+      "scale": {
+        "x": 40,
+        "y": 40
+      }
+    },
+    {
+      "uri": "layouts/bitcoin-makes-world-go-around/Black-shapes1@2x.png",
+      "position": {
+        "x": 1500,
+        "y": 5200
+      },
+      "scale": {
+        "x": 65,
+        "y": 65
+      }
+    },
+    {
+      "uri": "layouts/bitcoin-makes-world-go-around/Black-shapes2@2x.png",
+      "position": {
+        "x": 5200,
+        "y": 1000
+      },
+      "scale": {
+        "x": 45,
+        "y": 45
+      }
+    },
+    {
+      "uri": "layouts/bitcoin-makes-world-go-around/Black-shapes3@2x.png",
+      "position": {
+        "x": 1000,
+        "y": 1000
+      },
+      "scale": {
+        "x": 50,
+        "y": 50
+      }
+    },
+    {
+      "uri": "layouts/bitcoin-makes-world-go-around/Black-shapes4@2x.png",
+      "position": {
+        "x": 5000,
+        "y": 5000
+      },
+      "scale": {
+        "x": 50,
+        "y": 50
+      }
+    },
+    {
+      "uri": "layouts/bitcoin-makes-world-go-around/Red-stains@2x.png",
+      "position": {
+        "x": 3002,
+        "y": 3002
+      },
+      "scale": {
+        "x": 100,
+        "y": 100
+      }
+    },
+    {
+      "uri": "layouts/bitcoin-makes-world-go-around/Infinity-falls@2x.png",
+      "position": {
+        "x": 3002,
+        "y": 3002
+      },
+      "scale": {
+        "x": 100,
+        "y": 100
+      }
     }
-  ]  
+  ]
 }
