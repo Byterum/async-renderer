@@ -1,7 +1,8 @@
 var Jimp = require('jimp');
 var ethers = require("ethers");
 
-const KEY_ROTATION = "rotation";
+const KEY_FIXED_ROTATION = "fixed-rotation";
+const KEY_ORBIT_ROTATION = "orbit-rotation";
 const KEY_ANCHOR = "anchor";
 const KEY_SCALE = "scale";
 const KEY_COLOR = "color";
@@ -12,7 +13,6 @@ const KEY_X = "x";
 const KEY_Y = "y";
 const KEY_VISIBLE = "visible";
 const KEY_URI = "uri";
-const KEY_ID = "id";
 
 var blockNum = -1;
 var bufferConnector = null;
@@ -26,6 +26,10 @@ async function render(contract, layout, currentImage, layerIndex, _blockNum, cal
 	
 
 	if (layerIndex >= layout.layers.length) {	
+		// TODO remove	
+		// resize the final image before returning
+		// currentImage.resize(2048, 2048);
+
 		callback(currentImage)		
 		return		
 	}
@@ -114,8 +118,8 @@ async function OnImageRead(contract, currentImage, layout, layer, layerImage, la
 			}
 
 			// rotate the layer (optionally)
-			if (KEY_ROTATION in layer) {
-				var rotation = await readIntProperty(contract, layer, KEY_ROTATION, "Layer Rotation");
+			if (KEY_FIXED_ROTATION in layer) {
+				var rotation = await readIntProperty(contract, layer, KEY_FIXED_ROTATION, "Layer Fixed Rotation");
 
 				layerImage.rotate(rotation, true);
 
@@ -128,30 +132,52 @@ async function OnImageRead(contract, currentImage, layout, layer, layerImage, la
 			var y = 0;
 
 			if (KEY_ANCHOR in layer) {				
-				var anchorLayerId = layer[KEY_ANCHOR].id;
+				var anchorLayerId = layer[KEY_ANCHOR];
 
 				if (typeof anchorLayerId === "object") {
 					// TODO test this
-					var anchorLayerIndex = await readIntProperty(contract, layer[KEY_ANCHOR], KEY_ID, "Anchor Layer Index");
+					var anchorLayerIndex = await readIntProperty(contract, layer, KEY_ANCHOR, "Anchor Layer Index");
 
 					anchorLayerId = layer[KEY_ANCHOR].options[anchorLayerIndex];
 				}
 
 				var anchorLayor = getLayerWithId(layout, anchorLayerId);
 				
-				console.log("	Anchor Layer Id: " + layer[KEY_ANCHOR].id);
+				console.log("	Anchor Layer Id: " + anchorLayerId);
 				
 				x = anchorLayor.finalCenterX;
 				y = anchorLayor.finalCenterY;
 			}
+
+			var relativeX = 0;
+			var relativeY = 0;
 			
 			// position the layer (optionally)
 			if (KEY_FIXED_POSITION in layer) {
+				// Fixed position sets an absolute position
 				x = await readIntProperty(contract, layer[KEY_FIXED_POSITION], KEY_X, "Layer Fixed Position X");
 				y = await readIntProperty(contract, layer[KEY_FIXED_POSITION], KEY_Y, "Layer Fixed Position Y");
-			} else if (KEY_RELATIVE_POSITION in layer) {
-				var relativeX = await readIntProperty(contract, layer[KEY_RELATIVE_POSITION], KEY_X, "Layer Relative Position X");
-				var relativeY = await readIntProperty(contract, layer[KEY_RELATIVE_POSITION], KEY_Y, "Layer Relative Position Y");
+			} else {
+				// relative position adjusts xy based on the anchor
+				if (KEY_RELATIVE_POSITION in layer) {
+					relativeX = await readIntProperty(contract, layer[KEY_RELATIVE_POSITION], KEY_X, "Layer Relative Position X");
+					relativeY = await readIntProperty(contract, layer[KEY_RELATIVE_POSITION], KEY_Y, "Layer Relative Position Y");
+				}
+
+				// relative rotation orbits this layer around an anchor
+				if (KEY_ORBIT_ROTATION in layer) {
+					var relativeRotation = await readIntProperty(contract, layer, KEY_ORBIT_ROTATION, "Layer Orbit Rotation");
+
+					console.log("Orbiting " + relativeRotation + " degrees around anchor");					
+
+					var rad = -relativeRotation * Math.PI / 180;
+
+					var newRelativeX = Math.round(relativeX * Math.cos(rad) - relativeY * Math.sin(rad));
+					var newRelativeY = Math.round(relativeY * Math.cos(rad) + relativeX * Math.sin(rad));
+
+					relativeX = newRelativeX;
+					relativeY = newRelativeY;
+				}
 
 				x += relativeX;
 				y += relativeY;
