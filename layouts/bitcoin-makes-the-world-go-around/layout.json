@@ -5,10 +5,18 @@
     {
       "uri": "bitcoin-makes-the-world-go-around/Background-white@2x.png",
       "id" : "bg-white"
-    },    
+    },
     {
       "uri": "bitcoin-makes-the-world-go-around/Background-grey-stains@2x.png",
       "id" : "bg-grey",
+      "fixed-position": {
+        "x": 3002,
+        "y": 3002
+      }
+    },
+    {
+      "uri": "bitcoin-makes-the-world-go-around/Background-black-stains@2x.png",
+      "id" : "bg-black",
       "fixed-position": {
         "x": 3002,
         "y": 3002
