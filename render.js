@@ -14,7 +14,8 @@ const CONTRACT_ABI = [{"inputs":[{"internalType":"string","name":"name","type":"
 
 // TODO move provider into a separate module too
 // const provider = new ethers.providers.JsonRpcProvider('http://localhost:7545');
-const provider = new ethers.providers.InfuraProvider('goerli');
+const provider = new ethers.providers.JsonRpcProvider('https://goerli.infura.io/v3/e6fbb7c91658422b8582e035657141bf');
+// const provider = new ethers.providers.InfuraProvider('goerli');
 
 // TODO load the layout from the Token URI instead of being passed in
 function process(tokenAddress, tokenId, blockNum, layout, callback) {	

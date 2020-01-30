@@ -19,6 +19,7 @@
   "dependencies": {
     "@google-cloud/storage": "^4.3.0",
     "ethers": "^4.0.40",
+    "heapdump": "^0.3.15",
     "jimp": "^0.9.3"
   }
 }

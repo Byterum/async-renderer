@@ -10,14 +10,6 @@ async function loadFromURI(uri, callback) {
 	var buffer = await file.download()
 
 	return buffer[0];
-
-	// file.download(function(err, contents) {
-	// 	if (err) throw err;
-
-	// 	console.log(contents);
-	// 	callback(contents)
-	// }); 
-
 }
 
 exports.loadFromURI = loadFromURI

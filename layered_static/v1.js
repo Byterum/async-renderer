@@ -1,3 +1,5 @@
+//var heapdump = require('heapdump');
+
 var Jimp = require('jimp');
 var ethers = require("ethers");
 
@@ -16,6 +18,8 @@ const KEY_URI = "uri";
 
 var blockNum = -1;
 var bufferConnector = null;
+
+var controlTokenCache = {}
 
 function setBufferConnector(_bufferConnector) {
 	bufferConnector = _bufferConnector;
@@ -44,6 +48,8 @@ async function render(contract, layout, _blockNum) {
 
 		var layerImage = await Jimp.read(imageBuffer);
 
+		imageBuffer = null;
+
 		if (currentImage == null) {
 			currentImage = layerImage;
 		} else {
@@ -52,8 +58,10 @@ async function render(contract, layout, _blockNum) {
 
 		layerImage = null;
 		layer = null;
-
+		
 		global.gc();
+
+		// heapdump.writeSnapshot(Date.now() + '.heapsnapshot');
 	}
 
 	currentImage.resize(2048, 2048);
@@ -68,16 +76,25 @@ async function readIntProperty(contract, object, key, label) {
 	if (typeof value === "object") {
 		var tokenId = object[key]["token-id"];
 		var leverId = object[key]["lever-id"];
-		
-		console.log("Fetching " + label + " value from contract. TokenId=" + tokenId + ", LeverId=" + leverId);
 
 		var controlLeverResults = null;
 
-		// retrieve results as of a specific block number (use -1 for latest)
-		if (blockNum >= 0) {
-			controlLeverResults = await contract.getControlToken(tokenId, {blockTag : blockNum});
+		if (tokenId in controlTokenCache) {
+			console.log("Using control token CACHE. (TokenId=" + tokenId + ", LeverId=" + leverId + ", Label=" + label + ")");
+
+			controlLeverResults = controlTokenCache[tokenId];
 		} else {
-			controlLeverResults = await contract.getControlToken(tokenId);
+			console.log("Fetching from contract. (TokenId=" + tokenId + ", LeverId=" + leverId + ", Label=" + label + ")");
+
+			// retrieve results as of a specific block number (use -1 for latest)
+			if (blockNum >= 0) {
+				controlLeverResults = await contract.getControlToken(tokenId, {blockTag : blockNum});
+			} else {
+				controlLeverResults = await contract.getControlToken(tokenId);
+			}
+
+			// store in cache for future use
+			controlTokenCache[tokenId] = controlLeverResults;
 		}
 
 		// controlLeverResults is in format [minValue, maxValue, currentValue, ..., ..., ...]
