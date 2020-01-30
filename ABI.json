@@ -80,6 +80,12 @@
         "internalType": "uint256",
         "name": "bidAmount",
         "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "bidder",
+        "type": "address"
       }
     ],
     "name": "BidProposed",
@@ -124,6 +130,12 @@
         "indexed": false,
         "internalType": "uint256",
         "name": "tokenId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "priorityTip",
         "type": "uint256"
       },
       {
@@ -1050,8 +1062,8 @@
     ],
     "name": "useControlToken",
     "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   }
 ]
