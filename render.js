@@ -44,10 +44,10 @@ async function onNetworkLoaded(tokenAddress, tokenId, blockNum, layout, callback
 	// set the buffer connector on the renderer
 	renderer.setBufferConnector(bufferConnector);
 	
-	renderer.render(contract, layout, null, 0, blockNum, (finalImage) => {		
-		stampBlockNumber(finalImage, blockNum, () => {
-			callback(finalImage, blockNum)
-		});
+	var finalImage = await renderer.render(contract, layout, blockNum);
+
+	stampBlockNumber(finalImage, blockNum, () => {
+		callback(finalImage, blockNum)
 	});
 }
 

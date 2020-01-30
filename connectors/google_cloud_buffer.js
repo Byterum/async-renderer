@@ -7,11 +7,16 @@ const bucketName='async-art-renderer.appspot.com';
 async function loadFromURI(uri, callback) {
 	const file = storage.bucket(bucketName).file(uri);	
 
-	file.download(function(err, contents) {
-		if (err) throw err;
+	var buffer = await file.download()
 
-		callback(contents)
-	}); 
+	return buffer[0];
+
+	// file.download(function(err, contents) {
+	// 	if (err) throw err;
+
+	// 	console.log(contents);
+	// 	callback(contents)
+	// }); 
 
 }
 
