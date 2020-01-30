@@ -4,7 +4,7 @@
   "layers": [
     {
       "id" : "base",
-      "uri": "layouts/bees/bg.jpg"
+      "uri": "bees/bg.jpg"
     },
     {
       "fixed-position": {

@@ -28,7 +28,7 @@ async function render(contract, layout, currentImage, layerIndex, _blockNum, cal
 	if (layerIndex >= layout.layers.length) {	
 		// TODO remove	
 		// resize the final image before returning
-		// currentImage.resize(2048, 2048);
+		currentImage.resize(2048, 2048);
 
 		callback(currentImage)		
 		return		
@@ -59,8 +59,8 @@ async function readIntProperty(contract, object, key, label) {
 
 	// check if value is an object. If so then we need to check the contract value
 	if (typeof value === "object") {
-		var tokenId = object[key]["token_id"];
-		var leverId = object[key]["lever_id"];
+		var tokenId = object[key]["token-id"];
+		var leverId = object[key]["lever-id"];
 		
 		console.log("Fetching " + label + " value from contract. TokenId=" + tokenId + ", LeverId=" + leverId);
 

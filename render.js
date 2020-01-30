@@ -8,6 +8,7 @@ const layered_static_v1 = require('./layered_static/v1.js')
 // Connector variants
 // Override here with custome buffer connectors
 const bufferConnector = require('./connectors/google_cloud_buffer.js')
+// const bufferConnector = require('./connectors/read_local_image_buffer.js')
 
 const CONTRACT_ABI = JSON.parse(fs.readFileSync("ABI.json"))
 
