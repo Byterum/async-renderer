@@ -24,20 +24,9 @@ function setBufferConnector(_bufferConnector) {
 async function render(contract, layout, _blockNum) {
 	blockNum = parseInt(_blockNum);
 
-	// if (layerIndex >= layout.layers.length) {
-	// 	// TODO remove	
-	// 	// resize the final image before returning
-	// 	currentImage.resize(2048, 2048);
-
-	// 	callback(currentImage)		
-	// 	return		
-	// }
-
 	var currentImage = null;
 
 	for (var i = 0; i < layout.layers.length; i++) {
-		global.gc();
-
 		console.log((process.memoryUsage().rss / 1024 / 1024) + " MB");
 
 		// TODO sort layers by z_order?
@@ -58,8 +47,13 @@ async function render(contract, layout, _blockNum) {
 		if (currentImage == null) {
 			currentImage = layerImage;
 		} else {
-			currentImage = await RenderLayer(contract, currentImage, layout, layer, layerImage);
+			currentImage = await renderLayer(contract, currentImage, layout, layer, layerImage);
 		}
+
+		layerImage = null;
+		layer = null;
+
+		global.gc();
 	}
 
 	currentImage.resize(2048, 2048);
@@ -106,7 +100,7 @@ function getLayerWithId(layout, layerId) {
 	return null;
 }
 
-async function RenderLayer(contract, currentImage, layout, layer, layerImage) {
+async function renderLayer(contract, currentImage, layout, layer, layerImage) {
 	// if (currentImage !== null) {
 	// each layer visible by default
 	var isVisible = true;
@@ -216,12 +210,6 @@ async function RenderLayer(contract, currentImage, layout, layer, layerImage) {
 	}
 
 	return currentImage;
-
-	// render(contract, layout, currentImage, layerIndex + 1, blockNum, callback)
-
-	// else {
-	// 	render(contract, layout, layerImage, layerIndex + 1, blockNum, callback)
-	// }
 }
 
 exports.render = render;
