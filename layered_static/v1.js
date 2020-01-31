@@ -59,7 +59,7 @@ async function render(contract, layout, _blockNum) {
 		layerImage = null;
 		layer = null;
 		
-		global.gc();
+		// global.gc();
 
 		// heapdump.writeSnapshot(Date.now() + '.heapsnapshot');
 	}
