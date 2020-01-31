@@ -18,7 +18,7 @@ const provider = new ethers.providers.JsonRpcProvider('https://goerli.infura.io/
 // const provider = new ethers.providers.InfuraProvider('goerli');
 
 // TODO load the layout from the Token URI instead of being passed in
-function process(tokenAddress, tokenId, blockNum, layout, callback) {	
+async function process(tokenAddress, tokenId, blockNum, layout, callback) {	
 	provider.getNetwork().then((network) => {
 		onNetworkLoaded(tokenAddress, tokenId, blockNum, layout, callback);		
 	});
