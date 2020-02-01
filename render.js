@@ -14,17 +14,18 @@ const CONTRACT_ABI = [{"inputs":[{"internalType":"string","name":"name","type":"
 
 // TODO move provider into a separate module too
 // const provider = new ethers.providers.JsonRpcProvider('http://localhost:7545');
-const provider = new ethers.providers.JsonRpcProvider('https://goerli.infura.io/v3/e6fbb7c91658422b8582e035657141bf');
 // const provider = new ethers.providers.InfuraProvider('goerli');
 
 // TODO load the layout from the Token URI instead of being passed in
-async function process(tokenAddress, tokenId, blockNum, layout, callback) {	
+async function process(tokenAddress, tokenId, blockNum, layout, callback) {
+	const provider = new ethers.providers.JsonRpcProvider('https://goerli.infura.io/v3/e6fbb7c91658422b8582e035657141bf');
+
 	provider.getNetwork().then((network) => {
-		onNetworkLoaded(tokenAddress, tokenId, blockNum, layout, callback);		
+		onNetworkLoaded(tokenAddress, tokenId, blockNum, layout, provider, callback);		
 	});
 }
 
-async function onNetworkLoaded(tokenAddress, tokenId, blockNum, layout, callback) {
+async function onNetworkLoaded(tokenAddress, tokenId, blockNum, layout, provider, callback) {
 	let contract = new ethers.Contract(tokenAddress, CONTRACT_ABI, provider);
 
 	// if no block num was provided then use the latest block number (minus 2 so we don't use a block that is pending currently)
