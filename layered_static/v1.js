@@ -224,6 +224,8 @@ async function renderLayer(contract, currentImage, layout, layer, layerImage) {
 
 		// composite this layer onto the current image
 		currentImage.composite(layerImage, x, y);
+	} else {
+		console.log("	NOT VISIBLE. SKIPPING.")
 	}
 
 	return currentImage;
