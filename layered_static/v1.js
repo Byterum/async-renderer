@@ -93,6 +93,11 @@ async function readIntProperty(contract, object, key, label) {
 				controlLeverResults = await contract.getControlToken(tokenId);
 			}
 
+			// print out the control lever results
+			for (var z = 0; z < controlLeverResults.length; z++) {
+				console.log(controlLeverResults[z].toString());
+			}
+
 			// store in cache for future use
 			controlTokenCache[tokenId] = controlLeverResults;
 		}
