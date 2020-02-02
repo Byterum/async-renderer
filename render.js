@@ -18,7 +18,8 @@ const CONTRACT_ABI = [{"inputs":[{"internalType":"string","name":"name","type":"
 
 // TODO load the layout from the Token URI instead of being passed in
 async function process(tokenAddress, tokenId, blockNum, layout, callback) {	
-	var provider = new ethers.providers.JsonRpcProvider('https://goerli.infura.io/v3/e6fbb7c91658422b8582e035657141bf');
+	// var provider = new ethers.providers.JsonRpcProvider('https://goerli.infura.io/v3/e6fbb7c91658422b8582e035657141bf');
+	var provider = new ethers.providers.JsonRpcProvider('https://www.ethercluster.com/goerli');
 
 	provider.getNetwork().then((network) => {
 		onNetworkLoaded(tokenAddress, tokenId, blockNum, layout, provider, callback);		
