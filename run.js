@@ -22,6 +22,7 @@ if (process.argv.length > 4) {
 	blockNum = process.argv[4]	
 }
 
+console.log("Using block " + blockNum)
 // TODO use a token id
 renderer.process(tokenAddress, 0, blockNum, layout, (finalImage, blockNum) => {
 	path = "renders/" + file + "_" + blockNum + ".png";
