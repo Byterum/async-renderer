@@ -15,6 +15,7 @@ const KEY_X = "x";
 const KEY_Y = "y";
 const KEY_VISIBLE = "visible";
 const KEY_URI = "uri";
+const KEY_STATES = "states";
 
 var blockNum = -1;
 var bufferConnector = null;
@@ -38,10 +39,10 @@ async function render(contract, layout, _blockNum) {
 
 		console.log("rendering layer: " + (i + 1) + " of " + layout.layers.length + " (" + layer.id + ")")
 
-		if (typeof layer.uri === "object") {
+		if (KEY_STATES in layer) {
 			var uriIndex = await readIntProperty(contract, layer, KEY_URI, "Layer Index");
 
-			layer = layer.uri.options[uriIndex];
+			layer = layer[KEY_STATES].options[uriIndex];
 		}
 
 		var imageBuffer = await bufferConnector.loadFromURI(layer.uri);
@@ -58,13 +59,10 @@ async function render(contract, layout, _blockNum) {
 
 		layerImage = null;
 		layer = null;
-		
-		// global.gc();
-
 		// heapdump.writeSnapshot(Date.now() + '.heapsnapshot');
 	}
 
-	currentImage.resize(2048, 2048);
+	// currentImage.resize(2048, 2048);
 
 	return currentImage;
 }
