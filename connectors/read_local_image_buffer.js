@@ -1,11 +1,11 @@
-const fs = require('fs');
+// const fs = require('fs').promises;
+const fs = require('fs')
+const { promisify } = require('util')
 
-async function loadFromURI(uri, callback) {
-	fs.readFile(uri, function(err, data) {
-		if (err) throw err;
-		
-		callback(data);
-	});
+const readFileAsync = promisify(fs.readFile)
+
+async function loadFromURI(uri) {
+	return await readFileAsync(uri)
 }
 
 exports.loadFromURI = loadFromURI
