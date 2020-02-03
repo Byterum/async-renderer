@@ -85,11 +85,11 @@ async function readIntProperty(contract, object, key, label) {
 		var controlLeverResults = null;
 
 		if (tokenId in controlTokenCache) {
-			console.log("Using control token CACHE. (TokenId=" + tokenId + ", LeverId=" + leverId + ", Label=" + label + ")");
+			console.log("	Using control token CACHE. (TokenId=" + tokenId + ", LeverId=" + leverId + ", Label='" + label + "')");
 
 			controlLeverResults = controlTokenCache[tokenId];
 		} else {
-			console.log("Fetching from contract. (TokenId=" + tokenId + ", LeverId=" + leverId + ", Label=" + label + ")");
+			console.log("	Fetching from contract. (TokenId=" + tokenId + ", LeverId=" + leverId + ", Label='" + label + "')");
 
 			// retrieve results as of a specific block number (use -1 for latest)
 			if (blockNum >= 0) {
@@ -112,8 +112,11 @@ async function readIntProperty(contract, object, key, label) {
 		var currentLeverValue = controlLeverResults[2 + (leverId * 3)];
 		
 		value = parseInt(currentLeverValue);
+
+		console.log("		" + label + " = " + value);
+	} else {
+		console.log("	" + label + " = " + value);
 	}
-	console.log("	" + label + " = " + value);
 
 	return value;
 }
