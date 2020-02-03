@@ -1,0 +1,72 @@
+{
+  "type": "layered-static",
+  "version": 1,
+  "layers": [    
+    {
+      "states": {
+        "options": [
+          {
+            "uri": "layouts/alotta/BG-01.png"          
+          },
+          {
+            "uri": "layouts/alotta/BG-02.png"          
+          },
+          {
+            "uri": "layouts/alotta/BG-03.png"          
+          },
+          {
+            "uri": "layouts/alotta/BG-04.png"          
+          }
+        ],
+        "token-id": 1,
+        "lever-id": 1
+      },
+      "id" : "Background"
+    },
+    {
+      "uri": "layouts/alotta/BODY.png",
+      "fixed-position" : {
+      	"x" : 532,
+      	"y" : 572
+      },
+      "id" : "Body"
+    },
+    {
+      "states": {
+        "options": [
+          {
+            "uri": "layouts/alotta/head-01.png",
+            "fixed-position" : {
+            	"x" : 532,
+            	"y" : 572
+            }
+          },
+          {
+            "uri": "layouts/alotta/head-02.png",
+            "fixed-position" : {
+            	"x" : 532,
+            	"y" : 572
+            }
+          },
+          {
+            "uri": "layouts/alotta/head-03.png",
+            "fixed-position" : {
+            	"x" : 532,
+            	"y" : 572
+            }
+          },
+          {
+            "uri": "layouts/alotta/head-04.png",
+            "fixed-position" : {
+            	"x" : 532,
+            	"y" : 572
+            }
+          }
+        ],
+        "token-id": 1,
+        "lever-id": 1
+      },
+      "id" : "Head"
+    }
+  ]
+}
