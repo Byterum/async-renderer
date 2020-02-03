@@ -20,11 +20,13 @@ if (process.argv.length > 4) {
 console.log("Using block = " + blockNum)
 
 async function main() {
-	var finalImage = await renderer.process(tokenAddress, tokenId, blockNum);
+	var finalImageData = await renderer.process(tokenAddress, tokenId, blockNum);
 
-	var path = "renders/token-" + tokenId + "_block-" + blockNum + ".png";
+	var path = "renders/token-" + tokenId + "_block-" + finalImageData.blockNum + ".png";
+
+	// finalImageData.image.resize(512, 512);
 	
-	finalImage.write(path);
+	finalImageData.image.write(path);
 
 	console.log("Wrote to " + path)    
 }

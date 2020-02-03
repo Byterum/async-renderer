@@ -1,5 +1,5 @@
 {
-  "type": "layered-static",
+  "type": "layered_static",
   "version": 1,
   "layers": [
     {
@@ -7,7 +7,7 @@
       "id" : "bg-white"
     },
     {
-      "uri": {
+      "states": {
         "options": [
           {
             "uri": "bitcoin-makes-the-world-go-around/Bitcoin-black@2x.png",
@@ -90,7 +90,7 @@
       }
     },
     {
-      "uri": {
+      "states": {
         "options": [
           {
             "uri": "bitcoin-makes-the-world-go-around/Bitcoin-black@2x.png",

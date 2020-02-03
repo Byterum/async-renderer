@@ -20,6 +20,7 @@ const KEY_HEIGHT = "height";
 
 var blockNum = -1;
 var bufferConnector = null;
+var masterArtTokenId = 0;
 
 var controlTokenCache = {}
 
@@ -27,8 +28,9 @@ function setBufferConnector(_bufferConnector) {
 	bufferConnector = _bufferConnector;
 }
 
-async function render(contract, layout, _blockNum) {
+async function render(contract, layout, _blockNum, _masterArtTokenId) {
 	blockNum = parseInt(_blockNum);
+	masterArtTokenId = parseInt(_masterArtTokenId);
 
 	var currentImage = null;
 
@@ -69,8 +71,6 @@ async function render(contract, layout, _blockNum) {
 		// heapdump.writeSnapshot(Date.now() + '.heapsnapshot');
 	}
 
-	// currentImage.resize(2048, 2048);
-
 	return currentImage;
 }
 
@@ -79,7 +79,7 @@ async function readIntProperty(contract, object, key, label) {
 
 	// check if value is an object. If so then we need to check the contract value
 	if (typeof value === "object") {
-		var tokenId = object[key]["token-id"];
+		var tokenId = object[key]["token-id"] + masterArtTokenId; // layer token ids are relative to their master token id
 		var leverId = object[key]["lever-id"];
 
 		var controlLeverResults = null;
