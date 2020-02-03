@@ -1,21 +1,77 @@
 {
   "type": "layered-static",
   "version": 1,
-  "layers": [    
+  "layers": [
+  	{  		
+  		"id" : "Base"
+  	},
     {
       "states": {
         "options": [
           {
-            "uri": "layouts/alotta/BG-01.png"          
+            "uri": "layouts/alotta/window-01.png",
+            "fixed-position" : {
+            	"x" : 149,
+            	"y" : 305
+            }
           },
           {
-            "uri": "layouts/alotta/BG-02.png"          
+            "uri": "layouts/alotta/window-02.png",
+            "fixed-position" : {
+            	"x" : 149,
+            	"y" : 305
+            }
           },
           {
-            "uri": "layouts/alotta/BG-03.png"          
+            "uri": "layouts/alotta/window-03.png",
+            "fixed-position" : {
+            	"x" : 149,
+            	"y" : 302
+            }
           },
           {
-            "uri": "layouts/alotta/BG-04.png"          
+            "uri": "layouts/alotta/window-04.png",
+            "fixed-position" : {
+            	"x" : 149,
+            	"y" : 305
+            }
+          }
+        ],
+        "token-id": 1,
+        "lever-id": 1
+      },
+      "id" : "Window"
+    },
+    {
+      "states": {
+        "options": [
+          {
+            "uri": "layouts/alotta/BG-01.png",
+            "fixed-position" : {
+            	"x" : 532,
+            	"y" : 572
+            }        
+          },
+          {
+            "uri": "layouts/alotta/BG-02.png",
+            "fixed-position" : {
+            	"x" : 532,
+            	"y" : 572
+            }
+          },
+          {
+            "uri": "layouts/alotta/BG-03.png",
+            "fixed-position" : {
+            	"x" : 532,
+            	"y" : 572
+            }
+          },
+          {
+            "uri": "layouts/alotta/BG-04.png",
+            "fixed-position" : {
+            	"x" : 532,
+            	"y" : 572
+            }
           }
         ],
         "token-id": 1,
@@ -37,29 +93,29 @@
           {
             "uri": "layouts/alotta/head-01.png",
             "fixed-position" : {
-            	"x" : 532,
-            	"y" : 572
+            	"x" : 678,
+            	"y" : 331
             }
           },
           {
             "uri": "layouts/alotta/head-02.png",
             "fixed-position" : {
-            	"x" : 532,
-            	"y" : 572
+            	"x" : 609,
+            	"y" : 277
             }
           },
           {
             "uri": "layouts/alotta/head-03.png",
             "fixed-position" : {
-            	"x" : 532,
-            	"y" : 572
+            	"x" : 667,
+            	"y" : 352
             }
           },
           {
             "uri": "layouts/alotta/head-04.png",
             "fixed-position" : {
-            	"x" : 532,
-            	"y" : 572
+            	"x" : 687,
+            	"y" : 277
             }
           }
         ],
@@ -67,6 +123,43 @@
         "lever-id": 1
       },
       "id" : "Head"
+    },
+    {
+      "states": {
+        "options": [
+          {
+            "uri": "layouts/alotta/item-01.png",
+            "fixed-position" : {
+            	"x" : 95,
+            	"y" : 728
+            }
+          },
+          {
+            "uri": "layouts/alotta/item-02.png",
+            "fixed-position" : {
+            	"x" : 158,
+            	"y" : 680
+            }
+          },
+          {
+            "uri": "layouts/alotta/item-03.png",
+            "fixed-position" : {
+            	"x" : 162,
+            	"y" : 724
+            }
+          },
+          {
+            "uri": "layouts/alotta/item-04.png",
+            "fixed-position" : {
+            	"x" : 152,
+            	"y" : 692
+            }
+          }
+        ],
+        "token-id": 1,
+        "lever-id": 1
+      },
+      "id" : "Item"
     }
   ]
 }
