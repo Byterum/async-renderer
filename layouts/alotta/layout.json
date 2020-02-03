@@ -3,42 +3,44 @@
   "version": 1,
   "layers": [
   	{  		
-  		"id" : "Base"
+  		"id" : "Base",
+  		"width" : 1065,
+  		"height" : 1144
   	},
     {
       "states": {
         "options": [
           {
-            "uri": "layouts/alotta/window-01.png",
+            "uri": "alotta/window-01.png",
             "fixed-position" : {
             	"x" : 149,
             	"y" : 305
             }
           },
           {
-            "uri": "layouts/alotta/window-02.png",
+            "uri": "alotta/window-02.png",
             "fixed-position" : {
             	"x" : 149,
             	"y" : 305
             }
           },
           {
-            "uri": "layouts/alotta/window-03.png",
+            "uri": "alotta/window-03.png",
             "fixed-position" : {
             	"x" : 149,
             	"y" : 302
             }
           },
           {
-            "uri": "layouts/alotta/window-04.png",
+            "uri": "alotta/window-04.png",
             "fixed-position" : {
             	"x" : 149,
             	"y" : 305
             }
           }
         ],
-        "token-id": 1,
-        "lever-id": 1
+        "token-id": 1,	
+        "lever-id": 0
       },
       "id" : "Window"
     },
@@ -46,41 +48,41 @@
       "states": {
         "options": [
           {
-            "uri": "layouts/alotta/BG-01.png",
+            "uri": "alotta/BG-01.png",
             "fixed-position" : {
             	"x" : 532,
             	"y" : 572
             }        
           },
           {
-            "uri": "layouts/alotta/BG-02.png",
+            "uri": "alotta/BG-02.png",
             "fixed-position" : {
             	"x" : 532,
             	"y" : 572
             }
           },
           {
-            "uri": "layouts/alotta/BG-03.png",
+            "uri": "alotta/BG-03.png",
             "fixed-position" : {
             	"x" : 532,
             	"y" : 572
             }
           },
           {
-            "uri": "layouts/alotta/BG-04.png",
+            "uri": "alotta/BG-04.png",
             "fixed-position" : {
             	"x" : 532,
             	"y" : 572
             }
           }
         ],
-        "token-id": 1,
-        "lever-id": 1
+        "token-id": 2,
+        "lever-id": 0
       },
       "id" : "Background"
     },
     {
-      "uri": "layouts/alotta/BODY.png",
+      "uri": "alotta/BODY.png",
       "fixed-position" : {
       	"x" : 532,
       	"y" : 572
@@ -91,36 +93,36 @@
       "states": {
         "options": [
           {
-            "uri": "layouts/alotta/head-01.png",
+            "uri": "alotta/head-01.png",
             "fixed-position" : {
             	"x" : 678,
             	"y" : 331
             }
           },
           {
-            "uri": "layouts/alotta/head-02.png",
+            "uri": "alotta/head-02.png",
             "fixed-position" : {
             	"x" : 609,
             	"y" : 277
             }
           },
           {
-            "uri": "layouts/alotta/head-03.png",
+            "uri": "alotta/head-03.png",
             "fixed-position" : {
             	"x" : 667,
             	"y" : 352
             }
           },
           {
-            "uri": "layouts/alotta/head-04.png",
+            "uri": "alotta/head-04.png",
             "fixed-position" : {
             	"x" : 687,
             	"y" : 277
             }
           }
         ],
-        "token-id": 1,
-        "lever-id": 1
+        "token-id": 3,
+        "lever-id": 0
       },
       "id" : "Head"
     },
@@ -128,36 +130,36 @@
       "states": {
         "options": [
           {
-            "uri": "layouts/alotta/item-01.png",
+            "uri": "alotta/item-01.png",
             "fixed-position" : {
             	"x" : 95,
             	"y" : 728
             }
           },
           {
-            "uri": "layouts/alotta/item-02.png",
+            "uri": "alotta/item-02.png",
             "fixed-position" : {
             	"x" : 158,
             	"y" : 680
             }
           },
           {
-            "uri": "layouts/alotta/item-03.png",
+            "uri": "alotta/item-03.png",
             "fixed-position" : {
             	"x" : 162,
             	"y" : 724
             }
           },
           {
-            "uri": "layouts/alotta/item-04.png",
+            "uri": "alotta/item-04.png",
             "fixed-position" : {
             	"x" : 152,
             	"y" : 692
             }
           }
         ],
-        "token-id": 1,
-        "lever-id": 1
+        "token-id": 4,
+        "lever-id": 0
       },
       "id" : "Item"
     }

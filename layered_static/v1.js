@@ -1,5 +1,4 @@
 //var heapdump = require('heapdump');
-
 var Jimp = require('jimp');
 var ethers = require("ethers");
 
@@ -16,6 +15,8 @@ const KEY_Y = "y";
 const KEY_VISIBLE = "visible";
 const KEY_URI = "uri";
 const KEY_STATES = "states";
+const KEY_WIDTH = "width";
+const KEY_HEIGHT = "height";
 
 var blockNum = -1;
 var bufferConnector = null;
@@ -40,16 +41,22 @@ async function render(contract, layout, _blockNum) {
 		console.log("rendering layer: " + (i + 1) + " of " + layout.layers.length + " (" + layer.id + ")")
 
 		if (KEY_STATES in layer) {
-			var uriIndex = await readIntProperty(contract, layer, KEY_URI, "Layer Index");
+			var uriIndex = await readIntProperty(contract, layer, KEY_STATES, "Layer Index");
 
 			layer = layer[KEY_STATES].options[uriIndex];
 		}
 
-		var imageBuffer = await bufferConnector.loadFromURI(layer.uri);
+		var layerImage = null;
 
-		var layerImage = await Jimp.read(imageBuffer);
+		if (layer.uri === undefined) {
+			layerImage = await new Jimp(layer[KEY_WIDTH], layer[KEY_HEIGHT]);
+		} else {
+			var imageBuffer = await bufferConnector.loadFromURI(layer.uri);	
 
-		imageBuffer = null;
+			layerImage = await Jimp.read(imageBuffer);
+
+			imageBuffer = null;
+		}		
 
 		if (currentImage == null) {
 			currentImage = layerImage;
@@ -92,9 +99,9 @@ async function readIntProperty(contract, object, key, label) {
 			}
 
 			// print out the control lever results
-			for (var z = 0; z < controlLeverResults.length; z++) {
-				console.log(controlLeverResults[z].toString());
-			}
+			// for (var z = 0; z < controlLeverResults.length; z++) {
+			// 	console.log(controlLeverResults[z].toString());
+			// }
 
 			// store in cache for future use
 			controlTokenCache[tokenId] = controlLeverResults;
