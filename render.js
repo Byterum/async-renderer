@@ -24,6 +24,13 @@ async function process(tokenAddress, tokenId, blockNum) {
 async function onNetworkLoaded(tokenAddress, tokenId, blockNum) {
 	let contract = new ethers.Contract(tokenAddress, CONTRACT_ABI, provider);
 
+	// if no block num was provided then stamp the image with the current block number
+	if (blockNum === -1) {
+		blockNum = (await provider.getBlockNumber());
+
+		console.log("Retrieved latest block number: " + blockNum);
+	}
+
 	// load the token URI for the layout
 	console.log("Retrieving layout URI...");
 	var tokenURI = await contract.tokenURI(tokenId);
@@ -42,13 +49,6 @@ async function onNetworkLoaded(tokenAddress, tokenId, blockNum) {
 	
 	// render the image
 	var finalImage = await renderer.render(contract, layout, blockNum, tokenId);
-
-	// if no block num was provided then stamp the image with the current block number
-	if (blockNum === -1) {
-		blockNum = (await provider.getBlockNumber());
-
-		console.log("Retrieved latest block number: " + blockNum);
-	}
 
 	// stamp the metadata
 	await stampBlockNumber(finalImage, blockNum);
