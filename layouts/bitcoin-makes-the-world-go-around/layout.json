@@ -3,35 +3,20 @@
   "version": 1,
   "layers": [
     {
-      "uri": "bitcoin-makes-the-world-go-around/Background-white@2x.jpg",
+      "uri": "layouts/bitcoin-makes-the-world-go-around/Background-white@2x.jpg",
       "id" : "bg-white"
     },
     {
       "states": {
         "options": [
-          {
-            "uri": "bitcoin-makes-the-world-go-around/Bitcoin-black@2x.png",
-            "fixed-position": {
-              "x": 3050,
-              "y": 2950
-            },
-            "visible" : 0,
-            "scale": {
-              "x": {
-                "token-id" : 1,
-                "lever-id" : 2
-              },
-              "y": {
-                "token-id" : 1,
-                "lever-id" : 2
-              }
-            }
+          {            
+            "visible" : 0
           },
           {
-            "uri": "bitcoin-makes-the-world-go-around/Bitcoin-green@2x.png",
+            "uri": "layouts/bitcoin-makes-the-world-go-around/Bitcoin-green@2x.png",
             "fixed-position": {
-              "x": 3002,
-              "y": 3002
+              "x": 1024,
+              "y": 1024
             },
             "scale": {
               "x": {
@@ -45,10 +30,10 @@
             }
           },
           {
-            "uri": "bitcoin-makes-the-world-go-around/Bitcoin-red@2x.png",
+            "uri": "layouts/bitcoin-makes-the-world-go-around/Bitcoin-red@2x.png",
             "fixed-position": {
-              "x": 3002,
-              "y": 3002
+              "x": 1024,
+              "y": 1024
             },
             "scale": {
               "x": {
@@ -68,11 +53,11 @@
       "id" : "btc-logo0"
     },
     {
-      "uri": "bitcoin-makes-the-world-go-around/City@2x.png",
+      "uri": "layouts/bitcoin-makes-the-world-go-around/City@2x.png",
       "id" : "city",
       "fixed-position": {
-        "x": 3002,
-        "y": 3002
+        "x": 1024,
+        "y": 1024
       },
       "fixed-rotation" : {
         "token-id" : 1,
@@ -93,10 +78,10 @@
       "states": {
         "options": [
           {
-            "uri": "bitcoin-makes-the-world-go-around/Bitcoin-black@2x.png",
+            "uri": "layouts/bitcoin-makes-the-world-go-around/Bitcoin-black@2x.png",
             "fixed-position": {
-              "x": 3050,
-              "y": 2950
+              "x": 1040,
+              "y": 1006
             },            
             "scale": {
               "x": {
@@ -110,40 +95,10 @@
             }
           },
           {
-            "uri": "bitcoin-makes-the-world-go-around/Bitcoin-green@2x.png",
-            "fixed-position": {
-              "x": 3002,
-              "y": 3002
-            },
-            "visible" : 0,
-            "scale": {
-              "x": {
-                "token-id" : 1,
-                "lever-id" : 2
-              },
-              "y": {
-                "token-id" : 1,
-                "lever-id" : 2
-              }
-            }
+            "visible" : 0            
           },
-          {
-            "uri": "bitcoin-makes-the-world-go-around/Bitcoin-red@2x.png",
-            "fixed-position": {
-              "x": 3002,
-              "y": 3002
-            },
-            "visible" : 0,
-            "scale": {
-              "x": {
-                "token-id" : 1,
-                "lever-id" : 2
-              },
-              "y": {
-                "token-id" : 1,
-                "lever-id" : 2
-              }
-            }
+          {            
+            "visible" : 0
           }
         ],
         "token-id": 1,
@@ -152,12 +107,12 @@
       "id" : "btc-logo1"
     },
     {
-      "uri": "bitcoin-makes-the-world-go-around/Red-A@2x.png",
+      "uri": "layouts/bitcoin-makes-the-world-go-around/Red-A@2x.png",
       "id" : "red-a",
       "anchor" : "city",
       "relative-position": {
         "x": 0,
-        "y": -3000
+        "y": -1024
       },      
       "orbit-rotation" : {
         "token-id" : 2,
@@ -179,12 +134,12 @@
       }
     },
     {
-      "uri": "bitcoin-makes-the-world-go-around/Red-B@2x.png",
+      "uri": "layouts/bitcoin-makes-the-world-go-around/Red-B@2x.png",
       "id" : "red-b",
       "anchor" : "city",
       "relative-position": {
         "x": 0,
-        "y": -3000
+        "y": -1024
       },      
       "orbit-rotation" : {
         "token-id" : 3,
@@ -206,12 +161,12 @@
       }
     },
     {
-      "uri": "bitcoin-makes-the-world-go-around/Red-C@2x.png",
+      "uri": "layouts/bitcoin-makes-the-world-go-around/Red-C@2x.png",
       "id" : "red-c",
       "anchor" : "city",
       "relative-position": {
         "x": 0,
-        "y": -2900
+        "y": -989
       },      
       "orbit-rotation" : {
         "token-id" : 4,
@@ -233,12 +188,12 @@
       }
     },
     {
-      "uri": "bitcoin-makes-the-world-go-around/Red-D@2x.png",
+      "uri": "layouts/bitcoin-makes-the-world-go-around/Red-D@2x.png",
       "id" : "red-d",
       "anchor" : "city",
       "relative-position": {
         "x": 0,
-        "y": -2900
+        "y": -989
       },      
       "orbit-rotation" : {
         "token-id" : 5,
@@ -260,12 +215,12 @@
       }
     },
     {
-      "uri": "bitcoin-makes-the-world-go-around/Black-plant1@2x.png",
+      "uri": "layouts/bitcoin-makes-the-world-go-around/Black-plant1@2x.png",
       "id" : "black-plant-1",
       "anchor" : "city",
       "relative-position": {
         "x": 0,
-        "y": -1900
+        "y": -648
       },
       "orbit-rotation" : {
         "token-id" : 6,
@@ -287,12 +242,12 @@
       }
     },
     {
-      "uri": "bitcoin-makes-the-world-go-around/Black-plant2@2x.png",
+      "uri": "layouts/bitcoin-makes-the-world-go-around/Black-plant2@2x.png",
       "id" : "black-plant-2",
       "anchor" : "city",
       "relative-position": {
         "x": 0,
-        "y": -1700
+        "y": -579
       },
       "orbit-rotation" : {
         "token-id" : 7,
@@ -314,12 +269,12 @@
       }
     },
     {
-      "uri": "bitcoin-makes-the-world-go-around/Black-shapes1@2x.png",
+      "uri": "layouts/bitcoin-makes-the-world-go-around/Black-shapes1@2x.png",
       "id" : "black-shape-1",
       "anchor" : "city",
       "relative-position": {
         "x": 0,
-        "y": -2800
+        "y": -955
       },
       "orbit-rotation" : {
         "token-id" : 8,
@@ -341,12 +296,12 @@
       }
     },
     {
-      "uri": "bitcoin-makes-the-world-go-around/Black-shapes2@2x.png",
+      "uri": "layouts/bitcoin-makes-the-world-go-around/Black-shapes2@2x.png",
       "id" : "black-shape-2",
       "anchor" : "city",
       "relative-position": {
         "x": 0,
-        "y": -3000
+        "y": -1024
       },
       "orbit-rotation" : {
         "token-id" : 9,
@@ -368,12 +323,12 @@
       }
     },
     {
-      "uri": "bitcoin-makes-the-world-go-around/Black-shapes3@2x.png",
+      "uri": "layouts/bitcoin-makes-the-world-go-around/Black-shapes3@2x.png",
       "id" : "black-shape-3",
       "anchor" : "city",
       "relative-position": {
         "x": 0,
-        "y": -3000
+        "y": -1024
       },
       "orbit-rotation" : {
         "token-id" : 10,
@@ -395,12 +350,12 @@
       }
     },
     {
-      "uri": "bitcoin-makes-the-world-go-around/Black-shapes4@2x.png",
+      "uri": "layouts/bitcoin-makes-the-world-go-around/Black-shapes4@2x.png",
       "id" : "black-shape-4",
       "anchor" : "city",
       "relative-position": {
         "x": 0,
-        "y": -3100
+        "y": -1057
       },
       "orbit-rotation" : {
         "token-id" : 11,
@@ -422,11 +377,11 @@
       }
     },
     {
-      "uri": "bitcoin-makes-the-world-go-around/Red-stains@2x.png",
+      "uri": "layouts/bitcoin-makes-the-world-go-around/Red-stains@2x.png",
       "id" : "red-stains",
       "fixed-position": {
-        "x": 3002,
-        "y": 3002
+        "x": 1024,
+        "y": 1024
       },
       "fixed-rotation" : {
         "token-id" : 12,
@@ -444,11 +399,11 @@
       }
     },
     {
-      "uri": "bitcoin-makes-the-world-go-around/Infinity-falls@2x.png",
+      "uri": "layouts/bitcoin-makes-the-world-go-around/Infinity-falls@2x.png",
       "id" : "infinity-falls",
       "fixed-position": {
-        "x": 3002,
-        "y": 3002
+        "x": 1024,
+        "y": 1024
       },
       "fixed-rotation": {
         "token-id" : 13,

@@ -50,6 +50,15 @@ async function render(contract, layout, _blockNum, _masterArtTokenId) {
 			layer = layer[KEY_STATES].options[uriIndex];
 		}
 
+		// check if this layer has visbility controls
+		if (KEY_VISIBLE in layer) {
+			var isVisible = (await readIntProperty(contract, layer, KEY_VISIBLE, "Layer Visible")) === 1;
+			if (isVisible === false) {
+				console.log("	NOT VISIBLE. SKIPPING.")
+				continue;
+			}
+		}
+
 		var layerImage = null;
 
 		if (layer.uri === undefined) {
@@ -133,115 +142,103 @@ function getLayerWithId(layout, layerId) {
 }
 
 async function renderLayer(contract, currentImage, layout, layer, layerImage) {
-	// if (currentImage !== null) {
-	// each layer visible by default
-	var isVisible = true;
-	// check if this layer has visbility controls
-	if (KEY_VISIBLE in layer) {
-		isVisible = (await readIntProperty(contract, layer, KEY_VISIBLE, "Layer Visible")) === 1;
+	// scale the layer (optionally)
+	var bitmapWidth = layerImage.bitmap.width;
+	var bitmapHeight = layerImage.bitmap.height;
+
+	if (KEY_SCALE in layer) {
+		var scale_x = (await readIntProperty(contract, layer[KEY_SCALE], KEY_X, "Layer Scale X")) / 100;
+		var scale_y = (await readIntProperty(contract, layer[KEY_SCALE], KEY_Y, "Layer Scale Y")) / 100;
+		// determine the new width
+		bitmapWidth = layerImage.bitmap.width * scale_x;
+		bitmapHeight = layerImage.bitmap.height * scale_y;
+		// resize the image
+		layerImage.resize(bitmapWidth, bitmapHeight);
 	}
 
-	if (isVisible) {
-		// scale the layer (optionally)
-		var bitmapWidth = layerImage.bitmap.width;
-		var bitmapHeight = layerImage.bitmap.height;
+	// rotate the layer (optionally)
+	if (KEY_FIXED_ROTATION in layer) {
+		var rotation = await readIntProperty(contract, layer, KEY_FIXED_ROTATION, "Layer Fixed Rotation");
 
-		if (KEY_SCALE in layer) {
-			var scale_x = (await readIntProperty(contract, layer[KEY_SCALE], KEY_X, "Layer Scale X")) / 100;
-			var scale_y = (await readIntProperty(contract, layer[KEY_SCALE], KEY_Y, "Layer Scale Y")) / 100;
-			// determine the new width
-			bitmapWidth = layerImage.bitmap.width * scale_x;
-			bitmapHeight = layerImage.bitmap.height * scale_y;
-			// resize the image
-			layerImage.resize(bitmapWidth, bitmapHeight);
+		layerImage.rotate(rotation, true);
+
+		// adjust for the new width and height based on the rotation
+		bitmapWidth = layerImage.bitmap.width;
+		bitmapHeight = layerImage.bitmap.height;
+	}
+
+	var x = 0;
+	var y = 0;
+
+	if (KEY_ANCHOR in layer) {				
+		var anchorLayerId = layer[KEY_ANCHOR];
+
+		if (typeof anchorLayerId === "object") {
+			// TODO test this
+			var anchorLayerIndex = await readIntProperty(contract, layer, KEY_ANCHOR, "Anchor Layer Index");
+
+			anchorLayerId = layer[KEY_ANCHOR].options[anchorLayerIndex];
 		}
 
-		// rotate the layer (optionally)
-		if (KEY_FIXED_ROTATION in layer) {
-			var rotation = await readIntProperty(contract, layer, KEY_FIXED_ROTATION, "Layer Fixed Rotation");
-
-			layerImage.rotate(rotation, true);
-
-			// adjust for the new width and height based on the rotation
-			bitmapWidth = layerImage.bitmap.width;
-			bitmapHeight = layerImage.bitmap.height;
-		}
-
-		var x = 0;
-		var y = 0;
-
-		if (KEY_ANCHOR in layer) {				
-			var anchorLayerId = layer[KEY_ANCHOR];
-
-			if (typeof anchorLayerId === "object") {
-				// TODO test this
-				var anchorLayerIndex = await readIntProperty(contract, layer, KEY_ANCHOR, "Anchor Layer Index");
-
-				anchorLayerId = layer[KEY_ANCHOR].options[anchorLayerIndex];
-			}
-
-			var anchorLayor = getLayerWithId(layout, anchorLayerId);
-			
-			console.log("	Anchor Layer Id: " + anchorLayerId);
-			
-			x = anchorLayor.finalCenterX;
-			y = anchorLayor.finalCenterY;
-		}
-
-		var relativeX = 0;
-		var relativeY = 0;
+		var anchorLayor = getLayerWithId(layout, anchorLayerId);
 		
-		// position the layer (optionally)
-		if (KEY_FIXED_POSITION in layer) {
-			// Fixed position sets an absolute position
-			x = await readIntProperty(contract, layer[KEY_FIXED_POSITION], KEY_X, "Layer Fixed Position X");
-			y = await readIntProperty(contract, layer[KEY_FIXED_POSITION], KEY_Y, "Layer Fixed Position Y");
-		} else {
-			// relative position adjusts xy based on the anchor
-			if (KEY_RELATIVE_POSITION in layer) {
-				relativeX = await readIntProperty(contract, layer[KEY_RELATIVE_POSITION], KEY_X, "Layer Relative Position X");
-				relativeY = await readIntProperty(contract, layer[KEY_RELATIVE_POSITION], KEY_Y, "Layer Relative Position Y");
-			}
-
-			// relative rotation orbits this layer around an anchor
-			if (KEY_ORBIT_ROTATION in layer) {
-				var relativeRotation = await readIntProperty(contract, layer, KEY_ORBIT_ROTATION, "Layer Orbit Rotation");
-
-				console.log("Orbiting " + relativeRotation + " degrees around anchor");					
-
-				var rad = -relativeRotation * Math.PI / 180;
-
-				var newRelativeX = Math.round(relativeX * Math.cos(rad) - relativeY * Math.sin(rad));
-				var newRelativeY = Math.round(relativeY * Math.cos(rad) + relativeX * Math.sin(rad));
-
-				relativeX = newRelativeX;
-				relativeY = newRelativeY;
-			}
-
-			x += relativeX;
-			y += relativeY;
-		}
-
-		// stamp the final center X and Y that this layer was rendered at (for any follow-up layers that might be anchored here)
-		layer.finalCenterX = x;
-		layer.finalCenterY = y;
-
-		// offset x and y so that layers are drawn at the center of their image
-		x -= (bitmapWidth / 2);
-		y -= (bitmapHeight / 2);
-
-		// adjust the color
-		if (KEY_COLOR in layer) {
-			var alpha = await readIntProperty(contract, layer[KEY_COLOR], KEY_ALPHA, "Layer Alpha"); 
-
-			layerImage.opacity(alpha / 100);
-		}
-
-		// composite this layer onto the current image
-		currentImage.composite(layerImage, x, y);
-	} else {
-		console.log("	NOT VISIBLE. SKIPPING.")
+		console.log("	Anchor Layer Id: " + anchorLayerId);
+		
+		x = anchorLayor.finalCenterX;
+		y = anchorLayor.finalCenterY;
 	}
+
+	var relativeX = 0;
+	var relativeY = 0;
+	
+	// position the layer (optionally)
+	if (KEY_FIXED_POSITION in layer) {
+		// Fixed position sets an absolute position
+		x = await readIntProperty(contract, layer[KEY_FIXED_POSITION], KEY_X, "Layer Fixed Position X");
+		y = await readIntProperty(contract, layer[KEY_FIXED_POSITION], KEY_Y, "Layer Fixed Position Y");
+	} else {
+		// relative position adjusts xy based on the anchor
+		if (KEY_RELATIVE_POSITION in layer) {
+			relativeX = await readIntProperty(contract, layer[KEY_RELATIVE_POSITION], KEY_X, "Layer Relative Position X");
+			relativeY = await readIntProperty(contract, layer[KEY_RELATIVE_POSITION], KEY_Y, "Layer Relative Position Y");
+		}
+
+		// relative rotation orbits this layer around an anchor
+		if (KEY_ORBIT_ROTATION in layer) {
+			var relativeRotation = await readIntProperty(contract, layer, KEY_ORBIT_ROTATION, "Layer Orbit Rotation");
+
+			console.log("Orbiting " + relativeRotation + " degrees around anchor");					
+
+			var rad = -relativeRotation * Math.PI / 180;
+
+			var newRelativeX = Math.round(relativeX * Math.cos(rad) - relativeY * Math.sin(rad));
+			var newRelativeY = Math.round(relativeY * Math.cos(rad) + relativeX * Math.sin(rad));
+
+			relativeX = newRelativeX;
+			relativeY = newRelativeY;
+		}
+
+		x += relativeX;
+		y += relativeY;
+	}
+
+	// stamp the final center X and Y that this layer was rendered at (for any follow-up layers that might be anchored here)
+	layer.finalCenterX = x;
+	layer.finalCenterY = y;
+
+	// offset x and y so that layers are drawn at the center of their image
+	x -= (bitmapWidth / 2);
+	y -= (bitmapHeight / 2);
+
+	// adjust the color
+	if (KEY_COLOR in layer) {
+		var alpha = await readIntProperty(contract, layer[KEY_COLOR], KEY_ALPHA, "Layer Alpha"); 
+
+		layerImage.opacity(alpha / 100);
+	}
+
+	// composite this layer onto the current image
+	currentImage.composite(layerImage, x, y);
 
 	return currentImage;
 }
