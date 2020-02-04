@@ -34,6 +34,8 @@ async function render(contract, layout, _blockNum, _masterArtTokenId) {
 
 	var currentImage = null;
 
+	controlTokenCache = {}; // clear the cache before each render
+
 	for (var i = 0; i < layout.layers.length; i++) {
 		console.log((process.memoryUsage().rss / 1024 / 1024) + " MB");
 
