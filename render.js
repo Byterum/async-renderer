@@ -11,8 +11,8 @@ const CONTRACT_ABI = [{"inputs":[{"internalType":"string","name":"name","type":"
 
 // TODO move provider into a separate module too
 // const provider = new ethers.providers.JsonRpcProvider('http://localhost:7545');
-// const provider = new ethers.providers.JsonRpcProvider('https://goerli.infura.io/v3/e6fbb7c91658422b8582e035657141bf');
-const provider = new ethers.providers.JsonRpcProvider('https://www.ethercluster.com/goerli');
+const provider = new ethers.providers.JsonRpcProvider('https://goerli.infura.io/v3/687d696aa0a440ceadfb06bf931cfe06');
+// const provider = new ethers.providers.JsonRpcProvider('https://www.ethercluster.com/goerli');
 // const provider = new ethers.providers.InfuraProvider('goerli');
 
 async function process(tokenAddress, tokenId, blockNum) {	
@@ -34,13 +34,6 @@ async function onNetworkLoaded(tokenAddress, tokenId, blockNum) {
 
 	var layout = JSON.parse(layoutBuffer.toString())
 
-	// if no block num was provided then use the latest block number (minus 2 so we don't use a block that is pending currently)
-	if (blockNum === -1) {
-		blockNum = (await provider.getBlockNumber());
-
-		console.log("Retrieved latest block number: " + blockNum);
-	}
-
 	// load the correct renderer based on layout type and version
 	var renderer = require("./" + layout.type + "/v" + layout.version + ".js")
 
@@ -49,6 +42,13 @@ async function onNetworkLoaded(tokenAddress, tokenId, blockNum) {
 	
 	// render the image
 	var finalImage = await renderer.render(contract, layout, blockNum, tokenId);
+
+	// if no block num was provided then stamp the image with the current block number
+	if (blockNum === -1) {
+		blockNum = (await provider.getBlockNumber());
+
+		console.log("Retrieved latest block number: " + blockNum);
+	}
 
 	// stamp the metadata
 	await stampBlockNumber(finalImage, blockNum);
