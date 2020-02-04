@@ -25,7 +25,7 @@ async function onNetworkLoaded(tokenAddress, tokenId, blockNum) {
 	let contract = new ethers.Contract(tokenAddress, CONTRACT_ABI, provider);
 
 	// if no block num was provided then stamp the image with the current block number
-	if (blockNum === -1) {
+	if (blockNum == -1) {
 		blockNum = (await provider.getBlockNumber());
 
 		console.log("Retrieved latest block number: " + blockNum);
