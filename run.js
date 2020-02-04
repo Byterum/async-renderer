@@ -24,11 +24,11 @@ async function main() {
 
 	var path = "renders/token-" + tokenId + "_block-" + finalImageData.blockNum + ".png";
 
-	// finalImageData.image.resize(512, 512);
+	console.log("Writing to " + path + "...");
 	
 	finalImageData.image.write(path);
 
-	console.log("Wrote to " + path)    
+	console.log("Wrote to " + path + ".");
 }
 
 main();
