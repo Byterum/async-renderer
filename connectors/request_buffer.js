@@ -1,9 +1,9 @@
-var request = require('request').defaults({ encoding: null });
+var rp = require('request-promise');
 
-async function loadFromURI(uri, callback) {
-	request(uri, function (error, response, body) {
-		callback(body)
-	})
+async function loadFromURI(uri) {
+	var response = await rp({uri: uri, encoding: null});
+
+	return Buffer.from(response);
 }
 
 exports.loadFromURI = loadFromURI
