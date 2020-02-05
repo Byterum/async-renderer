@@ -1,5 +1,3 @@
-const ethers = require("ethers");
-const fs = require('fs');
 const renderer = require("./render.js")
 
 // enforce that a file and token address was provided
@@ -20,14 +18,17 @@ if (process.argv.length > 4) {
 console.log("Using block = " + blockNum)
 
 async function main() {
-	var finalImageData = await renderer.process(tokenAddress, tokenId, blockNum);
+	var stampDebug = true;
 
+	var finalImageData = await renderer.process(tokenAddress, tokenId, blockNum, stampDebug);
+
+	// determine the render path
 	var path = "renders/token-" + tokenId + "_block-" + finalImageData.blockNum + ".png";
-
+	// output to console
 	console.log("Writing to " + path + "...");
-	
+	// write the final artwork
 	finalImageData.image.write(path);
-
+	// output to console
 	console.log("Wrote to " + path + ".");
 }
 
