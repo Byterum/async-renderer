@@ -4,6 +4,7 @@ var Jimp = require('jimp');
 
 // Connector variants
 const bufferConnector = require('./connectors/google_cloud_buffer.js')
+// const bufferConnector = require('./connectors/ipfs_buffer.js')
 // const bufferConnector = require('./connectors/request_buffer.js')
 // const bufferConnector = require('./connectors/read_local_image_buffer.js')
 
