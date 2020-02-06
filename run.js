@@ -19,16 +19,10 @@ if (process.argv.length > 4) {
 console.log("Using block = " + blockNum)
 
 async function main() {
-	var stampDebug = true;
+	// ie "https://rinkeby.infura.io/v3/xxx"
+	const provider = new ethers.providers.JsonRpcProvider(process.env.PROVIDER_URL);
 
-	// const provider = new ethers.providers.JsonRpcProvider('http://localhost:7545');
-	// const provider = new ethers.providers.JsonRpcProvider('https://goerli.infura.io/v3/687d696aa0a440ceadfb06bf931cfe06');
-	const provider = new ethers.providers.JsonRpcProvider('https://rinkeby.infura.io/v3/687d696aa0a440ceadfb06bf931cfe06');
-
-	// const provider = new ethers.providers.JsonRpcProvider('https://www.ethercluster.com/goerli');
-	// const provider = new ethers.providers.InfuraProvider('goerli');
-
-	var finalImageData = await renderer.process(provider, tokenAddress, tokenId, blockNum, stampDebug);
+	var finalImageData = await renderer.process(provider, tokenAddress, tokenId, blockNum, process.env.STAMP_DEBUG);
 
 	// determine the render path
 	var path = "renders/token-" + tokenId + "_block-" + finalImageData.blockNum + ".png";
