@@ -39,7 +39,7 @@ async function onNetworkLoaded(tokenAddress, tokenId, blockNum, stampDebug) {
 	console.log("Retrieving layout file...");
 	let layoutBuffer = await bufferConnector.loadFromURI(tokenURI);
 
-	var layout = JSON.parse(layoutBuffer.toString())
+	var layout = JSON.parse(layoutBuffer.toString()).layout;
 
 	// load the correct renderer based on layout type and version
 	var renderer = require("./" + layout.type + "/v" + layout.version + ".js")
