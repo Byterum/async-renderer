@@ -1,4 +1,7 @@
-// const fs = require('fs').promises;
+/*
+ * Connector for retrieving a file buffer from a local file path.
+ */
+
 const fs = require('fs')
 const { promisify } = require('util')
 

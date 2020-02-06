@@ -1,7 +1,10 @@
+/*
+ * Connector for retrieving a file buffer from just an IPFS hash.
+ * Define IPFS_GATEWAY in your environment settings.
+ */
 var rp = require('request-promise');
 
-// use the public IFPS gateway
-const IPFS_GATEWAY = "https://ipfs.io/ipfs/";
+const IPFS_GATEWAY = process.env.IPFS_GATEWAY;
 
 async function loadFromURI(ipfsHash) {	
 	if (ipfsHash == "alotta/layout.json") {

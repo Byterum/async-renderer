@@ -6,4 +6,4 @@ output*
 renders/
 
 manual-deployment.js
-test_local.sh
+run.sh

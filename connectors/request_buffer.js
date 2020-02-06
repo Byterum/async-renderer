@@ -1,3 +1,6 @@
+/*
+ * Connector for retrieving a file buffer from a web URI
+ */
 var rp = require('request-promise');
 
 async function loadFromURI(uri) {
