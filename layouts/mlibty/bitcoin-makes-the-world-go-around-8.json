@@ -1,0 +1,12 @@
+{
+  "name": "Topic's connections",
+  "description": "",
+  "image": "QmZBrWq2YnVmgQm6PiSXfMNKjTBzqX2eqGwt83RtgEZLD4",
+  "master" : "QmeE1tKaB3MrrW4ohruWqXWdWm98rez1fVibcw7gB7g1Sy",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Mlibty"
+    }
+  ]
+}

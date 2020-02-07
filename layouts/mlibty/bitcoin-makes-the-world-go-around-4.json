@@ -1,0 +1,12 @@
+{
+  "name": "Hot topic #3",
+  "description": "",
+  "image": "QmYRpiPBMFxcVyFzrxvKeGx4555jd7EGu7Sp3mRo85Xndg",
+  "master" : "QmeE1tKaB3MrrW4ohruWqXWdWm98rez1fVibcw7gB7g1Sy",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Mlibty"
+    }
+  ]
+}

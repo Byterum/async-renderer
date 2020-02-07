@@ -1,0 +1,12 @@
+{
+  "name": "Bitcoin makes the world go around",
+  "description": "",
+  "image": "QmXmeCPLdwyTj29HRpY127NFwFeCmZjDyYDLaLnW4uRqDA",
+  "master" : "QmeE1tKaB3MrrW4ohruWqXWdWm98rez1fVibcw7gB7g1Sy",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Mlibty"
+    }
+  ]
+}

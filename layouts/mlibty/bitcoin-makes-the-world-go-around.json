@@ -1,6 +1,6 @@
 {
   "name": "Bitcoin Makes the World Go Around",
-  "description": "",
+  "description": "Master Artwork Token description goes here.",
   "image": "QmPeqNvzxk1tHGrwHgbrwhXVCt4eAUj5AjQ9hxEZud3VE5",
   "attributes": [
     {
@@ -17,7 +17,7 @@
     "version": 1,
     "layers": [
       {
-        "uri": "bitcoin-makes-the-world-go-around/Background-white@2x.jpg",
+        "uri": "QmT9FChPqQdjdD3AcnsubhJPtp6YHbsrhqvoUjEusWGaRB",
         "id": "bg-white"
       },
       {
@@ -27,7 +27,7 @@
               "visible": 0
             },
             {
-              "uri": "bitcoin-makes-the-world-go-around/Bitcoin-green@2x.png",
+              "uri": "QmScvai4qGMxHgyDbLu9Fmv3kcf3N16wgTT7A9iK3fdMq5",
               "fixed-position": {
                 "x": 1024,
                 "y": 1024
@@ -44,7 +44,7 @@
               }
             },
             {
-              "uri": "bitcoin-makes-the-world-go-around/Bitcoin-red@2x.png",
+              "uri": "QmPzCtzs5RzFWcZJ8cFhXtuJVXWezrq9KxGZd8FzxA6yPN",
               "fixed-position": {
                 "x": 1024,
                 "y": 1024
@@ -67,7 +67,7 @@
         "id": "btc-logo0"
       },
       {
-        "uri": "bitcoin-makes-the-world-go-around/City@2x.png",
+        "uri": "QmXmeCPLdwyTj29HRpY127NFwFeCmZjDyYDLaLnW4uRqDA",
         "id": "city",
         "fixed-position": {
           "x": 1024,
@@ -92,7 +92,7 @@
         "states": {
           "options": [
             {
-              "uri": "bitcoin-makes-the-world-go-around/Bitcoin-black@2x.png",
+              "uri": "Qmb955UTJnUrh2MmvZBuh6MezwAyGYMtYYZhgAbzaVSJQn",
               "fixed-position": {
                 "x": 1040,
                 "y": 1006
@@ -121,7 +121,7 @@
         "id": "btc-logo1"
       },
       {
-        "uri": "bitcoin-makes-the-world-go-around/Red-A@2x.png",
+        "uri": "QmbuS8CNdLGbbY4siy33GeMQUVX7D7FxvZHnSyYDqcN5tA",
         "id": "red-a",
         "anchor": "city",
         "relative-position": {
@@ -148,7 +148,7 @@
         }
       },
       {
-        "uri": "bitcoin-makes-the-world-go-around/Red-B@2x.png",
+        "uri": "QmUPE3Wry7XM1KCDwNBwd2dKR5H7Uc2ztdX184McLdjw3z",
         "id": "red-b",
         "anchor": "city",
         "relative-position": {
@@ -175,7 +175,7 @@
         }
       },
       {
-        "uri": "bitcoin-makes-the-world-go-around/Red-C@2x.png",
+        "uri": "QmYRpiPBMFxcVyFzrxvKeGx4555jd7EGu7Sp3mRo85Xndg",
         "id": "red-c",
         "anchor": "city",
         "relative-position": {
@@ -202,7 +202,7 @@
         }
       },
       {
-        "uri": "bitcoin-makes-the-world-go-around/Red-D@2x.png",
+        "uri": "QmSDV4vNHEWRPNmsQRVowzRfSrFudkwc7tRVUSdYB6wvup",
         "id": "red-d",
         "anchor": "city",
         "relative-position": {
@@ -229,7 +229,7 @@
         }
       },
       {
-        "uri": "bitcoin-makes-the-world-go-around/Black-plant1@2x.png",
+        "uri": "QmYACfywE4Vv7z1xYrGx5tdKHpYAUipc4KP1euY17LAPJS",
         "id": "black-plant-1",
         "anchor": "city",
         "relative-position": {
@@ -256,7 +256,7 @@
         }
       },
       {
-        "uri": "bitcoin-makes-the-world-go-around/Black-plant2@2x.png",
+        "uri": "QmSy6MdEXMcqAz4ZeXFGCBYnocvJbVCAXTDYAyWPozSEmy",
         "id": "black-plant-2",
         "anchor": "city",
         "relative-position": {
@@ -283,7 +283,7 @@
         }
       },
       {
-        "uri": "bitcoin-makes-the-world-go-around/Black-shapes1@2x.png",
+        "uri": "QmZBrWq2YnVmgQm6PiSXfMNKjTBzqX2eqGwt83RtgEZLD4",
         "id": "black-shape-1",
         "anchor": "city",
         "relative-position": {
@@ -310,7 +310,7 @@
         }
       },
       {
-        "uri": "bitcoin-makes-the-world-go-around/Black-shapes2@2x.png",
+        "uri": "Qmar9roV18Z77gcKayMXkujm4k88arUkugCRw9WvdmDVNH",
         "id": "black-shape-2",
         "anchor": "city",
         "relative-position": {
@@ -337,7 +337,7 @@
         }
       },
       {
-        "uri": "bitcoin-makes-the-world-go-around/Black-shapes3@2x.png",
+        "uri": "QmcH4KfSoaN61pnj5H74o3p7Fwz3sXcz3DG6V9nbPAGNtU",
         "id": "black-shape-3",
         "anchor": "city",
         "relative-position": {
@@ -364,7 +364,7 @@
         }
       },
       {
-        "uri": "bitcoin-makes-the-world-go-around/Black-shapes4@2x.png",
+        "uri": "QmVTN3agQosyJLDnRBCkE62cRymFU65HnEcFTNwpAuk91M",
         "id": "black-shape-4",
         "anchor": "city",
         "relative-position": {
@@ -391,7 +391,7 @@
         }
       },
       {
-        "uri": "bitcoin-makes-the-world-go-around/Red-stains@2x.png",
+        "uri": "QmdFew7ZpccXAyT6AfVCjzs8gU1kMzFucbxmJfTW46oCSa",
         "id": "red-stains",
         "fixed-position": {
           "x": 1024,
@@ -413,7 +413,7 @@
         }
       },
       {
-        "uri": "bitcoin-makes-the-world-go-around/Infinity-falls@2x.png",
+        "uri": "QmZDMegJUu4913XU5twZkevXH875TExZVcbP4VbANtuhh8",
         "id": "infinity-falls",
         "fixed-position": {
           "x": 1024,
