@@ -21,6 +21,285 @@
         "id": "bg-white"
       },
       {
+        "id": "center-anchor",
+        "fixed-position": {
+          "x": 1024,
+          "y": 1024
+        },
+        "width": 1,
+        "height": 1
+      },
+      {
+        "uri": "QmbuS8CNdLGbbY4siy33GeMQUVX7D7FxvZHnSyYDqcN5tA",
+        "id": "red-a",
+        "anchor": "center-anchor",
+        "relative-position": {
+          "x": 0,
+          "y": -900
+        },
+        "orbit-rotation": {
+          "token-id": 2,
+          "lever-id": 0
+        },
+        "fixed-rotation": {
+          "token-id": 2,
+          "lever-id": 1
+        },
+        "scale": {
+          "x": {
+            "token-id": 2,
+            "lever-id": 2
+          },
+          "y": {
+            "token-id": 2,
+            "lever-id": 2
+          }
+        }
+      },
+      {
+        "uri": "QmUPE3Wry7XM1KCDwNBwd2dKR5H7Uc2ztdX184McLdjw3z",
+        "id": "red-b",
+        "anchor": "center-anchor",
+        "relative-position": {
+          "x": 0,
+          "y": -900
+        },
+        "orbit-rotation": {
+          "token-id": 3,
+          "lever-id": 0
+        },
+        "fixed-rotation": {
+          "token-id": 3,
+          "lever-id": 1
+        },
+        "scale": {
+          "x": {
+            "token-id": 3,
+            "lever-id": 2
+          },
+          "y": {
+            "token-id": 3,
+            "lever-id": 2
+          }
+        }
+      },
+      {
+        "uri": "QmYRpiPBMFxcVyFzrxvKeGx4555jd7EGu7Sp3mRo85Xndg",
+        "id": "red-c",
+        "anchor": "center-anchor",
+        "relative-position": {
+          "x": 0,
+          "y": -900
+        },
+        "orbit-rotation": {
+          "token-id": 4,
+          "lever-id": 0
+        },
+        "fixed-rotation": {
+          "token-id": 4,
+          "lever-id": 1
+        },
+        "scale": {
+          "x": {
+            "token-id": 4,
+            "lever-id": 2
+          },
+          "y": {
+            "token-id": 4,
+            "lever-id": 2
+          }
+        }
+      },
+      {
+        "uri": "QmSDV4vNHEWRPNmsQRVowzRfSrFudkwc7tRVUSdYB6wvup",
+        "id": "red-d",
+        "anchor": "center-anchor",
+        "relative-position": {
+          "x": 0,
+          "y": -900
+        },
+        "orbit-rotation": {
+          "token-id": 5,
+          "lever-id": 0
+        },
+        "fixed-rotation": {
+          "token-id": 5,
+          "lever-id": 1
+        },
+        "scale": {
+          "x": {
+            "token-id": 5,
+            "lever-id": 2
+          },
+          "y": {
+            "token-id": 5,
+            "lever-id": 2
+          }
+        }
+      },
+      {
+        "uri": "QmYACfywE4Vv7z1xYrGx5tdKHpYAUipc4KP1euY17LAPJS",
+        "id": "black-plant-1",
+        "anchor": "center-anchor",
+        "relative-position": {
+          "x": 0,
+          "y": -548
+        },
+        "orbit-rotation": {
+          "token-id": 6,
+          "lever-id": 0
+        },
+        "fixed-rotation": {
+          "token-id": 6,
+          "lever-id": 1
+        },
+        "scale": {
+          "x": {
+            "token-id": 6,
+            "lever-id": 2
+          },
+          "y": {
+            "token-id": 6,
+            "lever-id": 2
+          }
+        }
+      },
+      {
+        "uri": "QmSy6MdEXMcqAz4ZeXFGCBYnocvJbVCAXTDYAyWPozSEmy",
+        "id": "black-plant-2",
+        "anchor": "center-anchor",
+        "relative-position": {
+          "x": 0,
+          "y": -479
+        },
+        "orbit-rotation": {
+          "token-id": 7,
+          "lever-id": 0
+        },
+        "fixed-rotation": {
+          "token-id": 7,
+          "lever-id": 1
+        },
+        "scale": {
+          "x": {
+            "token-id": 7,
+            "lever-id": 2
+          },
+          "y": {
+            "token-id": 7,
+            "lever-id": 2
+          }
+        }
+      },
+      {
+        "uri": "QmZBrWq2YnVmgQm6PiSXfMNKjTBzqX2eqGwt83RtgEZLD4",
+        "id": "black-shape-1",
+        "anchor": "center-anchor",
+        "relative-position": {
+          "x": 0,
+          "y": -855
+        },
+        "orbit-rotation": {
+          "token-id": 8,
+          "lever-id": 0
+        },
+        "fixed-rotation": {
+          "token-id": 8,
+          "lever-id": 1
+        },
+        "scale": {
+          "x": {
+            "token-id": 8,
+            "lever-id": 2
+          },
+          "y": {
+            "token-id": 8,
+            "lever-id": 2
+          }
+        }
+      },
+      {
+        "uri": "Qmar9roV18Z77gcKayMXkujm4k88arUkugCRw9WvdmDVNH",
+        "id": "black-shape-2",
+        "anchor": "center-anchor",
+        "relative-position": {
+          "x": 0,
+          "y": -900
+        },
+        "orbit-rotation": {
+          "token-id": 9,
+          "lever-id": 0
+        },
+        "fixed-rotation": {
+          "token-id": 9,
+          "lever-id": 1
+        },
+        "scale": {
+          "x": {
+            "token-id": 9,
+            "lever-id": 2
+          },
+          "y": {
+            "token-id": 9,
+            "lever-id": 2
+          }
+        }
+      },
+      {
+        "uri": "QmcH4KfSoaN61pnj5H74o3p7Fwz3sXcz3DG6V9nbPAGNtU",
+        "id": "black-shape-3",
+        "anchor": "center-anchor",
+        "relative-position": {
+          "x": 0,
+          "y": -900
+        },
+        "orbit-rotation": {
+          "token-id": 10,
+          "lever-id": 0
+        },
+        "fixed-rotation": {
+          "token-id": 10,
+          "lever-id": 1
+        },
+        "scale": {
+          "x": {
+            "token-id": 10,
+            "lever-id": 2
+          },
+          "y": {
+            "token-id": 10,
+            "lever-id": 2
+          }
+        }
+      },
+      {
+        "uri": "QmVTN3agQosyJLDnRBCkE62cRymFU65HnEcFTNwpAuk91M",
+        "id": "black-shape-4",
+        "anchor": "center-anchor",
+        "relative-position": {
+          "x": 0,
+          "y": -900
+        },
+        "orbit-rotation": {
+          "token-id": 11,
+          "lever-id": 0
+        },
+        "fixed-rotation": {
+          "token-id": 11,
+          "lever-id": 1
+        },
+        "scale": {
+          "x": {
+            "token-id": 11,
+            "lever-id": 2
+          },
+          "y": {
+            "token-id": 11,
+            "lever-id": 2
+          }
+        }
+      },
+      {
         "states": {
           "options": [
             {
@@ -119,276 +398,6 @@
           "lever-id": 1
         },
         "id": "btc-logo1"
-      },
-      {
-        "uri": "QmbuS8CNdLGbbY4siy33GeMQUVX7D7FxvZHnSyYDqcN5tA",
-        "id": "red-a",
-        "anchor": "city",
-        "relative-position": {
-          "x": 0,
-          "y": -1024
-        },
-        "orbit-rotation": {
-          "token-id": 2,
-          "lever-id": 0
-        },
-        "fixed-rotation": {
-          "token-id": 2,
-          "lever-id": 1
-        },
-        "scale": {
-          "x": {
-            "token-id": 2,
-            "lever-id": 2
-          },
-          "y": {
-            "token-id": 2,
-            "lever-id": 2
-          }
-        }
-      },
-      {
-        "uri": "QmUPE3Wry7XM1KCDwNBwd2dKR5H7Uc2ztdX184McLdjw3z",
-        "id": "red-b",
-        "anchor": "city",
-        "relative-position": {
-          "x": 0,
-          "y": -1024
-        },
-        "orbit-rotation": {
-          "token-id": 3,
-          "lever-id": 0
-        },
-        "fixed-rotation": {
-          "token-id": 3,
-          "lever-id": 1
-        },
-        "scale": {
-          "x": {
-            "token-id": 3,
-            "lever-id": 2
-          },
-          "y": {
-            "token-id": 3,
-            "lever-id": 2
-          }
-        }
-      },
-      {
-        "uri": "QmYRpiPBMFxcVyFzrxvKeGx4555jd7EGu7Sp3mRo85Xndg",
-        "id": "red-c",
-        "anchor": "city",
-        "relative-position": {
-          "x": 0,
-          "y": -989
-        },
-        "orbit-rotation": {
-          "token-id": 4,
-          "lever-id": 0
-        },
-        "fixed-rotation": {
-          "token-id": 4,
-          "lever-id": 1
-        },
-        "scale": {
-          "x": {
-            "token-id": 4,
-            "lever-id": 2
-          },
-          "y": {
-            "token-id": 4,
-            "lever-id": 2
-          }
-        }
-      },
-      {
-        "uri": "QmSDV4vNHEWRPNmsQRVowzRfSrFudkwc7tRVUSdYB6wvup",
-        "id": "red-d",
-        "anchor": "city",
-        "relative-position": {
-          "x": 0,
-          "y": -989
-        },
-        "orbit-rotation": {
-          "token-id": 5,
-          "lever-id": 0
-        },
-        "fixed-rotation": {
-          "token-id": 5,
-          "lever-id": 1
-        },
-        "scale": {
-          "x": {
-            "token-id": 5,
-            "lever-id": 2
-          },
-          "y": {
-            "token-id": 5,
-            "lever-id": 2
-          }
-        }
-      },
-      {
-        "uri": "QmYACfywE4Vv7z1xYrGx5tdKHpYAUipc4KP1euY17LAPJS",
-        "id": "black-plant-1",
-        "anchor": "city",
-        "relative-position": {
-          "x": 0,
-          "y": -648
-        },
-        "orbit-rotation": {
-          "token-id": 6,
-          "lever-id": 0
-        },
-        "fixed-rotation": {
-          "token-id": 6,
-          "lever-id": 1
-        },
-        "scale": {
-          "x": {
-            "token-id": 6,
-            "lever-id": 2
-          },
-          "y": {
-            "token-id": 6,
-            "lever-id": 2
-          }
-        }
-      },
-      {
-        "uri": "QmSy6MdEXMcqAz4ZeXFGCBYnocvJbVCAXTDYAyWPozSEmy",
-        "id": "black-plant-2",
-        "anchor": "city",
-        "relative-position": {
-          "x": 0,
-          "y": -579
-        },
-        "orbit-rotation": {
-          "token-id": 7,
-          "lever-id": 0
-        },
-        "fixed-rotation": {
-          "token-id": 7,
-          "lever-id": 1
-        },
-        "scale": {
-          "x": {
-            "token-id": 7,
-            "lever-id": 2
-          },
-          "y": {
-            "token-id": 7,
-            "lever-id": 2
-          }
-        }
-      },
-      {
-        "uri": "QmZBrWq2YnVmgQm6PiSXfMNKjTBzqX2eqGwt83RtgEZLD4",
-        "id": "black-shape-1",
-        "anchor": "city",
-        "relative-position": {
-          "x": 0,
-          "y": -955
-        },
-        "orbit-rotation": {
-          "token-id": 8,
-          "lever-id": 0
-        },
-        "fixed-rotation": {
-          "token-id": 8,
-          "lever-id": 1
-        },
-        "scale": {
-          "x": {
-            "token-id": 8,
-            "lever-id": 2
-          },
-          "y": {
-            "token-id": 8,
-            "lever-id": 2
-          }
-        }
-      },
-      {
-        "uri": "Qmar9roV18Z77gcKayMXkujm4k88arUkugCRw9WvdmDVNH",
-        "id": "black-shape-2",
-        "anchor": "city",
-        "relative-position": {
-          "x": 0,
-          "y": -1024
-        },
-        "orbit-rotation": {
-          "token-id": 9,
-          "lever-id": 0
-        },
-        "fixed-rotation": {
-          "token-id": 9,
-          "lever-id": 1
-        },
-        "scale": {
-          "x": {
-            "token-id": 9,
-            "lever-id": 2
-          },
-          "y": {
-            "token-id": 9,
-            "lever-id": 2
-          }
-        }
-      },
-      {
-        "uri": "QmcH4KfSoaN61pnj5H74o3p7Fwz3sXcz3DG6V9nbPAGNtU",
-        "id": "black-shape-3",
-        "anchor": "city",
-        "relative-position": {
-          "x": 0,
-          "y": -1024
-        },
-        "orbit-rotation": {
-          "token-id": 10,
-          "lever-id": 0
-        },
-        "fixed-rotation": {
-          "token-id": 10,
-          "lever-id": 1
-        },
-        "scale": {
-          "x": {
-            "token-id": 10,
-            "lever-id": 2
-          },
-          "y": {
-            "token-id": 10,
-            "lever-id": 2
-          }
-        }
-      },
-      {
-        "uri": "QmVTN3agQosyJLDnRBCkE62cRymFU65HnEcFTNwpAuk91M",
-        "id": "black-shape-4",
-        "anchor": "city",
-        "relative-position": {
-          "x": 0,
-          "y": -1057
-        },
-        "orbit-rotation": {
-          "token-id": 11,
-          "lever-id": 0
-        },
-        "fixed-rotation": {
-          "token-id": 11,
-          "lever-id": 1
-        },
-        "scale": {
-          "x": {
-            "token-id": 11,
-            "lever-id": 2
-          },
-          "y": {
-            "token-id": 11,
-            "lever-id": 2
-          }
-        }
       },
       {
         "uri": "QmdFew7ZpccXAyT6AfVCjzs8gU1kMzFucbxmJfTW46oCSa",
