@@ -19,84 +19,301 @@
       {
         "id": "Base",
         "states": {
-      		"options": [
-            	{
-        		"uri" : "layouts/collab/base-0.jpg"
-        		},
-        		{
-        		"uri" : "layouts/collab/base-1.jpg"
-        		},
-        		{
-        		"uri" : "layouts/collab/base-2.jpg"
-        		}
-        	],
-        	"token-id": 1,
-          	"lever-id": 0
-      	}
+          "options": [
+            {
+              "uri": "layouts/collab/base-0.jpg"
+            },
+            {
+              "uri": "layouts/collab/base-1.jpg"
+            },
+            {
+              "uri": "layouts/collab/base-2.jpg"
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
       },
       {
         "id": "center-tapestry",
-        "uri" : "layouts/collab/center-tapestry-0.png",
-        "fixed-position" : {
-          "x" : 2355,
-          "y" : 1365
+        "uri": "layouts/collab/center-tapestry-0.png",
+        "fixed-position": {
+          "x": 2355,
+          "y": 1365
         }
       },
       {
         "id": "back-right-tapestry-content",
         "states": {
-      		"options": [
-      			{
-		        	"uri" : "layouts/collab/back-wall-right-content-0.png",
-		        	"fixed-position" : {
-		          		"x" : 3200,
-		          		"y" : 700
-		        	}
-		        }
-		    ],
-		    "token-id": 1,
-      		"lever-id": 0
-      	}
-      },
-      {
-        "id": "back-right-tapestry-frame",
-        "states": {
-      		"options": [
-      			{
-		        	"uri" : "layouts/collab/back-wall-right-frame-0.png",
-		        	"fixed-position" : {
-		          		"x" : 3200,
-		          		"y" : 700
-		        	}
-		        }
-		    ],
-		    "token-id": 1,
-      		"lever-id": 0
-      	}
-      },
-      {
-        "id": "archway",
-        "uri" : "layouts/collab/archway.png",
-        "fixed-position" : {
-          "x" : 2355,
-          "y" : 1150
+          "options": [
+            {
+              "uri": "layouts/collab/back-wall-right-content-0.png",
+              "fixed-position": {
+                "x": 3200,
+                "y": 700
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
         }
       },
       {
         "id": "back-right-tapestry-frame",
         "states": {
-      		"options": [
-      			{
-		        	"uri" : "layouts/collab/left-wall-back-0.png",
-		        	"fixed-position" : {
-		          		"x" : 500,
-		          		"y" : 700
-		        	}
-		        }
-		    ],
-		    "token-id": 1,
-      		"lever-id": 0
-      	}
+          "options": [
+            {
+              "uri": "layouts/collab/back-wall-right-frame-0.png",
+              "fixed-position": {
+                "x": 3200,
+                "y": 700
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
+      },
+      {
+        "id": "archway",
+        "uri": "layouts/collab/archway.png",
+        "fixed-position": {
+          "x": 2355,
+          "y": 1150
+        }
+      },
+      {
+        "id": "left-back-wall",
+        "states": {
+          "options": [
+            {
+              "uri": "layouts/collab/left-wall-back-0.png",
+              "fixed-position": {
+                "x": 839,
+                "y": 1099
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
+      },
+      {
+        "id": "right-back-wall",
+        "states": {
+          "options": [
+            {
+              "uri": "layouts/collab/right-wall-back-0.png",
+              "fixed-position": {
+                "x": 3905,
+                "y": 1067
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
+      },
+      {
+        "id": "left-front-wall",
+        "states": {
+          "options": [
+            {
+              "uri": "layouts/collab/left-wall-front-0.png",
+              "fixed-position": {
+                "x": 246,
+                "y": 1165
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
+      },
+      {
+        "id": "right-front-wall",
+        "states": {
+          "options": [
+            {
+              "uri": "layouts/collab/right-wall-front-0.png",
+              "fixed-position": {
+                "x": 4500,
+                "y": 1200
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
+      },
+      {
+        "id": "floor",
+        "states": {
+          "options": [
+            {
+              "uri": "layouts/collab/floor-0.png",
+              "fixed-position": {
+                "x": 2400,
+                "y": 2102
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
+      },
+      {
+        "id": "ceiling",
+        "states": {
+          "options": [
+            {
+              "uri": "layouts/collab/ceiling-1.png",
+              "fixed-position": {
+                "x": 2400,
+                "y": 250
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
+      },
+      {
+        "id": "ceiling-hand",
+        "states": {
+          "options": [
+            {
+              "uri": "layouts/collab/ceiling-hand-0.png",
+              "fixed-position": {
+                "x": 2400,
+                "y": 400
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
+      },
+      {
+        "id": "thomas",
+        "states": {
+          "options": [
+            {
+              "uri": "layouts/collab/thomas-0.png",
+              "fixed-position": {
+                "x": 3000,
+                "y": 1600
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
+      },   
+      {
+        "id": "matthew",
+        "states": {
+          "options": [
+            {
+              "uri": "layouts/collab/matthew-0.png",
+              "fixed-position": {
+                "x": 3725,
+                "y": 1430
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
+      },   
+      {
+        "id": "philip",
+        "states": {
+          "options": [
+            {
+              "uri": "layouts/collab/philip-0.png",
+              "fixed-position": {
+                "x": 3325,
+                "y": 1560
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
+      },
+      {
+        "id": "james-minor",
+        "states": {
+          "options": [
+            {
+              "uri": "layouts/collab/james-minor-0.png",
+              "fixed-position": {
+                "x": 1600,
+                "y": 1525
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
+      },
+      {
+        "id": "table",
+        "states": {
+          "options": [
+            {
+              "uri": "layouts/collab/table-0.png",
+              "fixed-position": {
+                "x": 2400,
+                "y": 1900
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
+      },
+      {
+        "id": "simon",
+        "states": {
+          "options": [
+            {
+              "uri": "layouts/collab/simon-0.png",
+              "fixed-position": {
+                "x": 4376,
+                "y": 1530
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
+      },
+      {
+        "id": "andrew",
+        "states": {
+          "options": [
+            {
+              "uri": "layouts/collab/andrew-0.png",
+              "fixed-position": {
+                "x": 1170,
+                "y": 1150
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
+      },
+      {
+        "id": "andrew-arm",
+		"anchor" : "andrew",       
+        "uri": "layouts/collab/andrew-arm-0.png",
+      	"relative-position": {
+        	"x": -200,
+        	"y": 50
+      	}        
       }
     ]
   }
