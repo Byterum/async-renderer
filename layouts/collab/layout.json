@@ -322,7 +322,15 @@
           "x": 100,
           "y": 700
         }
-      },  
+      },
+      {
+        "id": "table-shadow",
+        "uri": "layouts/collab/table-shadow.png",
+        "relative-position": {
+          "x": 2400,
+          "y": 2150
+        }
+      },
       {
         "id": "table",        
         "states": {
