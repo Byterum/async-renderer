@@ -1,0 +1,71 @@
+{
+  "name": "The First Supper",
+  "description": "",
+  "image": "",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": ""
+    },
+    {
+      "trait_type": "Layer Count",
+      "value": "0"
+    }
+  ],
+  "layout": {
+    "type": "layered_static",
+    "version": 1,
+    "layers": [
+      {
+        "id": "Base",
+        "states": {
+      		"options": [
+            	{
+        		"uri" : "layouts/collab/base-0.jpg"
+        		},
+        		{
+        		"uri" : "layouts/collab/base-1.jpg"
+        		},
+        		{
+        		"uri" : "layouts/collab/base-2.jpg"
+        		}
+        	],
+        	"token-id": 1,
+          	"lever-id": 0
+      	}
+      },
+      {
+        "id": "center-tapestry",
+        "uri" : "layouts/collab/center-tapestry-0.png",
+        "fixed-position" : {
+          "x" : 2355,
+          "y" : 1365
+        }
+      },
+      {
+        "id": "back-right-tapestry",
+        "states": {
+      		"options": [
+      			{
+		        	"uri" : "layouts/collab/back-wall-right-frame-0.png",
+		        	"fixed-position" : {
+		          		"x" : 3300,
+		          		"y" : 750
+		        	}
+		        }
+		    ],
+		    "token-id": 1,
+      		"lever-id": 0
+      	}
+      },
+      {
+        "id": "archway",
+        "uri" : "layouts/collab/archway.png",
+        "fixed-position" : {
+          "x" : 2355,
+          "y" : 1150
+        }
+      }
+    ]
+  }
+}
