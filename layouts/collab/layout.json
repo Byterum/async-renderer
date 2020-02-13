@@ -101,12 +101,19 @@
       {
         "id": "right-back-wall",
         "states": {
-          "options": [
+          "options": [            
             {
               "uri": "layouts/collab/right-wall-back-0.png",
               "fixed-position": {
                 "x": 3905,
                 "y": 1067
+              }
+            },
+            {
+              "uri": "layouts/collab/right-wall-back-1.png",
+              "fixed-position": {
+                "x": 3905,
+                "y": 1030
               }
             }
           ],
