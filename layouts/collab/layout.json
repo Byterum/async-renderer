@@ -470,6 +470,14 @@
         }
       },
       {
+        "id": "jesus-feet",
+        "uri": "layouts/collab/jesus-0-feet.png",
+        "relative-position": {
+          "x": 2440,
+          "y": 2025
+        }
+      },
+      {
         "id": "table-shadow",
         "uri": "layouts/collab/table-shadow.png",
         "relative-position": {
@@ -539,6 +547,14 @@
         "relative-position": {
           "x": -188,
           "y": 188
+        }
+      },      
+      {
+        "id": "jesus",
+        "uri": "layouts/collab/jesus-0.png",
+        "relative-position": {
+          "x": 2440,
+          "y": 1162
         }
       },
       {
