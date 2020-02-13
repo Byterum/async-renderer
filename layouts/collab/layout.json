@@ -21,7 +21,7 @@
         "states": {
           "options": [
             {
-              "uri": "layouts/collab/base-1.jpg"
+              "uri": "layouts/collab/base-0.jpg"
             },
             {
               "uri": "layouts/collab/base-1.jpg"
@@ -398,6 +398,13 @@
                 "x": 1550,
                 "y": 1300
               }
+            },
+            {
+              "uri": "layouts/collab/james-minor-1.png",
+              "fixed-position": {
+                "x": 1550,
+                "y": 1300
+              }
             }
           ],
           "token-id": 1,
@@ -410,6 +417,13 @@
           "options": [
             {
               "uri": "layouts/collab/judas-0.png",
+              "fixed-position": {
+                "x": 1400,
+                "y": 1450
+              }
+            },
+            {
+              "uri": "layouts/collab/judas-1.png",
               "fixed-position": {
                 "x": 1400,
                 "y": 1450
@@ -430,21 +444,18 @@
                 "x": 975,
                 "y": 1190
               }
+            },
+            {
+              "uri": "layouts/collab/andrew-1.png",
+              "fixed-position": {
+                "x": 975,
+                "y": 1190
+              }
             }
           ],
           "token-id": 1,
           "lever-id": 0
         }
-      },
-      {
-        "id": "andrew-arm",
-        "anchor" : "andrew",       
-        "uri": "layouts/collab/andrew-arm-0.png",
-        "relative-position": {
-          "x": -240,
-          "y": 95
-        },
-        "fixed-rotation" : 0
       },
       {
         "id": "andrew-feet",
@@ -492,6 +503,31 @@
           "token-id": 1,
           "lever-id": 0
         }
+      },      
+      {
+        "id": "andrew-arm",
+        "states": {
+          "options": [
+            {
+              "anchor" : "andrew",            
+              "uri": "layouts/collab/andrew-arm-0.png",
+              "relative-position": {
+                "x": -240,
+                "y": 95
+              },
+              "fixed-rotation" : 0
+            },
+            {
+              "anchor" : "andrew",            
+              "uri": "layouts/collab/andrew-arm-1.png",
+              "relative-position": {
+                "x": -200,
+                "y": 150
+              },
+              "fixed-rotation" : 0
+            }
+          ]
+        }
       },
       {
         "id": "philip-arm",
@@ -516,7 +552,7 @@
             {
               "uri": "layouts/collab/john-0.png",
               "fixed-position": {
-                "x": 1930,
+                "x": 1850,
                 "y": 1205
               }
             }
@@ -531,6 +567,13 @@
           "options": [
             {
               "uri": "layouts/collab/simon-0.png",
+              "fixed-position": {
+                "x": 4375,
+                "y": 1530
+              }
+            },
+            {
+              "uri": "layouts/collab/simon-1.png",
               "fixed-position": {
                 "x": 4375,
                 "y": 1530
@@ -550,6 +593,39 @@
               "fixed-position": {
                 "x": 550,
                 "y": 1500
+              }
+            },
+            {
+              "uri": "layouts/collab/bartholomew-0.png",
+              "fixed-position": {
+                "x": 550,
+                "y": 1500
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
+      },
+      {
+        "id": "ceiling-top",
+        "states": {
+          "options": [
+            {
+              "visible" : 0
+            },
+            {
+              "uri": "layouts/collab/ceiling-1-top.png",
+              "fixed-position": {
+                "x": 2400,
+                "y": 13
+              }
+            },
+            {
+              "uri": "layouts/collab/ceiling-1-top.png",
+              "fixed-position": {
+                "x": 2400,
+                "y": 13
               }
             }
           ],
