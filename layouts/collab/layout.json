@@ -28,6 +28,9 @@
             },
             {
               "uri": "layouts/collab/base-2.jpg"
+            },
+            {
+              "uri": "layouts/collab/base-3.jpg"
             }
           ],
           "token-id": 1,
@@ -634,17 +637,56 @@
         "states": {
           "options": [
             {
-              "uri": "layouts/collab/bartholomew-0.png",
+              "uri": "layouts/collab/bartholomew-1.png",
               "fixed-position": {
-                "x": 550,
-                "y": 1500
+                "x": 475,
+                "y": 1650
+              },
+              "scale": {
+                "x": 25,
+                "y": 25
               }
             },
             {
-              "uri": "layouts/collab/bartholomew-0.png",
+              "uri": "layouts/collab/bartholomew-2.png",
               "fixed-position": {
-                "x": 550,
-                "y": 1500
+                "x": 475,
+                "y": 1650
+              }
+            },
+            {
+              "uri": "layouts/collab/bartholomew-3.png",
+              "fixed-position": {
+                "x": 475,
+                "y": 1650
+              }
+            },
+            {
+              "uri": "layouts/collab/bartholomew-4.png",
+              "fixed-position": {
+                "x": 475,
+                "y": 1650
+              }
+            },
+            {
+              "uri": "layouts/collab/bartholomew-5.png",
+              "fixed-position": {
+                "x": 475,
+                "y": 1650
+              }
+            },
+            {
+              "uri": "layouts/collab/bartholomew-6.png",
+              "fixed-position": {
+                "x": 475,
+                "y": 1650
+              }
+            },
+            {
+              "uri": "layouts/collab/bartholomew-1.png",
+              "fixed-position": {
+                "x": 475,
+                "y": 1650
               }
             }
           ],
@@ -668,6 +710,29 @@
               "fixed-position": {
                 "x": 3650,
                 "y": 1780
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
+      },
+      {
+        "id": "snake",
+        "states": {
+          "options": [
+            {
+              "uri": "layouts/collab/snake-1.png",
+              "fixed-position": {
+                "x": 1400,
+                "y": 1627
+              }
+            },
+            {
+              "uri": "layouts/collab/snake-0.png",
+              "fixed-position": {
+                "x": 1400,
+                "y": 1627
               }
             }
           ],
