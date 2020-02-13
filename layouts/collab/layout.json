@@ -626,6 +626,13 @@
                 "x": 4375,
                 "y": 1530
               }
+            },
+            {
+              "uri": "layouts/collab/simon-2.png",
+              "fixed-position": {
+                "x": 4375,
+                "y": 1530
+              }
             }
           ],
           "token-id": 1,
