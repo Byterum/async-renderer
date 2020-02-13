@@ -301,6 +301,9 @@
         "states": {
           "options": [
             {
+              "visible" : 0
+            },
+            {
               "uri": "layouts/collab/ceiling-hand-0.png",
               "fixed-position": {
                 "x": 2400,
