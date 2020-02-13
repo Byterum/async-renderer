@@ -135,7 +135,16 @@ async function readIntProperty(contract, object, key, label) {
 function getLayerWithId(layout, layerId) {
 	for (var i = 0; i < layout.layers.length; i++) {
 		if (layout.layers[i].id == layerId) {
-			return layout.layers[i];
+			if (KEY_STATES in layout.layers[i]) {
+				for (var k = 0; k < layout.layers[i][KEY_STATES].options.length; k++) {
+					var layer = layout.layers[i][KEY_STATES].options[k];
+					if (layer.active) {
+						return layer;
+					}
+				}
+			} else {
+				return layout.layers[i];
+			}
 		}
 	}
 	return null;
@@ -225,6 +234,7 @@ async function renderLayer(contract, currentImage, layout, layer, layerImage) {
 	// stamp the final center X and Y that this layer was rendered at (for any follow-up layers that might be anchored here)
 	layer.finalCenterX = x;
 	layer.finalCenterY = y;
+	layer.active = true; // set this to be true so that any subsequent layers that are anchored to this can tell which layer was active (for multi state layers)
 
 	// offset x and y so that layers are drawn at the center of their image
 	x -= (bitmapWidth / 2);
