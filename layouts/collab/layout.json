@@ -47,6 +47,69 @@
         "states": {
           "options": [
             {
+              "uri": "layouts/collab/back-wall-right-content-9.png",
+              "fixed-position": {
+                "x": 3200,
+                "y": 700
+              }
+            },
+            {
+              "uri": "layouts/collab/back-wall-right-content-8.png",
+              "fixed-position": {
+                "x": 3200,
+                "y": 700
+              }
+            },
+            {
+              "uri": "layouts/collab/back-wall-right-content-7.png",
+              "fixed-position": {
+                "x": 3200,
+                "y": 700
+              }
+            },
+            {
+              "uri": "layouts/collab/back-wall-right-content-6.png",
+              "fixed-position": {
+                "x": 3200,
+                "y": 700
+              }
+            },
+            {
+              "uri": "layouts/collab/back-wall-right-content-5.png",
+              "fixed-position": {
+                "x": 3200,
+                "y": 700
+              }
+            },
+            {
+              "uri": "layouts/collab/back-wall-right-content-4.png",
+              "fixed-position": {
+                "x": 3200,
+                "y": 700
+              }
+            },
+            {
+              "uri": "layouts/collab/back-wall-right-content-3.png",
+              "fixed-position": {
+                "x": 3200,
+                "y": 700
+              }
+            },
+            {
+              "uri": "layouts/collab/back-wall-right-content-2.png",
+              "fixed-position": {
+                "x": 3200,
+                "y": 700
+              }
+            },
+            {
+              "uri": "layouts/collab/back-wall-right-content-1.png",
+              "fixed-position": {
+                "x": 3200,
+                "y": 700
+              }
+            },
+            {
               "uri": "layouts/collab/back-wall-right-content-0.png",
               "fixed-position": {
                 "x": 3200,
@@ -59,15 +122,28 @@
         }
       },
       {
-        "id": "back-right-tapestry-frame",
+        "id": "back-right-tapestry-frame",        
         "states": {
           "options": [
             {
+              "uri": "layouts/collab/back-wall-right-frame-4.png",
+              "anchor" : "back-right-tapestry-content"
+            },
+            {
+              "uri": "layouts/collab/back-wall-right-frame-3.png",
+              "anchor" : "back-right-tapestry-content"
+            },
+            {
+              "uri": "layouts/collab/back-wall-right-frame-2.png",
+              "anchor" : "back-right-tapestry-content"
+            },
+            {
+              "uri": "layouts/collab/back-wall-right-frame-1.png",
+              "anchor" : "back-right-tapestry-content"
+            },
+            {
               "uri": "layouts/collab/back-wall-right-frame-0.png",
-              "fixed-position": {
-                "x": 3200,
-                "y": 700
-              }
+              "anchor" : "back-right-tapestry-content"
             }
           ],
           "token-id": 1,
@@ -320,7 +396,7 @@
       },
       {
         "id": "andrew-arm",
-    "anchor" : "andrew",       
+        "anchor" : "andrew",       
         "uri": "layouts/collab/andrew-arm-0.png",
         "relative-position": {
           "x": -240,
