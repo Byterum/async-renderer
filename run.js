@@ -25,7 +25,7 @@ async function main() {
 	var finalImageData = await renderer.process(provider, tokenAddress, tokenId, blockNum, process.env.STAMP_DEBUG);
 
 	// determine the render path
-	var path = "renders/token-" + tokenId + "_block-" + finalImageData.blockNum + ".png";
+	var path = "renders/token-" + tokenId + "_block-" + finalImageData.blockNum + ".jpg";
 	// output to console
 	console.log("Writing to " + path + "...");
 	// write the final artwork
