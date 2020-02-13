@@ -87,6 +87,13 @@
         "states": {
           "options": [
             {
+              "uri": "layouts/collab/left-wall-back-1.png",
+              "fixed-position": {
+                "x": 830,
+                "y": 1035
+              }
+            },
+            {
               "uri": "layouts/collab/left-wall-back-0.png",
               "fixed-position": {
                 "x": 839,
