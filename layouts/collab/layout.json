@@ -413,6 +413,13 @@
         "states": {
           "options": [
             {
+              "uri": "layouts/collab/philip-0.png",
+              "fixed-position": {
+                "x": 3250,
+                "y": 1400
+              }
+            },
+            {
               "uri": "layouts/collab/philip-1.png",
               "fixed-position": {
                 "x": 3250,
@@ -420,7 +427,91 @@
               }
             },
             {
-              "uri": "layouts/collab/philip-0.png",
+              "uri": "layouts/collab/philip-2.png",
+              "fixed-position": {
+                "x": 3250,
+                "y": 1400
+              }
+            },
+            {
+              "uri": "layouts/collab/philip-3.png",
+              "fixed-position": {
+                "x": 3250,
+                "y": 1400
+              }
+            },
+            {
+              "uri": "layouts/collab/philip-4.png",
+              "fixed-position": {
+                "x": 3250,
+                "y": 1400
+              }
+            },
+            {
+              "uri": "layouts/collab/philip-5.png",
+              "fixed-position": {
+                "x": 3250,
+                "y": 1400
+              }
+            },
+            {
+              "uri": "layouts/collab/philip-6.png",
+              "fixed-position": {
+                "x": 3250,
+                "y": 1400
+              }
+            },
+            {
+              "uri": "layouts/collab/philip-7.png",
+              "fixed-position": {
+                "x": 3250,
+                "y": 1400
+              }
+            },
+            {
+              "uri": "layouts/collab/philip-8.png",
+              "fixed-position": {
+                "x": 3250,
+                "y": 1400
+              }
+            },
+            {
+              "uri": "layouts/collab/philip-9.png",
+              "fixed-position": {
+                "x": 3250,
+                "y": 1400
+              }
+            },
+            {
+              "uri": "layouts/collab/philip-10.png",
+              "fixed-position": {
+                "x": 3250,
+                "y": 1400
+              }
+            },
+            {
+              "uri": "layouts/collab/philip-11.png",
+              "fixed-position": {
+                "x": 3250,
+                "y": 1400
+              }
+            },
+            {
+              "uri": "layouts/collab/philip-12.png",
+              "fixed-position": {
+                "x": 3250,
+                "y": 1400
+              }
+            },
+            {
+              "uri": "layouts/collab/philip-13.png",
+              "fixed-position": {
+                "x": 3250,
+                "y": 1400
+              }
+            },
+            {
+              "uri": "layouts/collab/philip-14.png",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
