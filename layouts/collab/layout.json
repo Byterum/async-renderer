@@ -324,6 +324,29 @@
           "token-id": 1,
           "lever-id": 0
         }
+      },      
+      {
+        "id": "james-minor",
+        "states": {
+          "options": [
+            {
+              "uri": "layouts/collab/james-minor-0.png",
+              "fixed-position": {
+                "x": 1100,
+                "y": 1300
+              }
+            },
+            {
+              "uri": "layouts/collab/james-minor-1.png",
+              "fixed-position": {
+                "x": 1550,
+                "y": 1300
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }
       },
       {
         "id": "thomas",
@@ -347,11 +370,25 @@
           "token-id": 1,
           "lever-id": 0
         }
-      },   
+      },
       {
         "id": "matthew",
         "states": {
           "options": [
+            {
+              "uri": "layouts/collab/matthew-0.png",
+              "fixed-position": {
+                "x": 3725,
+                "y": 1300
+              }
+            },
+            {
+              "uri": "layouts/collab/matthew-1.png",
+              "fixed-position": {
+                "x": 3725,
+                "y": 1300
+              }
+            },
             {
               "uri": "layouts/collab/matthew-2.png",
               "fixed-position": {
@@ -360,7 +397,7 @@
               }
             },
             {
-              "uri": "layouts/collab/matthew-0.png",
+              "uri": "layouts/collab/matthew-3.png",
               "fixed-position": {
                 "x": 3725,
                 "y": 1300
@@ -387,29 +424,6 @@
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
-              }
-            }
-          ],
-          "token-id": 1,
-          "lever-id": 0
-        }
-      },
-      {
-        "id": "james-minor",
-        "states": {
-          "options": [
-            {
-              "uri": "layouts/collab/james-minor-0.png",
-              "fixed-position": {
-                "x": 1550,
-                "y": 1300
-              }
-            },
-            {
-              "uri": "layouts/collab/james-minor-1.png",
-              "fixed-position": {
-                "x": 1550,
-                "y": 1300
               }
             }
           ],
@@ -728,7 +742,14 @@
       {
         "id": "james-major",
         "states": {
-          "options": [
+          "options": [            
+            {
+              "uri": "layouts/collab/james-major-0.png",
+              "fixed-position": {
+                "x": 3650,
+                "y": 1780
+              }
+            },
             {
               "uri": "layouts/collab/james-major-1.png",
               "fixed-position": {
@@ -737,10 +758,10 @@
               }
             },
             {
-              "uri": "layouts/collab/james-major-0.png",
+              "uri": "layouts/collab/james-major-2.png",
               "fixed-position": {
-                "x": 3650,
-                "y": 1780
+                "x": 3658,
+                "y": 1576
               }
             }
           ],
