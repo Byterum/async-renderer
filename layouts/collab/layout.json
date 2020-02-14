@@ -164,19 +164,19 @@
       {
         "id": "left-back-wall",
         "states": {
-          "options": [
-            {
-              "uri": "layouts/collab/left-wall-back-1.png",
-              "fixed-position": {
-                "x": 830,
-                "y": 1035
-              }
-            },
+          "options": [            
             {
               "uri": "layouts/collab/left-wall-back-0.png",
               "fixed-position": {
                 "x": 839,
                 "y": 1099
+              }
+            },
+            {
+              "uri": "layouts/collab/left-wall-back-1.png",
+              "fixed-position": {
+                "x": 830,
+                "y": 1035
               }
             }
           ],
@@ -247,6 +247,20 @@
                 "x": 4500,
                 "y": 1200
               }
+            },
+            {
+              "uri": "layouts/collab/right-wall-front-2.png",
+              "fixed-position": {
+                "x": 4500,
+                "y": 1200
+              }
+            },
+            {
+              "uri": "layouts/collab/right-wall-front-3.png",
+              "fixed-position": {
+                "x": 4500,
+                "y": 1200
+              }
             }
           ],
           "token-id": 1,
@@ -266,6 +280,13 @@
             },
             {
               "uri": "layouts/collab/floor-1.png",
+              "fixed-position": {
+                "x": 2400,
+                "y": 2102
+              }
+            },
+            {
+              "uri": "layouts/collab/floor-2.png",
               "fixed-position": {
                 "x": 2400,
                 "y": 2102
