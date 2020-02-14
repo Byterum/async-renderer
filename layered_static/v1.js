@@ -158,6 +158,11 @@ async function renderLayer(contract, currentImage, layout, layer, layerImage) {
 	if (KEY_SCALE in layer) {
 		var scale_x = (await readIntProperty(contract, layer[KEY_SCALE], KEY_X, "Layer Scale X")) / 100;
 		var scale_y = (await readIntProperty(contract, layer[KEY_SCALE], KEY_Y, "Layer Scale Y")) / 100;
+
+		if ((scale_x == 0) || (scale_y == 0)) {
+			console.log("	Scale X or Y is 0 -- returning currentImage.")
+			return currentImage;
+		}
 		// determine the new width
 		bitmapWidth = layerImage.bitmap.width * scale_x;
 		bitmapHeight = layerImage.bitmap.height * scale_y;
