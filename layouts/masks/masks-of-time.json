@@ -1,0 +1,108 @@
+{
+  "name": "Masks of Time",
+  "description": "",
+  "image": "QmPeqNvzxk1tHGrwHgbrwhXVCt4eAUj5AjQ9hxEZud3VE5",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "BlackBoxDotArt"
+    },
+    {
+      "trait_type": "Layer Count",
+      "value": "4"
+    }
+  ],
+  "layout": {
+    "type": "layered_static",
+    "version": 1,
+    "layers": [
+      {
+        "id": "base",
+        "uri" : "layouts/masks/bg.jpg"
+      },
+      {
+        "id": "hand",
+        "states": {
+          "options": [
+            {
+              "uri" : "layouts/masks/hand-3.png",
+              "fixed-position" : {
+                "x" : 680,
+                "y" : 1170
+              }
+            },
+            {
+              "uri" : "layouts/masks/hand-2.png",
+              "fixed-position" : {
+                "x" : 680,
+                "y" : 1170
+              }
+            },
+            {
+              "uri" : "layouts/masks/hand-1.png",
+              "fixed-position" : {
+                "x" : 670,
+                "y" : 1185
+              }
+            },
+            {
+              "uri" : "layouts/masks/hand-0.png",
+              "fixed-position" : {
+                "x" : 650,
+                "y" : 1090
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "box",
+        "uri" : "layouts/masks/box.png",
+        "fixed-position" : {
+          "x" : 1580,
+          "y" : 875
+        },
+        "scale": {
+          "x": 100,
+          "y": 100
+        },
+        "fixed-rotation": 45
+      },
+      {
+        "id": "mask",
+        "states": {
+          "options": [
+            {
+              "uri" : "layouts/masks/mask-0.png",
+              "fixed-position" : {
+                "x" : 870,
+                "y" : 1030
+              }
+            },
+            {
+              "uri" : "layouts/masks/mask-1.png",
+              "fixed-position" : {
+                "x" : 870,
+                "y" : 1030
+              }
+            },
+            {
+              "uri" : "layouts/masks/mask-2.png",
+              "fixed-position" : {
+                "x" : 870,
+                "y" : 1030
+              }
+            },
+            {
+              "uri" : "layouts/masks/mask-3.png",
+              "fixed-position" : {
+                "x" : 875,
+                "y" : 1005
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
