@@ -631,9 +631,16 @@
               }
             },
             {
-              "uri": "layouts/collab/jesus-1  -feet.png",
+              "uri": "layouts/collab/jesus-1-feet.png",
               "relative-position": {
                 "x": 2440,
+                "y": 2035
+              }
+            },
+            {
+              "uri": "layouts/collab/jesus-2-feet.png",
+              "relative-position": {
+                "x": 2420,
                 "y": 2035
               }
             }
@@ -718,7 +725,7 @@
       {
         "id": "jesus",
         "states": {
-          "options": [
+          "options": [            
             {
               "uri": "layouts/collab/jesus-0.png",
               "fixed-position": {
@@ -731,6 +738,13 @@
               "fixed-position": {
                 "x": 2440,
                 "y": 1235
+              }
+            },
+            {
+              "uri": "layouts/collab/jesus-2.png",
+              "fixed-position": {
+                "x": 2440,
+                "y": 1238
               }
             }
           ]
