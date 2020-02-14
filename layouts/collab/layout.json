@@ -448,14 +448,21 @@
               "uri": "layouts/collab/andrew-0.png",
               "fixed-position": {
                 "x": 975,
-                "y": 1190
+                "y": 1220
               }
             },
             {
               "uri": "layouts/collab/andrew-1.png",
               "fixed-position": {
                 "x": 975,
-                "y": 1190
+                "y": 1220
+              }
+            },
+            {
+              "uri": "layouts/collab/andrew-2.png",
+              "fixed-position": {
+                "x": 975,
+                "y": 1220
               }
             }
           ],
@@ -465,11 +472,25 @@
       },
       {
         "id": "andrew-feet",
-        "anchor" : "andrew",       
-        "uri": "layouts/collab/andrew-feet-0.png",
-        "relative-position": {
-          "x": 100,
-          "y": 700
+        "states": {
+          "options": [
+            {
+              "anchor" : "andrew",       
+              "uri": "layouts/collab/andrew-feet-0.png",
+              "relative-position": {
+                "x": 100,
+                "y": 670
+              }
+            },
+            {
+              "anchor" : "andrew",       
+              "uri": "layouts/collab/andrew-feet-1.png",
+              "relative-position": {
+                "x": 100,
+                "y": 670
+              }
+            }
+          ]
         }
       },
       {
@@ -534,7 +555,7 @@
       {
         "id": "andrew-arm",
         "states": {
-          "options": [
+          "options": [            
             {
               "anchor" : "andrew",            
               "uri": "layouts/collab/andrew-arm-0.png",
@@ -552,6 +573,9 @@
                 "y": 150
               },
               "fixed-rotation" : 0
+            },
+            {
+              "visible" : 0
             }
           ]
         }
@@ -650,8 +674,8 @@
                 "y": 1650
               },
               "scale": {
-                "x": 25,
-                "y": 25
+                "x": 100,
+                "y": 100
               }
             },
             {
