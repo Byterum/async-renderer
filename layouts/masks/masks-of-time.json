@@ -27,15 +27,15 @@
             {
               "uri" : "layouts/masks/hand-3.png",
               "fixed-position" : {
-                "x" : 680,
-                "y" : 1170
+                "x" : 673,
+                "y" : 1144
               }
             },
             {
               "uri" : "layouts/masks/hand-2.png",
               "fixed-position" : {
-                "x" : 680,
-                "y" : 1170
+                "x" : 671,
+                "y" : 1142
               }
             },
             {
@@ -73,6 +73,9 @@
         "states": {
           "options": [
             {
+              "visible" : 0
+            },
+            {
               "uri" : "layouts/masks/mask-0.png",
               "fixed-position" : {
                 "x" : 870,
@@ -83,14 +86,14 @@
               "uri" : "layouts/masks/mask-1.png",
               "fixed-position" : {
                 "x" : 870,
-                "y" : 1030
+                "y" : 1025
               }
             },
             {
               "uri" : "layouts/masks/mask-2.png",
               "fixed-position" : {
                 "x" : 870,
-                "y" : 1030
+                "y" : 1020
               }
             },
             {
