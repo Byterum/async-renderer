@@ -648,6 +648,34 @@
         }
       },
       {
+        "id": "john-feet",
+        "states": {
+          "options": [            
+            {
+              "uri": "layouts/collab/john-0-feet.png",
+              "relative-position": {
+                "x": 1910,
+                "y": 2005
+              }
+            },
+            {
+              "uri": "layouts/collab/john-0-feet.png",
+              "relative-position": {
+                "x": 1910,
+                "y": 2005
+              }
+            },
+            {
+              "uri": "layouts/collab/john-1-feet.png",
+              "relative-position": {
+                "x": 1910,
+                "y": 2020
+              }
+            }           
+          ]
+        }
+      },
+      {
         "id": "table-shadow",
         "uri": "layouts/collab/table-shadow.png",
         "relative-position": {
@@ -753,19 +781,26 @@
       {
         "id": "john",
         "states": {
-          "options": [
-            {
-              "uri": "layouts/collab/john-2.png",
-              "fixed-position": {
-                "x": 1940,
-                "y": 1140
-              }
-            },
+          "options": [ 
             {
               "uri": "layouts/collab/john-0.png",
               "fixed-position": {
                 "x": 1850,
                 "y": 1205
+              }
+            },           
+            {
+              "uri": "layouts/collab/john-1.png",
+              "fixed-position": {
+                "x": 1910,
+                "y": 1205
+              }
+            },
+            {
+              "uri": "layouts/collab/john-2.png",
+              "fixed-position": {
+                "x": 1940,
+                "y": 1140
               }
             }
           ],
