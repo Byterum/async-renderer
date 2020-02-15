@@ -355,8 +355,12 @@
             {
               "uri": "layouts/collab/james-minor-0.png",
               "fixed-position": {
-                "x": 1100,
+                "x": 1200,
                 "y": 1300
+              },
+              "mirror" : {
+                "x" : 1,
+                "y" : 0
               }
             },
             {
@@ -364,6 +368,10 @@
               "fixed-position": {
                 "x": 1550,
                 "y": 1300
+              },
+              "mirror" : {
+                "x" : 1,
+                "y" : 0
               }
             }
           ],
