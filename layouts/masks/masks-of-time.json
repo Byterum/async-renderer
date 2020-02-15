@@ -9,7 +9,7 @@
     },
     {
       "trait_type": "Layer Count",
-      "value": "4"
+      "value": "3"
     }
   ],
   "layout": {
@@ -25,17 +25,10 @@
         "states": {
           "options": [
             {
-              "uri" : "layouts/masks/hand-3.png",
+              "uri" : "layouts/masks/hand-0.png",
               "fixed-position" : {
-                "x" : 673,
-                "y" : 1144
-              }
-            },
-            {
-              "uri" : "layouts/masks/hand-2.png",
-              "fixed-position" : {
-                "x" : 671,
-                "y" : 1142
+                "x" : 650,
+                "y" : 1090
               }
             },
             {
@@ -46,14 +39,23 @@
               }
             },
             {
-              "uri" : "layouts/masks/hand-0.png",
+              "uri" : "layouts/masks/hand-2.png",
               "fixed-position" : {
-                "x" : 650,
-                "y" : 1090
+                "x" : 671,
+                "y" : 1142
               }
-            }
+            },
+            {
+              "uri" : "layouts/masks/hand-3.png",
+              "fixed-position" : {
+                "x" : 673,
+                "y" : 1144
+              }
+            }                
           ]
-        }
+        },
+        "token-id": 1,
+        "lever-id": 0
       },
       {
         "id": "box",
@@ -62,11 +64,20 @@
           "x" : 1580,
           "y" : 875
         },
-        "scale": {
-          "x": 100,
-          "y": 100
+        "fixed-rotation": {
+          "token-id": 2,
+          "lever-id": 0
         },
-        "fixed-rotation": 45
+        "scale": {
+          "x": {
+            "token-id": 2,
+            "lever-id": 1
+          },
+          "y": {
+            "token-id": 2,
+            "lever-id": 1
+          }
+        }        
       },
       {
         "id": "mask",
@@ -104,7 +115,9 @@
               }
             }
           ]
-        }
+        },
+        "token-id": 3,
+        "lever-id": 0
       }
     ]
   }
