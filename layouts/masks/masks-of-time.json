@@ -52,10 +52,10 @@
                 "y" : 1144
               }
             }                
-          ]
-        },
-        "token-id": 1,
-        "lever-id": 0
+          ],
+          "token-id": 1,
+          "lever-id": 0
+        }        
       },
       {
         "id": "box",
@@ -114,10 +114,10 @@
                 "y" : 1005
               }
             }
-          ]
-        },
-        "token-id": 3,
-        "lever-id": 0
+          ],
+          "token-id": 3,
+          "lever-id": 0
+        }
       }
     ]
   }
