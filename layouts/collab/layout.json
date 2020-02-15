@@ -330,16 +330,18 @@
             {
               "uri": "layouts/collab/ceiling-hand-0.png",
               "fixed-position": {
-                "x": 2400,
+                "x": 1200,
                 "y": 300
-              }
+              },
+              "fixed-rotation" : -30
             },
             {
               "uri": "layouts/collab/ceiling-hand-1.png",
               "fixed-position": {
                 "x": 2400,
                 "y": 300
-              }
+              },
+              "fixed-rotation" : -30
             }
           ],
           "token-id": 1,
@@ -721,10 +723,10 @@
               "anchor" : "andrew",            
               "uri": "layouts/collab/andrew-arm-0.png",
               "relative-position": {
-                "x": -240,
-                "y": 95
+                "x": -220,
+                "y": 125
               },
-              "fixed-rotation" : 0
+              "fixed-rotation" : 30
             },
             {
               "anchor" : "andrew",            
@@ -733,7 +735,7 @@
                 "x": -200,
                 "y": 150
               },
-              "fixed-rotation" : 0
+              "fixed-rotation" : 30
             },
             {
               "visible" : 0
@@ -849,8 +851,8 @@
                 "y": 1650
               },
               "scale": {
-                "x": 100,
-                "y": 100
+                "x": 25,
+                "y": 25
               }
             },
             {
@@ -858,6 +860,10 @@
               "fixed-position": {
                 "x": 475,
                 "y": 1650
+              },
+              "scale": {
+                "x": 25,
+                "y": 25
               }
             },
             {
@@ -865,6 +871,10 @@
               "fixed-position": {
                 "x": 475,
                 "y": 1650
+              },
+              "scale": {
+                "x": 25,
+                "y": 25
               }
             },
             {
@@ -872,6 +882,10 @@
               "fixed-position": {
                 "x": 475,
                 "y": 1650
+              },
+              "scale": {
+                "x": 25,
+                "y": 25
               }
             },
             {
@@ -879,6 +893,10 @@
               "fixed-position": {
                 "x": 475,
                 "y": 1650
+              },
+              "scale": {
+                "x": 25,
+                "y": 25
               }
             },
             {
@@ -886,6 +904,10 @@
               "fixed-position": {
                 "x": 475,
                 "y": 1650
+              },
+              "scale": {
+                "x": 25,
+                "y": 25
               }
             },
             {
@@ -893,6 +915,10 @@
               "fixed-position": {
                 "x": 475,
                 "y": 1650
+              },
+              "scale": {
+                "x": 25,
+                "y": 25
               }
             }
           ],
