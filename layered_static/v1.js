@@ -17,6 +17,7 @@ const KEY_URI = "uri";
 const KEY_STATES = "states";
 const KEY_WIDTH = "width";
 const KEY_HEIGHT = "height";
+const KEY_MIRROR = "mirror";
 
 var blockNum = -1;
 var bufferConnector = null;
@@ -179,6 +180,14 @@ async function renderLayer(contract, currentImage, layout, layer, layerImage) {
 		// adjust for the new width and height based on the rotation
 		bitmapWidth = layerImage.bitmap.width;
 		bitmapHeight = layerImage.bitmap.height;
+	}
+
+	// check for mirror
+	if (KEY_MIRROR in layer) {
+		var shouldMirrorHorizontal = ((await readIntProperty(contract, layer[KEY_MIRROR], KEY_X, "Mirror X")) == 1);
+		var shouldMirrorVertical = ((await readIntProperty(contract, layer[KEY_MIRROR], KEY_Y, "Mirror Y")) == 1);
+
+		layerImage.mirror(shouldMirrorHorizontal, shouldMirrorVertical);
 	}
 
 	var x = 0;
