@@ -56,6 +56,76 @@
             }
           ]
         }
+      },
+      {
+        "id": "socks",
+        "states": {
+          "options": [
+            {
+              "uri" : "layouts/banker/socks-0.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            },
+            {
+              "uri" : "layouts/banker/socks-1.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            },
+            {
+              "uri" : "layouts/banker/socks-2.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "trousers",
+        "states": {
+          "options": [
+            {
+              "uri" : "layouts/banker/trousers-0.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            },
+            {
+              "uri" : "layouts/banker/trousers-1.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "right-hand",
+        "states": {
+          "options": [
+            {
+              "uri" : "layouts/banker/right-hand-0.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            },
+            {
+              "uri" : "layouts/banker/right-hand-1.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            }
+          ]
+        }
       }
     ]
   }
