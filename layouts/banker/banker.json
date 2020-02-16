@@ -1,0 +1,62 @@
+{
+  "name": "Banker",
+  "description": "",
+  "image": "",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "XCOPY"
+    },
+    {
+      "trait_type": "Layer Count",
+      "value": "0"
+    }
+  ],
+  "layout": {
+    "type": "layered_static",
+    "version": 1,
+    "layers": [
+      {
+        "id": "base",
+        "states": {
+          "options": [
+            {
+              "uri" : "layouts/banker/bg-0.jpg"
+            },
+            {
+              "uri" : "layouts/banker/bg-1.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "id": "money",
+        "states": {
+          "options": [
+            {
+              "uri" : "layouts/banker/money-0.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            },
+            {
+              "uri" : "layouts/banker/money-1.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            },
+            {
+              "uri" : "layouts/banker/money-2.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
