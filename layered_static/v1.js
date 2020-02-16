@@ -6,8 +6,15 @@ const KEY_FIXED_ROTATION = "fixed-rotation";
 const KEY_ORBIT_ROTATION = "orbit-rotation";
 const KEY_ANCHOR = "anchor";
 const KEY_SCALE = "scale";
+
 const KEY_COLOR = "color";
 const KEY_ALPHA = "alpha";
+const KEY_HUE = "hue";
+
+const KEY_RED = "red";
+const KEY_GREEN = "green";
+const KEY_BLUE = "blue";
+
 const KEY_FIXED_POSITION = "fixed-position";
 const KEY_RELATIVE_POSITION = "relative-position";
 const KEY_X = "x";
@@ -256,9 +263,47 @@ async function renderLayer(contract, currentImage, layout, layer, layerImage) {
 
 	// adjust the color
 	if (KEY_COLOR in layer) {
-		var alpha = await readIntProperty(contract, layer[KEY_COLOR], KEY_ALPHA, "Layer Alpha"); 
+		if (KEY_ALPHA in layer[KEY_COLOR]) {
+			var alpha = await readIntProperty(contract, layer[KEY_COLOR], KEY_ALPHA, "Layer Color Alpha"); 
 
-		layerImage.opacity(alpha / 100);
+			layerImage.opacity(alpha / 100);
+		}
+		if (KEY_HUE in layer[KEY_COLOR]) {
+			var hue = await readIntProperty(contract, layer[KEY_COLOR], KEY_HUE, "Layer Color Hue"); 
+
+			layerImage.color([
+				{
+					apply: 'hue', params: [hue]
+				}
+			]);
+		}
+		if (KEY_RED in layer[KEY_COLOR]) {
+			var red = await readIntProperty(contract, layer[KEY_COLOR], KEY_RED, "Layer Color Red"); 
+
+			layerImage.color([
+				{
+					apply: 'red', params: [red]
+				}
+			]);
+		}
+		if (KEY_GREEN in layer[KEY_COLOR]) {
+			var green = await readIntProperty(contract, layer[KEY_COLOR], KEY_GREEN, "Layer Color Green"); 
+
+			layerImage.color([
+				{
+					apply: 'green', params: [green]
+				}
+			]);
+		}
+		if (KEY_BLUE in layer[KEY_COLOR]) {
+			var blue = await readIntProperty(contract, layer[KEY_COLOR], KEY_BLUE, "Layer Color Blue"); 
+
+			layerImage.color([
+				{
+					apply: 'blue', params: [blue]
+				}
+			]);
+		}
 	}
 
 	// composite this layer onto the current image
