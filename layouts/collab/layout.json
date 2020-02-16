@@ -50,7 +50,7 @@
         "states": {
           "options": [
             {
-              "uri": "layouts/collab/back-wall-left-content-2.png",
+              "uri": "layouts/collab/back-wall-left-content-0.png",
               "fixed-position": {
                 "x": 1500,
                 "y": 700
@@ -64,7 +64,7 @@
               }
             },
             {
-              "uri": "layouts/collab/back-wall-left-content-0.png",
+              "uri": "layouts/collab/back-wall-left-content-2.png",
               "fixed-position": {
                 "x": 1500,
                 "y": 700
@@ -79,6 +79,14 @@
           "options": [
             {
               "uri": "layouts/collab/back-wall-left-frame-0.png",
+              "anchor" : "back-left-tapestry-content"
+            },
+            {
+              "uri": "layouts/collab/back-wall-left-frame-1.png",
+              "anchor" : "back-left-tapestry-content"
+            },
+            {
+              "uri": "layouts/collab/back-wall-left-frame-2.png",
               "anchor" : "back-left-tapestry-content"
             }
           ]
