@@ -126,6 +126,91 @@
             }
           ]
         }
+      },
+      {
+        "id": "left-hand",
+        "states": {
+          "options": [
+            {
+              "uri" : "layouts/banker/left-hand-0.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            },
+            {
+              "uri" : "layouts/banker/left-hand-1.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "shirt",
+        "states": {
+          "options": [
+            {
+              "uri" : "layouts/banker/shirt-0.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            },
+            {
+              "uri" : "layouts/banker/shirt-1.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            },
+            {
+              "uri" : "layouts/banker/shirt-2.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "head",
+        "states": {
+          "options": [
+            {
+              "uri" : "layouts/banker/head-0.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            },
+            {
+              "uri" : "layouts/banker/head-1.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            },
+            {
+              "uri" : "layouts/banker/head-2.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "coat",
+        "uri" : "layouts/banker/coat.png",
+        "fixed-position" : {
+          "x" : 750,
+          "y" : 1200
+        }
       }
     ]
   }
