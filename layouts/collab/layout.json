@@ -46,6 +46,45 @@
         }
       },
       {
+        "id": "back-left-tapestry-content",
+        "states": {
+          "options": [
+            {
+              "uri": "layouts/collab/back-wall-left-content-2.png",
+              "fixed-position": {
+                "x": 1500,
+                "y": 700
+              }
+            },
+            {
+              "uri": "layouts/collab/back-wall-left-content-1.png",
+              "fixed-position": {
+                "x": 1500,
+                "y": 700
+              }
+            },
+            {
+              "uri": "layouts/collab/back-wall-left-content-0.png",
+              "fixed-position": {
+                "x": 1500,
+                "y": 700
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "back-left-tapestry-frame",
+        "states": {
+          "options": [
+            {
+              "uri": "layouts/collab/back-wall-left-frame-0.png",
+              "anchor" : "back-left-tapestry-content"
+            }
+          ]
+        }
+      },
+      {
         "id": "back-right-tapestry-content",
         "states": {
           "options": [

@@ -9,7 +9,7 @@
     },
     {
       "trait_type": "Layer Count",
-      "value": "0"
+      "value": "8"
     }
   ],
   "layout": {
@@ -26,7 +26,9 @@
             {
               "uri" : "layouts/banker/bg-1.jpg"
             }
-          ]
+          ],
+          "token-id": 8,
+          "lever-id": 0
         }
       },
       {
@@ -54,7 +56,9 @@
                 "y" : 1200
               }
             }
-          ]
+          ],
+          "token-id": 7,
+          "lever-id": 0
         }
       },
       {
@@ -82,7 +86,9 @@
                 "y" : 1200
               }
             }
-          ]
+          ],
+          "token-id": 6,
+          "lever-id": 0
         }
       },
       {
@@ -103,7 +109,9 @@
                 "y" : 1200
               }
             }
-          ]
+          ],
+          "token-id": 5,
+          "lever-id": 0
         }
       },
       {
@@ -124,7 +132,9 @@
                 "y" : 1200
               }
             }
-          ]
+          ],
+          "token-id": 3,
+          "lever-id": 0
         }
       },
       {
@@ -145,7 +155,9 @@
                 "y" : 1200
               }
             }
-          ]
+          ],
+          "token-id": 4,
+          "lever-id": 0
         }
       },
       {
@@ -173,7 +185,9 @@
                 "y" : 1200
               }
             }
-          ]
+          ],
+          "token-id": 2,
+          "lever-id": 1
         }
       },
       {
@@ -201,11 +215,17 @@
                 "y" : 1200
               }
             }
-          ]
+          ],
+          "token-id": 1,
+          "lever-id": 0
         }
       },
       {
         "id": "coat",
+        "visible" : {
+          "token-id": 2,
+          "lever-id": 0
+        },
         "uri" : "layouts/banker/coat.png",
         "fixed-position" : {
           "x" : 750,
