@@ -263,20 +263,6 @@ async function renderLayer(contract, currentImage, layout, layer, layerImage) {
 
 	// adjust the color
 	if (KEY_COLOR in layer) {
-		if (KEY_ALPHA in layer[KEY_COLOR]) {
-			var alpha = await readIntProperty(contract, layer[KEY_COLOR], KEY_ALPHA, "Layer Color Alpha"); 
-
-			layerImage.opacity(alpha / 100);
-		}
-		if (KEY_HUE in layer[KEY_COLOR]) {
-			var hue = await readIntProperty(contract, layer[KEY_COLOR], KEY_HUE, "Layer Color Hue"); 
-
-			layerImage.color([
-				{
-					apply: 'hue', params: [hue]
-				}
-			]);
-		}
 		if (KEY_RED in layer[KEY_COLOR]) {
 			var red = await readIntProperty(contract, layer[KEY_COLOR], KEY_RED, "Layer Color Red"); 
 
@@ -303,6 +289,20 @@ async function renderLayer(contract, currentImage, layout, layer, layerImage) {
 					apply: 'blue', params: [blue]
 				}
 			]);
+		}
+		if (KEY_HUE in layer[KEY_COLOR]) {
+			var hue = await readIntProperty(contract, layer[KEY_COLOR], KEY_HUE, "Layer Color Hue"); 
+
+			layerImage.color([
+				{
+					apply: 'hue', params: [hue]
+				}
+			]);
+		}
+		if (KEY_ALPHA in layer[KEY_COLOR]) {
+			var alpha = await readIntProperty(contract, layer[KEY_COLOR], KEY_ALPHA, "Layer Color Alpha"); 
+
+			layerImage.opacity(alpha / 100);
 		}
 	}
 
