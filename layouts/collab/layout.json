@@ -455,6 +455,23 @@
                 },
                 "y" : 0
               }
+            },
+            {
+              "uri": "layouts/collab/james-minor-2.png",
+              "fixed-position": {
+                "x": {
+                  "token-id": 10,
+                  "lever-id": 1
+                },
+                "y": 1300
+              },
+              "mirror" : {
+                "x" : {
+                  "token-id": 10,
+                  "lever-id": 2
+                },
+                "y" : 0
+              }
             }
           ],
           "token-id": 10,
