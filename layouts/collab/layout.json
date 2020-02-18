@@ -169,6 +169,34 @@
                 "x": 3200,
                 "y": 700
               }
+            },
+            {
+              "uri": "layouts/collab/back-wall-right-content-10.png",
+              "fixed-position": {
+                "x": 3200,
+                "y": 700
+              }
+            },
+            {
+              "uri": "layouts/collab/back-wall-right-content-11.png",
+              "fixed-position": {
+                "x": 3200,
+                "y": 700
+              }
+            },
+            {
+              "uri": "layouts/collab/back-wall-right-content-12.png",
+              "fixed-position": {
+                "x": 3200,
+                "y": 700
+              }
+            },
+            {
+              "uri": "layouts/collab/back-wall-right-content-13.png",
+              "fixed-position": {
+                "x": 3200,
+                "y": 700
+              }
             }
           ],
           "token-id": 3,
@@ -665,6 +693,13 @@
             },
             {
               "uri": "layouts/collab/judas-1.png",
+              "fixed-position": {
+                "x": 1400,
+                "y": 1450
+              }
+            },
+            {
+              "uri": "layouts/collab/judas-2.png",
               "fixed-position": {
                 "x": 1400,
                 "y": 1450
