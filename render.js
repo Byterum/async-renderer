@@ -13,7 +13,17 @@ const CONTRACT_ABI = [{"inputs":[{"internalType":"string","name":"name","type":"
 async function process(provider, tokenAddress, tokenId, blockNum, stampDebug) {	
 	var network = await provider.getNetwork();
 
-	return await onNetworkLoaded(provider, tokenAddress, tokenId, blockNum, stampDebug);
+	try {
+		var returnData = await onNetworkLoaded(provider, tokenAddress, tokenId, blockNum, stampDebug);;
+
+		return returnData;
+	} catch (e) {
+		return {
+			error: e,
+			image : null,
+			blockNum :  -1
+		}
+	}
 }
 
 async function onNetworkLoaded(provider, tokenAddress, tokenId, blockNum, stampDebug) {
