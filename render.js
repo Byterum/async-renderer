@@ -31,9 +31,9 @@ async function onNetworkLoaded(provider, tokenAddress, tokenId, blockNum, stampD
 
 	// if no block num was provided then stamp the image with the current block number
 	if (blockNum == -1) {
-		blockNum = (await provider.getBlockNumber());
+		// blockNum = (await provider.getBlockNumber());
 
-		console.log("Retrieved latest block number: " + blockNum);
+		// console.log("Retrieved latest block number: " + blockNum);
 	}
 
 	// load the token URI for the layout	
