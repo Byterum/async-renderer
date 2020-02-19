@@ -24,14 +24,18 @@ async function main() {
 
 	var finalImageData = await renderer.process(provider, tokenAddress, tokenId, blockNum, process.env.STAMP_DEBUG);
 
-	// determine the render path
-	var path = "renders/token-" + tokenId + "_block-" + finalImageData.blockNum + ".jpg";
-	// output to console
-	console.log("Writing to " + path + "...");
-	// write the final artwork
-	finalImageData.image.write(path);
-	// output to console
-	console.log("Wrote to " + path + ".");
+	if (finalImageData.image === null) {
+		console.log(finalImageData.error);
+	} else {
+		// determine the render path
+		var path = "renders/token-" + tokenId + "_block-" + finalImageData.blockNum + ".jpg";
+		// output to console
+		console.log("Writing to " + path + "...");
+		// write the final artwork
+		finalImageData.image.write(path);
+		// output to console
+		console.log("Wrote to " + path + ".");
+	}
 }
 
 main();
