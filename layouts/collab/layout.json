@@ -1099,9 +1099,9 @@
                 }
               },
               "color" : {
-                "alpha" : {
+                "hue" : {
                   "token-id": 20,
-                  "lever-id": 2
+                  "lever-id": 3
                 }
               }
             },
@@ -1122,10 +1122,6 @@
                 }
               },
               "color" : {
-                "hue" : {
-                  "token-id": 20,
-                  "lever-id": 3
-                },
                 "red" : {
                   "token-id": 20,
                   "lever-id": 4
@@ -1185,6 +1181,20 @@
                 "y": {
                   "token-id": 20,
                   "lever-id": 1
+                }
+              },
+              "color" : {
+                "red" : {
+                  "token-id": 20,
+                  "lever-id": 4
+                },
+                "green" : {
+                  "token-id": 20,
+                  "lever-id": 4
+                },
+                "blue" : {
+                  "token-id": 20,
+                  "lever-id": 4
                 }
               }
             }
