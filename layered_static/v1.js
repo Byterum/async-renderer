@@ -132,7 +132,7 @@ async function readIntProperty(contract, object, key, label) {
 		
 		value = parseInt(currentLeverValue);
 
-		console.log("		" + label + " = " + value);
+		console.log("		" + label + " = " + value + " (TokenId=" + tokenId + ", LeverId=" + leverId + ")");
 	} else {
 		console.log("	" + label + " = " + value);
 	}
