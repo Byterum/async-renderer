@@ -1,0 +1,48 @@
+{
+  "name": "Untitled",
+  "description": "",
+  "image": "",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Edward Puckett"
+    },
+    {
+      "trait_type": "Layer Count",
+      "value": "3"
+    }
+  ],
+  "layout": {
+    "type": "layered_static",
+    "version": 1,
+    "layers": [
+      {
+        "id" : "base",
+        "width" : 1024,
+        "height" : 1024
+      },
+      {
+        "id": "bg",
+        "uri" : "layouts/untitled/bg-0.png",
+        "fixed-position" : {
+          "x" : 512,
+          "y" : 512
+        },
+        "color" : {
+          "hue" : 0
+        }
+      },
+      {
+        "id": "mask",
+        "uri" : "layouts/untitled/mask-1.png",
+        "fixed-position" : {
+          "x" : 512,
+          "y" : 512
+        },
+        "color" : {
+          "green" : 200
+        }
+      }
+    ]
+  }
+}
