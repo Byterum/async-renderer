@@ -18,35 +18,35 @@
     "layers": [
       {
         "id": "base",
-        "uri" : "layouts/masks/bg.jpg"
+        "uri" : "layouts/asynchronous_time/bg.jpg"
       },
       {
         "id": "hand",
         "states": {
           "options": [
             {
-              "uri" : "layouts/masks/hand-0.png",
+              "uri" : "layouts/asynchronous_time/hand-0.png",
               "fixed-position" : {
                 "x" : 650,
                 "y" : 1090
               }
             },
             {
-              "uri" : "layouts/masks/hand-1.png",
+              "uri" : "layouts/asynchronous_time/hand-1.png",
               "fixed-position" : {
                 "x" : 670,
                 "y" : 1182
               }
             },
             {
-              "uri" : "layouts/masks/hand-2.png",
+              "uri" : "layouts/asynchronous_time/hand-2.png",
               "fixed-position" : {
                 "x" : 671,
                 "y" : 1142
               }
             },
             {
-              "uri" : "layouts/masks/hand-3.png",
+              "uri" : "layouts/asynchronous_time/hand-3.png",
               "fixed-position" : {
                 "x" : 673,
                 "y" : 1144
@@ -59,7 +59,7 @@
       },
       {
         "id": "box",
-        "uri" : "layouts/masks/box.png",
+        "uri" : "layouts/asynchronous_time/box.png",
         "fixed-position" : {
           "x" : 1580,
           "y" : 875
@@ -87,28 +87,28 @@
               "visible" : 0
             },
             {
-              "uri" : "layouts/masks/mask-0.png",
+              "uri" : "layouts/asynchronous_time/mask-0.png",
               "fixed-position" : {
                 "x" : 870,
                 "y" : 1030
               }
             },
             {
-              "uri" : "layouts/masks/mask-1.png",
+              "uri" : "layouts/asynchronous_time/mask-1.png",
               "fixed-position" : {
                 "x" : 870,
                 "y" : 1025
               }
             },
             {
-              "uri" : "layouts/masks/mask-2.png",
+              "uri" : "layouts/asynchronous_time/mask-2.png",
               "fixed-position" : {
                 "x" : 870,
                 "y" : 1020
               }
             },
             {
-              "uri" : "layouts/masks/mask-3.png",
+              "uri" : "layouts/asynchronous_time/mask-3.png",
               "fixed-position" : {
                 "x" : 875,
                 "y" : 1005
