@@ -257,14 +257,14 @@
         "states": {
           "options": [            
             {
-              "uri": "layouts/collab/left-wall-back-0.png",
+              "uri": "QmToLrAD88Pec7B6dpRteJk4xE97B66UEYuNNaQBf3Lg39",
               "fixed-position": {
                 "x": 839,
                 "y": 1099
               }
             },
             {
-              "uri": "layouts/collab/left-wall-back-1.png",
+              "uri": "QmYCVDL1YxTBqZm5SAQhjtsbGmv89jTcz8D6Let5FDFwm9",
               "fixed-position": {
                 "x": 830,
                 "y": 1035
@@ -280,14 +280,14 @@
         "states": {
           "options": [            
             {
-              "uri": "layouts/collab/right-wall-back-0.png",
+              "uri": "QmdnnPW6KsV9o47vuyRP83oLusnBtce2nACNqtp6jBp9zo",
               "fixed-position": {
                 "x": 3905,
                 "y": 1067
               }
             },
             {
-              "uri": "layouts/collab/right-wall-back-1.png",
+              "uri": "QmVjmLh6we1ATQaH9hvcLcw63i8ZiWr9S8KWnHWr2Z1np6",
               "fixed-position": {
                 "x": 3905,
                 "y": 1030
@@ -303,14 +303,14 @@
         "states": {
           "options": [
             {
-              "uri": "layouts/collab/left-wall-front-0.png",
+              "uri": "QmZq3yqA8GZDdkCymZSNxuPQT8e4QdyGJgqBTPN98WiQkW",
               "fixed-position": {
                 "x": 246,
                 "y": 1165
               }
             },
             {
-              "uri": "layouts/collab/left-wall-front-1.png",
+              "uri": "QmdyaJEZEftc5aaRcwaFKxwWsUWytSFyvFXxUN5nCfweyh",
               "fixed-position": {
                 "x": 246,
                 "y": 1165
@@ -326,28 +326,28 @@
         "states": {
           "options": [
             {
-              "uri": "layouts/collab/right-wall-front-0.png",
+              "uri": "QmXc6UYiJ4EXyAUg9dPa42z8nCkyD9J1VJL9SJawVHZt7d",
               "fixed-position": {
                 "x": 4500,
                 "y": 1200
               }
             },
             {
-              "uri": "layouts/collab/right-wall-front-1.png",
+              "uri": "QmPcbRWv5XzQ957SJMbdLkW7i21t5AAUrR93pjFdDcgLdh",
               "fixed-position": {
                 "x": 4500,
                 "y": 1200
               }
             },
             {
-              "uri": "layouts/collab/right-wall-front-2.png",
+              "uri": "QmaX7RR8E4GARyzLoGuyZz54n4cs9K65EzeY6gPFVnDRXW",
               "fixed-position": {
                 "x": 4500,
                 "y": 1200
               }
             },
             {
-              "uri": "layouts/collab/right-wall-front-3.png",
+              "uri": "QmfEWiRPVYD5MLYYZKC9vHgdLCkhioEzGwaKQXUASoJsxZ",
               "fixed-position": {
                 "x": 4500,
                 "y": 1200
@@ -363,21 +363,21 @@
         "states": {
           "options": [
             {
-              "uri": "layouts/collab/floor-0.png",
+              "uri": "QmVQr7dYkgS2dsK5hVjVBmVM8qAr8ehpRXy6V2EcPzUjD7",
               "fixed-position": {
                 "x": 2400,
                 "y": 2102
               }
             },
             {
-              "uri": "layouts/collab/floor-1.png",
+              "uri": "QmdHUWLS3UefruphgieB4X2iu31dxwKvNKYbEnwZqZEFrN",
               "fixed-position": {
                 "x": 2400,
                 "y": 2102
               }
             },
             {
-              "uri": "layouts/collab/floor-2.png",
+              "uri": "QmXJkmaK7ggN2ZyAynMR1Q6aJ4Un1CXsAjbMX49CMgYhtQ",
               "fixed-position": {
                 "x": 2400,
                 "y": 2102
@@ -426,7 +426,7 @@
               "visible" : 0
             },
             {
-              "uri": "layouts/collab/ceiling-hand-0.png",
+              "uri": "QmQYJqm2yfjNZ5RVygTj8WmkRDX4d8tqNcyrZsdywpF9LX",
               "fixed-position": {
                 "x": {
                   "token-id": 9,
@@ -440,7 +440,7 @@
               }
             },
             {
-              "uri": "layouts/collab/ceiling-hand-1.png",
+              "uri": "QmVLUxEFJf2XG22SCc24LVH4J6uFHRM8wwUiWbVzxaycSC",
               "fixed-position": {
                 "x": {
                   "token-id": 9,
@@ -463,7 +463,7 @@
         "states": {
           "options": [
             {
-              "uri": "layouts/collab/james-minor-0.png",
+              "uri": "QmRLAtHjrKGQuPHMN3Wz4KokwqoYeHCEAdHGfKKtP9Ee5W",
               "fixed-position": {
                 "x": {
                   "token-id": 10,
@@ -480,7 +480,7 @@
               }
             },
             {
-              "uri": "layouts/collab/james-minor-1.png",
+              "uri": "QmU38nK5GMQ9o6LDvTJW4vVDLuNYSL1siyQC9yffkkKbkF",
               "fixed-position": {
                 "x": {
                   "token-id": 10,
@@ -497,7 +497,7 @@
               }
             },
             {
-              "uri": "layouts/collab/james-minor-2.png",
+              "uri": "QmSSd8CEZ8sPceP8z42KGunRxBmrqDvuUEqhUcsbqJTTvr",
               "fixed-position": {
                 "x": {
                   "token-id": 10,
@@ -523,14 +523,14 @@
         "states": {
           "options": [
             {
-              "uri": "layouts/collab/thomas-0.png",
+              "uri": "QmYzjLYaYUsCjBqwh9FJs7PGcv68nR5fWJ3DGFRFFHuSLq",
               "fixed-position": {
                 "x": 2890,
                 "y": 1400
               }
             },
             {
-              "uri": "layouts/collab/thomas-1.png",
+              "uri": "QmVrF5bFFPCMwoFEFcf1B4pcJDfRpis12Pxh95b91AJ91x",
               "fixed-position": {
                 "x": 2890,
                 "y": 1400
@@ -546,28 +546,28 @@
         "states": {
           "options": [
             {
-              "uri": "layouts/collab/matthew-0.png",
+              "uri": "QmcrruSBxmZZUH4wg89qTTCERXr1yJyFwT1Ygnz5v3EG1e",
               "fixed-position": {
                 "x": 3725,
                 "y": 1300
               }
             },
             {
-              "uri": "layouts/collab/matthew-1.png",
+              "uri": "QmZ8YAsSX2KoUtvh7y2d8hXzMfXfqjdkfsfByCNMNwKdZu",
               "fixed-position": {
                 "x": 3725,
                 "y": 1300
               }
             },
             {
-              "uri": "layouts/collab/matthew-2.png",
+              "uri": "QmYBJYu1PmUYWminSXZcZ9ocBA1S846pvR5mHvwbJRmS55",
               "fixed-position": {
                 "x": 3725,
                 "y": 1300
               }
             },
             {
-              "uri": "layouts/collab/matthew-3.png",
+              "uri": "Qma6o5eXdaJgd6vxBuXf2JeutuYCUU2GTx6tLa3P9z1Tjq",
               "fixed-position": {
                 "x": 3725,
                 "y": 1300
@@ -583,105 +583,105 @@
         "states": {
           "options": [
             {
-              "uri": "layouts/collab/philip-0.png",
+              "uri": "QmW2FyTrLaa5VQA1LD3h5B8zwA6nApf4FX1YgGQWNYcaWa",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
               }
             },
             {
-              "uri": "layouts/collab/philip-1.png",
+              "uri": "QmSPu7W57Q6McmZQpHLSJiBp5uPFvi9gd7xx5Ky1NFH92X",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
               }
             },
             {
-              "uri": "layouts/collab/philip-2.png",
+              "uri": "QmNrU3YXWaujAXfLkrSuHAtkjWXXe3xdqGXH2pvGZuhYbB",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
               }
             },
             {
-              "uri": "layouts/collab/philip-3.png",
+              "uri": "Qmc8E19xNRZztutpvn76ACurPPh9wNYGVGucDokwwFmKv4",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
               }
             },
             {
-              "uri": "layouts/collab/philip-4.png",
+              "uri": "QmdqevcaabLa9EFXZAPVRytExPXh9kXvpxZjT9zYkU5i9P",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
               }
             },
             {
-              "uri": "layouts/collab/philip-5.png",
+              "uri": "QmY6pHApo3joWvPieQTCHa6cLL4zu3ZBgkDz8feQ9LkFiv",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
               }
             },
             {
-              "uri": "layouts/collab/philip-6.png",
+              "uri": "QmZdMAc4DL3V7dtiXcyqL9cDQPsyWQMq3Z8wK4pCVuwruw",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
               }
             },
             {
-              "uri": "layouts/collab/philip-7.png",
+              "uri": "QmNpzQsFRdfWrcKX14M3BWswGZe46vS18AtcTZumNqsWzS",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
               }
             },
             {
-              "uri": "layouts/collab/philip-8.png",
+              "uri": "QmUQeaLSeWnxZaTZxHVnFMjhvjWbqEXsdy237zo6PHeJDG",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
               }
             },
             {
-              "uri": "layouts/collab/philip-9.png",
+              "uri": "QmUkhbvUATaR8CTeXfBeAZsNqrHzVNxbdE9tqC3JZnodFj",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
               }
             },
             {
-              "uri": "layouts/collab/philip-10.png",
+              "uri": "Qma1Swacm81wB68VSzZom1kJGcNeSCQo6ph5zT4RM26ZmR",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
               }
             },
             {
-              "uri": "layouts/collab/philip-11.png",
+              "uri": "Qmb7Y5mGE3X3vqbiLnzZB2Gy1cjxuSW72whU9m3b4PdjGE",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
               }
             },
             {
-              "uri": "layouts/collab/philip-12.png",
+              "uri": "Qma7EZ1LewYiyYAehy8k7pSmgPRcs1CvG8JCi9KoLsXuNm",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
               }
             },
             {
-              "uri": "layouts/collab/philip-13.png",
+              "uri": "QmcT4FfivjzFBn6ZFc5Ew6t97P7FJJmMS8TVxnYpPKSfco",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
               }
             },
             {
-              "uri": "layouts/collab/philip-14.png",
+              "uri": "QmRjrkfPS1w7FzGz9VCevbxpbweAwkwq4pQem5pChAW7z4",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
@@ -697,21 +697,21 @@
         "states": {
           "options": [
             {
-              "uri": "layouts/collab/judas-0.png",
+              "uri": "QmapxDGw4Ki8LiPtAkHAFNvjaYrVwmo5fhCvpVXbjeaCAG",
               "fixed-position": {
                 "x": 1400,
                 "y": 1450
               }
             },
             {
-              "uri": "layouts/collab/judas-1.png",
+              "uri": "QmPgS2gdGgV6fPKb65gwtFrzyZdaP5EoXSBvQjSXJR5zit",
               "fixed-position": {
                 "x": 1400,
                 "y": 1450
               }
             },
             {
-              "uri": "layouts/collab/judas-2.png",
+              "uri": "Qmeu2kb9ELkzB8y7H3ppgFt7sZgDiMCxBq3wtTB3ArRWAz",
               "fixed-position": {
                 "x": 1400,
                 "y": 1450
@@ -782,21 +782,21 @@
         "states": {
           "options": [
             {
-              "uri": "layouts/collab/jesus-0-feet.png",
+              "uri": "QmTB7UPncncx8TETbvGegJssTzKa9GpCWEsksw1kTGrBN3",
               "relative-position": {
                 "x": 2440,
                 "y": 2035
               }
             },
             {
-              "uri": "layouts/collab/jesus-1-feet.png",
+              "uri": "QmSk2TxDha2NQYF45PCwPo8irMRFAbua6hLxWYb94dapBV",
               "relative-position": {
                 "x": 2440,
                 "y": 2035
               }
             },
             {
-              "uri": "layouts/collab/jesus-2-feet.png",
+              "uri": "QmcfrYAcs7uWrGHuDQHHB4mzHf67iuq69sGFgs44VCB9y1",
               "relative-position": {
                 "x": 2420,
                 "y": 2035
@@ -812,21 +812,21 @@
         "states": {
           "options": [            
             {
-              "uri": "layouts/collab/john-0-feet.png",
+              "uri": "QmSfyaaARjqjcPE1n8WCG8jujCCAxcFT1i5ZLZngj6WQtU",
               "relative-position": {
                 "x": 1910,
                 "y": 2005
               }
             },
             {
-              "uri": "layouts/collab/john-0-feet.png",
+              "uri": "QmSfyaaARjqjcPE1n8WCG8jujCCAxcFT1i5ZLZngj6WQtU",
               "relative-position": {
                 "x": 1910,
                 "y": 2005
               }
             },
             {
-              "uri": "layouts/collab/john-1-feet.png",
+              "uri": "QmUxz25YzPmX8fdVMifxgNRCnYAJqKVmhSzphEj7rjDQhM",
               "relative-position": {
                 "x": 1910,
                 "y": 2020
@@ -839,7 +839,7 @@
       },
       {
         "id": "table-shadow",
-        "uri": "layouts/collab/table-shadow.png",
+        "uri": "QmX4H67j5Zkmr5XURG94p5qGTAAeYCUoFTKBWP94yGUMSK",
         "relative-position": {
           "x": 2400,
           "y": 2150
@@ -850,21 +850,21 @@
         "states": {
           "options": [
             {
-              "uri": "layouts/collab/table-0.png",
+              "uri": "QmZUbQ5BLMK1xHqstvHHr5JYAXJhV64Baf7PRZpEuW9wWd",
               "fixed-position": {
                 "x": 2400,
                 "y": 1900
               }
             },
             {
-              "uri": "layouts/collab/table-1.png",
+              "uri": "QmThY8TsFrd2Wyugyk3QwAuxeqKXuiLLGivQ2U7h4dxVX7",
               "fixed-position": {
                 "x": 2400,
                 "y": 1900
               }
             },
             {
-              "uri": "layouts/collab/table-2.png",
+              "uri": "Qmdu6x53VXFuvUT3dxWxtD5dLFpwL7Ex6V9PntFa2Yfjcx",
               "fixed-position": {
                 "x": 2400,
                 "y": 1900
@@ -914,7 +914,7 @@
       {
         "id": "philip-arm",
         "anchor" : "philip",       
-        "uri": "layouts/collab/philip-hand-0.png",
+        "uri": "QmQtzDoisLEHdRKwE5xBV2pcEkqSQohExn81rqkGxsxXQF",
         "relative-position": {
           "x": -188,
           "y": 188
@@ -925,21 +925,21 @@
         "states": {
           "options": [            
             {
-              "uri": "layouts/collab/jesus-0.png",
+              "uri": "QmbVajnodHaZ3B9hntEjaR78JjaP8zL4vCNywt1Kmn2Pk3",
               "fixed-position": {
                 "x": 2440,
                 "y": 1162
               }
             },
             {
-              "uri": "layouts/collab/jesus-1.png",
+              "uri": "QmRpsxh7Ga5xmwLEedbSgM3CMGZDt8PUfxZUhEiCxT3pEi",
               "fixed-position": {
                 "x": 2440,
                 "y": 1235
               }
             },
             {
-              "uri": "layouts/collab/jesus-2.png",
+              "uri": "QmbXLaPoDcQoUWhodjQCNQyCGYW2pNny9pAUeH2T81FSzc",
               "fixed-position": {
                 "x": 2440,
                 "y": 1238
@@ -955,21 +955,21 @@
         "states": {
           "options": [ 
             {
-              "uri": "layouts/collab/john-0.png",
+              "uri": "QmWwQJwaGRpop49sErPc6HqEhmPtbjejxfN9LgB67gHejk",
               "fixed-position": {
                 "x": 1850,
                 "y": 1205
               }
             },           
             {
-              "uri": "layouts/collab/john-1.png",
+              "uri": "QmbvLWeadYSGEUqTGgVKdd4thk7Qm2XCGiKs68WCmfWaMt",
               "fixed-position": {
                 "x": 1910,
                 "y": 1205
               }
             },
             {
-              "uri": "layouts/collab/john-2.png",
+              "uri": "QmVLfwKhptUdyHiYYkgDfqbbHrMq9XCDGpa2ngQSyHVgwA",
               "fixed-position": {
                 "x": 1940,
                 "y": 1140
@@ -985,21 +985,21 @@
         "states": {
           "options": [
             {
-              "uri": "layouts/collab/simon-0.png",
+              "uri": "QmfXL5rzSwvZ9x3xYA2tUjqA3jxMMgDnERqheFbpopw4cN",
               "fixed-position": {
                 "x": 4375,
                 "y": 1530
               }
             },
             {
-              "uri": "layouts/collab/simon-1.png",
+              "uri": "QmZ3yStuSdH8Fo1JUDd9u5k6boK8BZyZ5Rby6YSRTM18ER",
               "fixed-position": {
                 "x": 4375,
                 "y": 1530
               }
             },
             {
-              "uri": "layouts/collab/simon-2.png",
+              "uri": "QmeXCbZP7SnAK23pm16pXEEkDqieNhgmru9sYbC7mVD4c4",
               "fixed-position": {
                 "x": 4375,
                 "y": 1530
@@ -1220,21 +1220,21 @@
         "states": {
           "options": [                        
             {
-              "uri": "layouts/collab/james-major-0.png",
+              "uri": "QmUrE229N8niyRyHmM1CkFuTmJf9eLgtGt95M36whVq6vT",
               "fixed-position": {
                 "x": 3650,
                 "y": 1780
               }
             },
             {
-              "uri": "layouts/collab/james-major-1.png",
+              "uri": "QmPicpS78yQavz92C9Dh82eau6uvSZ2x9MbcQ3QqghH77o",
               "fixed-position": {
                 "x": 3658,
                 "y": 1627
               }
             },
             {
-              "uri": "layouts/collab/james-major-2.png",
+              "uri": "Qme4e2XweqCyptyADahuvkj832uRZ7jUicGzigWX56sPMB",
               "fixed-position": {
                 "x": 3658,
                 "y": 1576
@@ -1250,7 +1250,7 @@
         "states": {
           "options": [
             {
-              "uri": "layouts/collab/snake-0.png",
+              "uri": "QmSHPiCvgS8DmJyqsM4wbCCh2hNps38Hcbhuy4mGK3aD6v",
               "fixed-position": {
                 "x": 1400,
                 "y": 1627
@@ -1263,7 +1263,7 @@
               }
             },
             {
-              "uri": "layouts/collab/snake-1.png",
+              "uri": "QmbrdtDoftnnJD6EZ16EWGvCX22gGEETtkyfCM7Cuf8PgZ",
               "fixed-position": {
                 "x": 1400,
                 "y": 1627
@@ -1296,14 +1296,14 @@
               "visible" : 0
             },
             {
-              "uri": "layouts/collab/ceiling-1-top.png",
+              "uri": "QmYVJDn97oZEqLBCegc95K2d1Ba1tudJfC8XixSWyD63QA",
               "fixed-position": {
                 "x": 2400,
                 "y": 13
               }
             },
             {
-              "uri": "layouts/collab/ceiling-1-top.png",
+              "uri": "QmYVJDn97oZEqLBCegc95K2d1Ba1tudJfC8XixSWyD63QA",
               "fixed-position": {
                 "x": 2400,
                 "y": 13
