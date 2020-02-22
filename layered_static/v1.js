@@ -118,9 +118,13 @@ async function readIntProperty(contract, object, key, label) {
 			}
 
 			// print out the control lever results
-			// for (var z = 0; z < controlLeverResults.length; z++) {
-			// 	console.log(controlLeverResults[z].toString());
-			// }
+			var results = "		";
+			for (var z = 0; z < controlLeverResults.length; z++) {
+				results += controlLeverResults[z].toString();
+				results += ", ";
+			}
+			results += " (TokenId=" + tokenId + ", LeverId=" + leverId + ")";
+			console.log(results);
 
 			// store in cache for future use
 			controlTokenCache[tokenId] = controlLeverResults;

@@ -115,29 +115,6 @@
         }
       },
       {
-        "id": "right-hand",
-        "states": {
-          "options": [
-            {
-              "uri" : "layouts/banker/right-hand-0.png",
-              "fixed-position" : {
-                "x" : 750,
-                "y" : 1200
-              }
-            },
-            {
-              "uri" : "layouts/banker/right-hand-1.png",
-              "fixed-position" : {
-                "x" : 750,
-                "y" : 1200
-              }
-            }
-          ],
-          "token-id": 3,
-          "lever-id": 0
-        }
-      },
-      {
         "id": "left-hand",
         "states": {
           "options": [
@@ -150,6 +127,29 @@
             },
             {
               "uri" : "layouts/banker/left-hand-1.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            }
+          ],
+          "token-id": 3,
+          "lever-id": 0
+        }
+      },
+      {
+        "id": "right-hand",
+        "states": {
+          "options": [
+            {
+              "uri" : "layouts/banker/right-hand-0.png",
+              "fixed-position" : {
+                "x" : 750,
+                "y" : 1200
+              }
+            },
+            {
+              "uri" : "layouts/banker/right-hand-1.png",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
