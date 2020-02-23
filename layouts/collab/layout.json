@@ -20,6 +20,42 @@
       "value": "MLIBTY"
     },
     {
+      "trait_type": "Artist",
+      "value": "VansDesign"
+    },
+    {
+      "trait_type": "Artist",
+      "value": "Alotta Money"
+    },
+    {
+      "trait_type": "Artist",
+      "value": "TwistedVacancy"
+    },
+    {
+      "trait_type": "Artist",
+      "value": "Coldie"
+    },
+    {
+      "trait_type": "Artist",
+      "value": "Hackatao"
+    },
+    {
+      "trait_type": "Artist",
+      "value": "XCOPY"
+    },
+    {
+      "trait_type": "Artist",
+      "value": "Rutger van der Tas"
+    },
+    {
+      "trait_type": "Artist",
+      "value": "Matt Kane"
+    },
+    {
+      "trait_type": "Artist",
+      "value": "Connie Digital"
+    },
+    {
       "trait_type": "Layer Count",
       "value": "22"
     }
@@ -734,14 +770,14 @@
               }
             },
             {
-              "uri": "layouts/collab/QmdsNPLCuBBKBUHfTU6qeVxrBpVL6yT3CSxKaosKu3Nq7F",
+              "uri": "QmdsNPLCuBBKBUHfTU6qeVxrBpVL6yT3CSxKaosKu3Nq7F",
               "fixed-position": {
                 "x": 975,
                 "y": 1220
               }
             },
             {
-              "uri": "layouts/collab/QmQhwcK2TTvo1mEaVyutbkvESubnaY7U3jnCKxVWMb97tM",
+              "uri": "QmQhwcK2TTvo1mEaVyutbkvESubnaY7U3jnCKxVWMb97tM",
               "fixed-position": {
                 "x": 975,
                 "y": 1220
@@ -881,7 +917,7 @@
           "options": [            
             {
               "anchor" : "andrew",            
-              "uri": "layouts/collab/Qmbn6LQRwVC3zkrh27RwjFNinzMgjenTmDyvkVkWEsuZVA",
+              "uri": "Qmbn6LQRwVC3zkrh27RwjFNinzMgjenTmDyvkVkWEsuZVA",
               "relative-position": {
                 "x": -220,
                 "y": 125
