@@ -1,7 +1,7 @@
 {
   "name": "First Supper",
   "description": "We, cryptoartists, gather in this place to celebrate a new dawn for collaboration, creativity, and interaction between artist, collector, and art-lover alike. We hold these tokens to be self-evident, that all layers are created uniquely by individual artists, that each is endowed by their creator with specific immutable rights; that among these are state, rotation, scale, XY position, visibility, opacity, hue, and RGB. That whenever a token holder desires, it is their sole privilege to alter the value of these rights and constitute a new image.",
-  "image": "",
+  "image": "QmVVKDkMziAXLmSyfhFAF5ev9TNyXVe6dkMGA6YNbRcQSv",
   "attributes": [
     {
       "trait_type": "Artist",
@@ -69,16 +69,20 @@
         "states": {
           "options": [
             {
-              "uri": "QmRoCMEQgSd6QQo9iA2HdDzwSuqoJ3TLEEzNrRdXm7cKYo"
+              "uri": "QmRoCMEQgSd6QQo9iA2HdDzwSuqoJ3TLEEzNrRdXm7cKYo",
+              "label" : "Classic"
             },
             {
-              "uri": "QmXuz6bWxYuB1atjpYt1WJsiT2yfnJ38qHDXWur65fXAsR"
+              "uri": "QmXuz6bWxYuB1atjpYt1WJsiT2yfnJ38qHDXWur65fXAsR",
+              "label" : "Light Oscillations"
             },
             {
-              "uri": "QmcmdZjGHTkkir2oe9wDTXQycKmujGUfDxL6B4Do8e9HyP"
+              "uri": "QmcmdZjGHTkkir2oe9wDTXQycKmujGUfDxL6B4Do8e9HyP",
+              "label" : "Dark Oscillations"
             },
             {
-              "uri": "Qme8YVzNDjjFxNgwkgSK8RgXJHvQumEx24DgU6SyVZ7kYy"
+              "uri": "Qme8YVzNDjjFxNgwkgSK8RgXJHvQumEx24DgU6SyVZ7kYy",
+              "label" : "Electro Tiles"
             }
           ],
           "token-id": 1,
@@ -99,6 +103,7 @@
           "options": [
             {
               "uri": "QmU3n7bquULDCqaWhoauaNMkTUMqdt79AZr9jy9mkC6huu",
+              "label" : "Blue/Red",
               "fixed-position": {
                 "x": 1500,
                 "y": 700
@@ -106,6 +111,7 @@
             },
             {
               "uri": "QmPnJq97hAjeyL1ujqjbJVGZhw4RSaqkg6hNrGKq6svaK8",
+              "label" : "Green/Purple",
               "fixed-position": {
                 "x": 1500,
                 "y": 700
@@ -113,6 +119,7 @@
             },
             {
               "uri": "QmVdRXDcynJgtt31rxu8SJPirxesLFvhbPq3LeuR7L9VKN",
+              "label" : "Fiat",
               "fixed-position": {
                 "x": 1500,
                 "y": 700
@@ -129,14 +136,17 @@
           "options": [
             {
               "uri": "QmajQ7BH75xdKe3SKzM5QfVofBx8nEv8Eb8u171Xz7DPoK",
+              "label" : "Red/Blue",
               "anchor" : "back-left-tapestry-content"
             },
             {
               "uri": "QmTmV5ShAc61c1GhYJfhbnac5JksH65ihQFVJvSUaz4c4R",
+              "label" : "Gold",
               "anchor" : "back-left-tapestry-content"
             },
             {
               "uri": "QmVRKtGYoRCZ3Erg6pNWoj4mG26aCrcCKz2yZeE7NaEbK1",
+              "label" : "Green/Purple",
               "anchor" : "back-left-tapestry-content"
             }
           ],
@@ -150,6 +160,7 @@
           "options": [
             {
               "uri": "QmUkR5kkZbq5Szi1P7wJGS5pa1QZvG1tgp9Cnu7fBNdsv5",
+              "label" : "Chapter 1",
               "fixed-position": {
                 "x": 3200,
                 "y": 700
@@ -157,6 +168,7 @@
             },
             {
               "uri": "QmbbSQbZzbFzWLoV3LooZQnjSr7tS3T9jdYSHbDk8WDRJX",
+              "label" : "Chapter 2",
               "fixed-position": {
                 "x": 3200,
                 "y": 700
@@ -164,6 +176,7 @@
             },
             {
               "uri": "QmfDrTqHU2BETm5a8XD5ykoWQCwcGPz4tGhuswyzr8oVJi",
+              "label" : "Chapter 3",
               "fixed-position": {
                 "x": 3200,
                 "y": 700
@@ -171,6 +184,7 @@
             },
             {
               "uri": "QmfWSv7XnTXc8EVM5VFYyEsC2vJB2vuVZ23UCymNuMbi73",
+              "label" : "Chapter 4",
               "fixed-position": {
                 "x": 3200,
                 "y": 700
@@ -178,6 +192,7 @@
             },
             {
               "uri": "QmRysFFhFFEKrVzLhnE4XDdwZUh5KhXCjnDte2mQ7Wvbsk",
+              "label" : "Chapter 5",
               "fixed-position": {
                 "x": 3200,
                 "y": 700
@@ -185,6 +200,7 @@
             },
             {
               "uri": "QmUWvx6Znf8csegRqy3XHd89YcSyi1xtJUnG1ofBRQisqJ",
+              "label" : "Chapter 6",
               "fixed-position": {
                 "x": 3200,
                 "y": 700
@@ -192,6 +208,7 @@
             },
             {
               "uri": "QmReVPtyoq9fBw3K6ZQbfqPA2NhtMVyTG15GcYpV9EeWqz",
+              "label" : "Chapter 7",
               "fixed-position": {
                 "x": 3200,
                 "y": 700
@@ -199,6 +216,7 @@
             },
             {
               "uri": "QmQdFQ4mfZ7qwMgNZyngaSjRKaYEcoZAc4X1D4xv6KyRTm",
+              "label" : "Chapter 8",
               "fixed-position": {
                 "x": 3200,
                 "y": 700
@@ -206,6 +224,7 @@
             },
             {
               "uri": "QmduBmonJWkrcXJBEmQEMHJuEqeRab6B1PrtYuZjzehHrd",
+              "label" : "Chapter 9",
               "fixed-position": {
                 "x": 3200,
                 "y": 700
@@ -213,6 +232,7 @@
             },
             {
               "uri": "QmaLp3h9LeEsDbadFF52tdnAEvGu89rnY4CABqHQ8HnUz8",
+              "label" : "Chapter 10",
               "fixed-position": {
                 "x": 3200,
                 "y": 700
@@ -220,6 +240,7 @@
             },
             {
               "uri": "QmZtZzFNS1bk8juCXwM6KRqSd76h6KAE641wkUQxC3xtuw",
+              "label" : "Chapter 11",
               "fixed-position": {
                 "x": 3200,
                 "y": 700
@@ -227,6 +248,7 @@
             },
             {
               "uri": "QmSEVYYJX2SErmWi3SzCKABZhNXe5CnifBmN7QSZv9uMGu",
+              "label" : "Chapter 12",
               "fixed-position": {
                 "x": 3200,
                 "y": 700
@@ -234,6 +256,7 @@
             },
             {
               "uri": "Qmcx6hznGczCo9e7QCkoBD7ZUDe7mm9RMJHbdr53Kq6kgj",
+              "label" : "Chapter 13",
               "fixed-position": {
                 "x": 3200,
                 "y": 700
@@ -241,6 +264,7 @@
             },
             {
               "uri": "QmZxxUW98SnbcQ9TF37v9FfZGaWjbZ4EnU4vxoNLdPa48f",
+              "label" : "Chapter 14",
               "fixed-position": {
                 "x": 3200,
                 "y": 700
@@ -257,22 +281,27 @@
           "options": [
             {
               "uri": "QmQjjrvBmDuLnrdnXkohx5j1nt5zebgRGRYVwfBFLUVdrE",
+              "label" : "Turquoise",
               "anchor" : "back-right-tapestry-content"
             },
             {
               "uri": "QmaSafsQtTzCeJRkmENJLk3p2tySQB7Jbk7KVHqMSgNWx5",
+              "label" : "Blue",
               "anchor" : "back-right-tapestry-content"
             },
             {
               "uri": "QmdQ9gQp5cag5MwPPFDiccc2BVkX6B6dca2wA4L33gVGLc",
+              "label" : "Gold",
               "anchor" : "back-right-tapestry-content"
             },
             {
               "uri": "QmXpkL6cVuYNWgATUSeSqsKqJgiomTA5Y25Zgq6YWD7f5y",
+              "label" : "Green",
               "anchor" : "back-right-tapestry-content"
             },
             {
               "uri": "QmWn3aKsnEZTnDehFSE6q5mhkQ6tCU2h9LtXDRd7iCze2T",
+              "label" : "Purple",
               "anchor" : "back-right-tapestry-content"
             }
           ],
@@ -294,6 +323,7 @@
           "options": [            
             {
               "uri": "QmToLrAD88Pec7B6dpRteJk4xE97B66UEYuNNaQBf3Lg39",
+              "label" : "Meat",
               "fixed-position": {
                 "x": 839,
                 "y": 1099
@@ -301,6 +331,7 @@
             },
             {
               "uri": "QmYCVDL1YxTBqZm5SAQhjtsbGmv89jTcz8D6Let5FDFwm9",
+              "label" : "Async",
               "fixed-position": {
                 "x": 830,
                 "y": 1035
@@ -317,6 +348,7 @@
           "options": [            
             {
               "uri": "QmdnnPW6KsV9o47vuyRP83oLusnBtce2nACNqtp6jBp9zo",
+              "label" : "Drinks",
               "fixed-position": {
                 "x": 3905,
                 "y": 1067
@@ -324,6 +356,7 @@
             },
             {
               "uri": "QmVjmLh6we1ATQaH9hvcLcw63i8ZiWr9S8KWnHWr2Z1np6",
+              "label" : "Culture",
               "fixed-position": {
                 "x": 3905,
                 "y": 1030
@@ -340,6 +373,7 @@
           "options": [
             {
               "uri": "QmZq3yqA8GZDdkCymZSNxuPQT8e4QdyGJgqBTPN98WiQkW",
+              "label" : "Staff Only",
               "fixed-position": {
                 "x": 246,
                 "y": 1165
@@ -347,6 +381,7 @@
             },
             {
               "uri": "QmdyaJEZEftc5aaRcwaFKxwWsUWytSFyvFXxUN5nCfweyh",
+              "label" : "Void",
               "fixed-position": {
                 "x": 246,
                 "y": 1165
@@ -363,6 +398,7 @@
           "options": [
             {
               "uri": "QmXc6UYiJ4EXyAUg9dPa42z8nCkyD9J1VJL9SJawVHZt7d",
+              "label" : "Flesh & Blood ATM",
               "fixed-position": {
                 "x": 4500,
                 "y": 1200
@@ -370,6 +406,7 @@
             },
             {
               "uri": "QmPcbRWv5XzQ957SJMbdLkW7i21t5AAUrR93pjFdDcgLdh",
+              "label" : "Jesus",
               "fixed-position": {
                 "x": 4500,
                 "y": 1200
@@ -377,6 +414,7 @@
             },
             {
               "uri": "QmaX7RR8E4GARyzLoGuyZz54n4cs9K65EzeY6gPFVnDRXW",
+              "label" : "BTC",
               "fixed-position": {
                 "x": 4500,
                 "y": 1200
@@ -384,6 +422,7 @@
             },
             {
               "uri": "QmfEWiRPVYD5MLYYZKC9vHgdLCkhioEzGwaKQXUASoJsxZ",
+              "label" : "Outside",
               "fixed-position": {
                 "x": 4500,
                 "y": 1200
@@ -400,6 +439,7 @@
           "options": [
             {
               "uri": "QmVQr7dYkgS2dsK5hVjVBmVM8qAr8ehpRXy6V2EcPzUjD7",
+              "label" : "Checkerboard",
               "fixed-position": {
                 "x": 2400,
                 "y": 2102
@@ -407,6 +447,7 @@
             },
             {
               "uri": "QmdHUWLS3UefruphgieB4X2iu31dxwKvNKYbEnwZqZEFrN",
+              "label" : "Pattern 2",
               "fixed-position": {
                 "x": 2400,
                 "y": 2102
@@ -414,6 +455,7 @@
             },
             {
               "uri": "QmXJkmaK7ggN2ZyAynMR1Q6aJ4Un1CXsAjbMX49CMgYhtQ",
+              "label" : "Space",
               "fixed-position": {
                 "x": 2400,
                 "y": 2102
@@ -430,6 +472,7 @@
           "options": [
             {
               "uri": "QmctnyEcJ6s3udvDgRuLUHz4r8P8FNBvRfnP1aio7mT1cD",
+              "label" : "Cat",
               "fixed-position": {
                 "x": 2400,
                 "y": 250
@@ -437,6 +480,7 @@
             },
             {
               "uri": "QmTyo4SNzTE1ncupJjzM8RubU5wDGd2cVK5XainWQWjJQk",
+              "label" : "Space + Pointer",
               "fixed-position": {
                 "x": 2400,
                 "y": 250
@@ -444,6 +488,7 @@
             },
             {
               "uri": "QmTyo4SNzTE1ncupJjzM8RubU5wDGd2cVK5XainWQWjJQk",
+              "label" : "Space + Metal",
               "fixed-position": {
                 "x": 2400,
                 "y": 250
@@ -500,6 +545,7 @@
           "options": [
             {
               "uri": "QmRLAtHjrKGQuPHMN3Wz4KokwqoYeHCEAdHGfKKtP9Ee5W",
+              "label" : "Normal",
               "fixed-position": {
                 "x": {
                   "token-id": 10,
@@ -517,6 +563,7 @@
             },
             {
               "uri": "QmU38nK5GMQ9o6LDvTJW4vVDLuNYSL1siyQC9yffkkKbkF",
+              "label" : "VR",
               "fixed-position": {
                 "x": {
                   "token-id": 10,
@@ -534,6 +581,7 @@
             },
             {
               "uri": "QmSSd8CEZ8sPceP8z42KGunRxBmrqDvuUEqhUcsbqJTTvr",
+              "label" : "Voxel",
               "fixed-position": {
                 "x": {
                   "token-id": 10,
@@ -560,6 +608,7 @@
           "options": [
             {
               "uri": "QmYzjLYaYUsCjBqwh9FJs7PGcv68nR5fWJ3DGFRFFHuSLq",
+              "label" : "Day",
               "fixed-position": {
                 "x": 2890,
                 "y": 1400
@@ -567,6 +616,7 @@
             },
             {
               "uri": "QmVrF5bFFPCMwoFEFcf1B4pcJDfRpis12Pxh95b91AJ91x",
+              "label" : "Night",
               "fixed-position": {
                 "x": 2890,
                 "y": 1400
@@ -583,6 +633,7 @@
           "options": [
             {
               "uri": "QmcrruSBxmZZUH4wg89qTTCERXr1yJyFwT1Ygnz5v3EG1e",
+              "label" : "Demon",
               "fixed-position": {
                 "x": 3725,
                 "y": 1300
@@ -590,6 +641,7 @@
             },
             {
               "uri": "QmZ8YAsSX2KoUtvh7y2d8hXzMfXfqjdkfsfByCNMNwKdZu",
+              "label" : "Robot",
               "fixed-position": {
                 "x": 3725,
                 "y": 1300
@@ -597,6 +649,7 @@
             },
             {
               "uri": "QmYBJYu1PmUYWminSXZcZ9ocBA1S846pvR5mHvwbJRmS55",
+              "label" : "Soldier",
               "fixed-position": {
                 "x": 3725,
                 "y": 1300
@@ -604,6 +657,7 @@
             },
             {
               "uri": "Qma6o5eXdaJgd6vxBuXf2JeutuYCUU2GTx6tLa3P9z1Tjq",
+              "label" : "Surfer",
               "fixed-position": {
                 "x": 3725,
                 "y": 1300
@@ -620,6 +674,7 @@
           "options": [
             {
               "uri": "QmW2FyTrLaa5VQA1LD3h5B8zwA6nApf4FX1YgGQWNYcaWa",
+              "label" : "Satoshi Left",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
@@ -627,6 +682,7 @@
             },
             {
               "uri": "QmSPu7W57Q6McmZQpHLSJiBp5uPFvi9gd7xx5Ky1NFH92X",
+              "label" : "Satoshi Right",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
@@ -634,6 +690,7 @@
             },
             {
               "uri": "QmNrU3YXWaujAXfLkrSuHAtkjWXXe3xdqGXH2pvGZuhYbB",
+              "label" : "Satoshi Forward",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
@@ -641,6 +698,7 @@
             },
             {
               "uri": "Qmc8E19xNRZztutpvn76ACurPPh9wNYGVGucDokwwFmKv4",
+              "label" : "Andreas Forward",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
@@ -648,6 +706,7 @@
             },
             {
               "uri": "QmdqevcaabLa9EFXZAPVRytExPXh9kXvpxZjT9zYkU5i9P",
+              "label" : "Andreas Left",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
@@ -655,6 +714,7 @@
             },
             {
               "uri": "QmY6pHApo3joWvPieQTCHa6cLL4zu3ZBgkDz8feQ9LkFiv",
+              "label" : "Andreas Right",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
@@ -662,6 +722,7 @@
             },
             {
               "uri": "QmZdMAc4DL3V7dtiXcyqL9cDQPsyWQMq3Z8wK4pCVuwruw",
+              "label" : "McAfee Forward",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
@@ -669,6 +730,7 @@
             },
             {
               "uri": "QmNpzQsFRdfWrcKX14M3BWswGZe46vS18AtcTZumNqsWzS",
+              "label" : "McAfee Left",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
@@ -676,6 +738,7 @@
             },
             {
               "uri": "QmUQeaLSeWnxZaTZxHVnFMjhvjWbqEXsdy237zo6PHeJDG",
+              "label" : "McAfee Right",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
@@ -683,6 +746,7 @@
             },
             {
               "uri": "QmUkhbvUATaR8CTeXfBeAZsNqrHzVNxbdE9tqC3JZnodFj",
+              "label" : "Snowden Forward",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
@@ -690,6 +754,7 @@
             },
             {
               "uri": "Qma1Swacm81wB68VSzZom1kJGcNeSCQo6ph5zT4RM26ZmR",
+              "label" : "Snowden Left",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
@@ -697,6 +762,7 @@
             },
             {
               "uri": "Qmb7Y5mGE3X3vqbiLnzZB2Gy1cjxuSW72whU9m3b4PdjGE",
+              "label" : "Snowden Right",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
@@ -704,6 +770,7 @@
             },
             {
               "uri": "Qma7EZ1LewYiyYAehy8k7pSmgPRcs1CvG8JCi9KoLsXuNm",
+              "label" : "Vitalik Right",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
@@ -711,6 +778,7 @@
             },
             {
               "uri": "QmcT4FfivjzFBn6ZFc5Ew6t97P7FJJmMS8TVxnYpPKSfco",
+              "label" : "Vitalik Forward",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
@@ -718,6 +786,7 @@
             },
             {
               "uri": "QmRjrkfPS1w7FzGz9VCevbxpbweAwkwq4pQem5pChAW7z4",
+              "label" : "Vitalik Left",
               "fixed-position": {
                 "x": 3250,
                 "y": 1400
@@ -734,6 +803,7 @@
           "options": [
             {
               "uri": "QmapxDGw4Ki8LiPtAkHAFNvjaYrVwmo5fhCvpVXbjeaCAG",
+              "label" : "Accusing",
               "fixed-position": {
                 "x": 1400,
                 "y": 1450
@@ -741,6 +811,7 @@
             },
             {
               "uri": "QmPgS2gdGgV6fPKb65gwtFrzyZdaP5EoXSBvQjSXJR5zit",
+              "label" : "Calm",
               "fixed-position": {
                 "x": 1400,
                 "y": 1450
@@ -748,6 +819,7 @@
             },
             {
               "uri": "Qmeu2kb9ELkzB8y7H3ppgFt7sZgDiMCxBq3wtTB3ArRWAz",
+              "label" : "Miner",
               "fixed-position": {
                 "x": 1400,
                 "y": 1450
@@ -764,6 +836,7 @@
           "options": [
             {
               "uri": "QmX42RUqYXHrN8SD194BbGpxPzm7GGcPvAaB15rxohrCgU",
+              "label" : "Anonymous",
               "fixed-position": {
                 "x": 975,
                 "y": 1220
@@ -771,6 +844,7 @@
             },
             {
               "uri": "QmdsNPLCuBBKBUHfTU6qeVxrBpVL6yT3CSxKaosKu3Nq7F",
+              "label" : "Lizard Man",
               "fixed-position": {
                 "x": 975,
                 "y": 1220
@@ -778,6 +852,7 @@
             },
             {
               "uri": "QmQhwcK2TTvo1mEaVyutbkvESubnaY7U3jnCKxVWMb97tM",
+              "label" : "Magician",
               "fixed-position": {
                 "x": 975,
                 "y": 1220
@@ -887,6 +962,7 @@
           "options": [
             {
               "uri": "QmZUbQ5BLMK1xHqstvHHr5JYAXJhV64Baf7PRZpEuW9wWd",
+              "label" : "After DaVinci",
               "fixed-position": {
                 "x": 2400,
                 "y": 1900
@@ -894,6 +970,7 @@
             },
             {
               "uri": "QmThY8TsFrd2Wyugyk3QwAuxeqKXuiLLGivQ2U7h4dxVX7",
+              "label" : "Blue Diamonds",
               "fixed-position": {
                 "x": 2400,
                 "y": 1900
@@ -901,6 +978,7 @@
             },
             {
               "uri": "Qmdu6x53VXFuvUT3dxWxtD5dLFpwL7Ex6V9PntFa2Yfjcx",
+              "label" : "Maggots",
               "fixed-position": {
                 "x": 2400,
                 "y": 1900
@@ -962,6 +1040,7 @@
           "options": [            
             {
               "uri": "QmbVajnodHaZ3B9hntEjaR78JjaP8zL4vCNywt1Kmn2Pk3",
+              "label" : "I solve",
               "fixed-position": {
                 "x": 2440,
                 "y": 1162
@@ -969,6 +1048,7 @@
             },
             {
               "uri": "QmRpsxh7Ga5xmwLEedbSgM3CMGZDt8PUfxZUhEiCxT3pEi",
+              "label" : "I believe",
               "fixed-position": {
                 "x": 2440,
                 "y": 1235
@@ -976,6 +1056,7 @@
             },
             {
               "uri": "QmbXLaPoDcQoUWhodjQCNQyCGYW2pNny9pAUeH2T81FSzc",
+              "label" : "I rule",
               "fixed-position": {
                 "x": 2440,
                 "y": 1238
@@ -992,6 +1073,7 @@
           "options": [ 
             {
               "uri": "QmWwQJwaGRpop49sErPc6HqEhmPtbjejxfN9LgB67gHejk",
+              "label" : "Early Doors",
               "fixed-position": {
                 "x": 1850,
                 "y": 1205
@@ -999,6 +1081,7 @@
             },           
             {
               "uri": "QmbvLWeadYSGEUqTGgVKdd4thk7Qm2XCGiKs68WCmfWaMt",
+              "label" : "Getting Heavy",
               "fixed-position": {
                 "x": 1910,
                 "y": 1205
@@ -1006,6 +1089,7 @@
             },
             {
               "uri": "QmVLfwKhptUdyHiYYkgDfqbbHrMq9XCDGpa2ngQSyHVgwA",
+              "label" : "Exit Strategy",
               "fixed-position": {
                 "x": 1940,
                 "y": 1140
@@ -1022,6 +1106,7 @@
           "options": [
             {
               "uri": "QmfXL5rzSwvZ9x3xYA2tUjqA3jxMMgDnERqheFbpopw4cN",
+              "label" : "Apple",
               "fixed-position": {
                 "x": 4375,
                 "y": 1530
@@ -1029,6 +1114,7 @@
             },
             {
               "uri": "QmZ3yStuSdH8Fo1JUDd9u5k6boK8BZyZ5Rby6YSRTM18ER",
+              "label" : "Both",
               "fixed-position": {
                 "x": 4375,
                 "y": 1530
@@ -1036,6 +1122,7 @@
             },
             {
               "uri": "QmeXCbZP7SnAK23pm16pXEEkDqieNhgmru9sYbC7mVD4c4",
+              "label" : "TNT",
               "fixed-position": {
                 "x": 4375,
                 "y": 1530
@@ -1052,6 +1139,7 @@
           "options": [
             {
               "uri": "QmWVkGGWmqBJ9GNxNTxEQFaZUFyA11opNsABMkrBxzSG9M",
+              "label" : "Dimensional Painting",
               "fixed-position": {
                 "x": 475,
                 "y": 1650
@@ -1069,6 +1157,7 @@
             },
             {
               "uri": "QmP5D9FtoUZx1hqb1h4iN7EgBCAV43HKJe1gtkRwWfNfSe",
+              "label" : "Processing.org Console",
               "fixed-position": {
                 "x": 475,
                 "y": 1650
@@ -1086,6 +1175,7 @@
             },
             {
               "uri": "QmYbjQjr17SGt4UYEtuZzUJX5F5GFELmnQVc27Bihejtgt",
+              "label" : "Offset Layers",
               "fixed-position": {
                 "x": 475,
                 "y": 1650
@@ -1109,6 +1199,7 @@
             },
             {
               "uri": "QmdZN4Ub9rww5pjYLkBudbcqsJ1iTnizbDbL5SdepbP15F",
+              "label" : "Blueprint Wireframe",
               "fixed-position": {
                 "x": 475,
                 "y": 1650
@@ -1132,6 +1223,7 @@
             },
             {
               "uri": "QmWRnXDiK4RS328nD7rn6NRrqmdJV2pkShjoobkgBdzabf",
+              "label" : "Blueprint Fill",
               "fixed-position": {
                 "x": 475,
                 "y": 1650
@@ -1155,6 +1247,7 @@
             },
             {
               "uri": "Qmcwwc9wcA8kzJ3pKd1p5HkvGh2Cd3W7H9FmZEaAHjE7Pv",
+              "label" : "Paper Wireframe",
               "fixed-position": {
                 "x": 475,
                 "y": 1650
@@ -1186,6 +1279,7 @@
             },
             {
               "uri": "QmebFhnCtcC2GLHMhF3C2WzdU7aJuzUwduE2cmUHKaU1UB",
+              "label" : "Clear Black Wireframe",
               "fixed-position": {
                 "x": 475,
                 "y": 1650
@@ -1217,6 +1311,7 @@
             },
             {
               "uri": "QmXDMJ9fuV5XgGonBxLwz3CTss6oNDXcZPTtp4bcAUvCcS",
+              "label" : "Clear White Wireframe",
               "fixed-position": {
                 "x": 475,
                 "y": 1650
@@ -1257,6 +1352,7 @@
           "options": [                        
             {
               "uri": "QmUrE229N8niyRyHmM1CkFuTmJf9eLgtGt95M36whVq6vT",
+              "label" : "State 1",
               "fixed-position": {
                 "x": 3650,
                 "y": 1780
@@ -1264,6 +1360,7 @@
             },
             {
               "uri": "QmPicpS78yQavz92C9Dh82eau6uvSZ2x9MbcQ3QqghH77o",
+              "label" : "State 2",
               "fixed-position": {
                 "x": 3658,
                 "y": 1627
@@ -1271,6 +1368,7 @@
             },
             {
               "uri": "Qme4e2XweqCyptyADahuvkj832uRZ7jUicGzigWX56sPMB",
+              "label" : "State 3",
               "fixed-position": {
                 "x": 3658,
                 "y": 1576
@@ -1287,6 +1385,7 @@
           "options": [
             {
               "uri": "QmSHPiCvgS8DmJyqsM4wbCCh2hNps38Hcbhuy4mGK3aD6v",
+              "label" : "Color",
               "fixed-position": {
                 "x": 1400,
                 "y": 1627
@@ -1300,6 +1399,7 @@
             },
             {
               "uri": "QmbrdtDoftnnJD6EZ16EWGvCX22gGEETtkyfCM7Cuf8PgZ",
+              "label" : "Greyscale",
               "fixed-position": {
                 "x": 1400,
                 "y": 1627

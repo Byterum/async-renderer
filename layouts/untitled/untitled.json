@@ -1,6 +1,6 @@
 {
   "name": "Untitled",
-  "description": "",
+  "description": "Image of man wearing a blazer and balaclava with floral background.",
   "image": "",
   "attributes": [
     {
@@ -17,31 +17,94 @@
     "version": 1,
     "layers": [
       {
-        "id" : "base",
-        "width" : 1024,
-        "height" : 1024
-      },
-      {
         "id": "bg",
-        "uri" : "layouts/untitled/bg-0.png",
-        "fixed-position" : {
-          "x" : 512,
-          "y" : 512
-        },
-        "color" : {
-          "hue" : 0
+        "states": {
+          "options": [
+            {
+              "uri" : "layouts/untitled/bg-0.png",
+              "fixed-position" : {
+                "x" : 512,
+                "y" : 512
+              }
+            },
+            {
+              "uri" : "layouts/untitled/bg-1.png",
+              "fixed-position" : {
+                "x" : 512,
+                "y" : 512
+              }
+            },
+            {
+              "uri" : "layouts/untitled/bg-2.png",
+              "fixed-position" : {
+                "x" : 512,
+                "y" : 512
+              }
+            }
+          ],
+          "token-id": 1,
+          "lever-id": 0
         }
       },
       {
         "id": "mask",
-        "uri" : "layouts/untitled/mask-1.png",
-        "fixed-position" : {
-          "x" : 512,
-          "y" : 512
-        },
-        "color" : {
-          "green" : 200
-        }
+        "states": {
+          "options": [
+            {
+              "uri" : "layouts/untitled/mask-0.png",
+              "fixed-position" : {
+                "x" : 512,
+                "y" : 512
+              }
+            },
+            {
+              "uri" : "layouts/untitled/mask-1.png",
+              "fixed-position" : {
+                "x" : 512,
+                "y" : 512
+              }
+            },
+            {
+              "uri" : "layouts/untitled/mask-2.png",
+              "fixed-position" : {
+                "x" : 512,
+                "y" : 512
+              }
+            }
+          ],
+          "token-id": 2,
+          "lever-id": 0
+        }        
+      },
+      {
+        "id": "jacket",
+        "states": {
+          "options": [
+            {
+              "uri" : "layouts/untitled/jacket-0.png",
+              "fixed-position" : {
+                "x" : 512,
+                "y" : 512
+              }
+            },
+            {
+              "uri" : "layouts/untitled/jacket-1.png",
+              "fixed-position" : {
+                "x" : 512,
+                "y" : 512
+              }
+            },
+            {
+              "uri" : "layouts/untitled/jacket-2.png",
+              "fixed-position" : {
+                "x" : 512,
+                "y" : 512
+              }
+            }
+          ],
+          "token-id": 3,
+          "lever-id": 0
+        }        
       }
     ]
   }
