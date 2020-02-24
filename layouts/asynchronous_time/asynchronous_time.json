@@ -1,7 +1,7 @@
 {
   "name": "Asynchronous Time",
   "description": "Exploring our concept of time through states, symbols, measurements and changes, this artwork invites you to play with time. Make your your time truly yours.",
-  "image": "QmPeqNvzxk1tHGrwHgbrwhXVCt4eAUj5AjQ9hxEZud3VE5",
+  "image": "QmYbmz4Q8ooodc9CN8hu2s4tMpAbciZbgmfYBybZaXLW27",
   "attributes": [
     {
       "trait_type": "Artist",
@@ -18,35 +18,39 @@
     "layers": [
       {
         "id": "base",
-        "uri" : "layouts/asynchronous_time/bg.jpg"
+        "uri" : "QmSC9wvHHmM7d2dMqTNeif6UgFBt1NsR9n3q6dHXGAjHKx"
       },
       {
         "id": "hand",
         "states": {
           "options": [
             {
-              "uri" : "layouts/asynchronous_time/hand-0.png",
+              "uri" : "QmPfyLizWtyAk5VTtSB6j2egvhNgEtVPvTza7iwroZFhTf",
+              "label" : "Clock",
               "fixed-position" : {
                 "x" : 650,
                 "y" : 1090
               }
             },
             {
-              "uri" : "layouts/asynchronous_time/hand-1.png",
+              "uri" : "QmeWdxnxobiSHazNuL13t1zaws2JakZtWtWa65v7EE9Xx7",
+              "label" : "Digital",
               "fixed-position" : {
                 "x" : 670,
                 "y" : 1182
               }
             },
             {
-              "uri" : "layouts/asynchronous_time/hand-2.png",
+              "uri" : "QmRpQbq23WtvXoMptEYrCXFZXnpxgyYdPHik7toG6fDMS1",
+              "label" : "Hourglass",
               "fixed-position" : {
                 "x" : 671,
                 "y" : 1142
               }
             },
             {
-              "uri" : "layouts/asynchronous_time/hand-3.png",
+              "uri" : "QmQ5zWAFoWpoVdyxaky5sx19NkedaWnAGZ4E2vR2WgnmpS",
+              "label" : "Metronome",
               "fixed-position" : {
                 "x" : 673,
                 "y" : 1144
@@ -59,7 +63,7 @@
       },
       {
         "id": "box",
-        "uri" : "layouts/asynchronous_time/box.png",
+        "uri" : "QmTborpFZ2qX8L6v8p1y4nUE3QLZ6n3LdSdAg6EjcZPGCz",
         "fixed-position" : {
           "x" : 1580,
           "y" : 875
@@ -84,31 +88,36 @@
         "states": {
           "options": [
             {
-              "visible" : 0
+              "visible" : 0,
+              "label" : "Unmasked"
             },
             {
-              "uri" : "layouts/asynchronous_time/mask-0.png",
+              "uri" : "QmUgGGXoasPq7MUzXALFzC3dj9SzW5SxfTgX5qaDMvVRfK",
+              "label" : "Anonymous",
               "fixed-position" : {
                 "x" : 870,
                 "y" : 1030
               }
             },
             {
-              "uri" : "layouts/asynchronous_time/mask-1.png",
+              "uri" : "QmNsUpvn6hJBdDtQG2WVLt5DbSwirEL9WHyUZe8fWURZS3",
+              "label" : "Aztec",
               "fixed-position" : {
                 "x" : 870,
                 "y" : 1025
               }
             },
             {
-              "uri" : "layouts/asynchronous_time/mask-2.png",
+              "uri" : "QmXtGaYCmsaLKNuk3kshQy1x8yW5mYXf4hZkDJtsdZ1ezw",
+              "label" : "Cyberman",
               "fixed-position" : {
                 "x" : 870,
                 "y" : 1020
               }
             },
             {
-              "uri" : "layouts/asynchronous_time/mask-3.png",
+              "uri" : "QmSMNBVUXK5QWYUtSY9KryVN7TegbDgB2DAUuKfLwLSyeL",
+              "label" : "Egyptian",
               "fixed-position" : {
                 "x" : 875,
                 "y" : 1005

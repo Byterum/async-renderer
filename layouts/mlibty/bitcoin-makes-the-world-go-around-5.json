@@ -1,12 +1,6 @@
 {
   "name": "Hot topic #4",
-  "description": "",
+  "description": "Lava plants are growing in the atmosphere.",
   "image": "QmSDV4vNHEWRPNmsQRVowzRfSrFudkwc7tRVUSdYB6wvup",
-  "master" : "QmeE1tKaB3MrrW4ohruWqXWdWm98rez1fVibcw7gB7g1Sy",
-  "attributes": [
-    {
-      "trait_type": "Artist",
-      "value": "Mlibty"
-    }
-  ]
+  "master" : "QmZ21usZyoD9xxreyNRwXdytPHwSRi9QRFZB83AcGNLbUU"
 }

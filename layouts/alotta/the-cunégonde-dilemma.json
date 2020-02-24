@@ -1,7 +1,7 @@
 {
   "name": "The Cunégonde Dilemma",
-  "description": "Is Cunégonde sitting here all day, asked the new chair with a smothered voice. Yes she was. All year long, waiting for things to calm down or just to happen. Cunégonde knew deep down inside that someone, maybe several persons were playing with her mind, showing her things that were not real.",
-  "image": "QmPeqNvzxk1tHGrwHgbrwhXVCt4eAUj5AjQ9hxEZud3VE5",
+  "description": "Cunégonde knew since the day she seated in this doomed chair that some people from the future were making her stay here, playing with her mind, showing her things that were not real, turning her into something different. Sometimes she could even feel having hairs on her scalp while the flames of hell were drying her giant toad's eyes.",
+  "image": "QmRA13dkrwu4T4REsSfGFuSqEyH4RREvXYmpRjnr9s5Qxj",
   "attributes": [
     {
       "trait_type": "Artist",
@@ -26,6 +26,7 @@
           "options": [
             {
               "uri": "QmNgBaeuGjReCeXqxyaGuDH6zJVXBEBaSPV6JoqjQLEJA7",
+              "label" : "Puimichel",
               "fixed-position": {
                 "x": 149,
                 "y": 305
@@ -33,6 +34,7 @@
             },
             {
               "uri": "QmXLyhXQwtUTHfbjA5i6Uf2htxCcWuW4xQ3Mr6X8GysYgk",
+              "label" : "Pandemonium",
               "fixed-position": {
                 "x": 149,
                 "y": 305
@@ -40,6 +42,7 @@
             },
             {
               "uri": "QmNiBqdvE45szBP7Ta26ZoPUUTNen4vr6mU1mye2pbP693",
+              "label" : "Fort d'Aubervillier",
               "fixed-position": {
                 "x": 149,
                 "y": 302
@@ -47,6 +50,7 @@
             },
             {
               "uri": "QmQoLXRSECVmC5Y6rnhFAazPe9Xu7iQ2qz5UtbAPQoyAfC",
+              "label" : "Utopia",
               "fixed-position": {
                 "x": 149,
                 "y": 305
@@ -63,6 +67,7 @@
           "options": [
             {
               "uri": "QmQb56argDShNwXZTUcB6AY3obE9WYCFFrqSBu9c9gnMRx",
+              "label" : "Old Shoe Box",
               "fixed-position": {
                 "x": 532,
                 "y": 572
@@ -70,6 +75,7 @@
             },
             {
               "uri": "QmQiBPvNbU2HmqqQj1cmBBiq1pWwGnYmmGfZLU8FxhD7fe",
+              "label" : "Nostromo's bathroom",
               "fixed-position": {
                 "x": 532,
                 "y": 572
@@ -77,6 +83,7 @@
             },
             {
               "uri": "QmcFncEBXVhzFRJ7zRi8Td3kUgUX7kTB6vENHQ3eTaUMPN",
+              "label" : "Le Clapier",
               "fixed-position": {
                 "x": 532,
                 "y": 572
@@ -84,6 +91,7 @@
             },
             {
               "uri": "QmXHT2x7AQEqUTcHLB5JfjiwqvHrpGMoL5AiU1QQWaZm7Y",
+              "label" : "Luxor Club",
               "fixed-position": {
                 "x": 532,
                 "y": 572
@@ -108,6 +116,7 @@
           "options": [
             {
               "uri": "QmfDSo2Z2uDgqKGa3xCkJUukL21tRXVzuiUgkfmbpkvNYf",
+              "label" : "Cunégonde",
               "fixed-position": {
                 "x": 678,
                 "y": 331
@@ -115,6 +124,7 @@
             },
             {
               "uri": "QmSNhE9dWkXUaogVqv9Phsf9g15ZDr8C7zizZTfLh2kWsT",
+              "label" : "Panaceanne",
               "fixed-position": {
                 "x": 609,
                 "y": 277
@@ -122,6 +132,7 @@
             },
             {
               "uri": "QmdubrGQ8694nXxCzetiqQgJo8WgpVbkRgojmwxKfwZWjn",
+              "label" : "Triclopine",
               "fixed-position": {
                 "x": 667,
                 "y": 352
@@ -129,6 +140,7 @@
             },
             {
               "uri": "QmexdQxQj6vLweV1RWrEt8m4Q7xRckWSwGp1huSULK5AcY",
+              "label" : "Elesdée",
               "fixed-position": {
                 "x": 687,
                 "y": 277
@@ -145,6 +157,7 @@
           "options": [
             {
               "uri": "QmU8hsh3Li3uzVHMGzEPWBZLwpD1UJLbUUCsNRR5r1wEKB",
+              "label" : "Toby and the ashes of Elvis",
               "fixed-position": {
                 "x": 95,
                 "y": 728
@@ -152,6 +165,7 @@
             },
             {
               "uri": "QmQs82vqMtkd3Hsgir5sFceuTPAw3ULm2MWjdt4y9pHnD9",
+              "label" : "2 more windows",
               "fixed-position": {
                 "x": 158,
                 "y": 680
@@ -159,6 +173,7 @@
             },
             {
               "uri": "QmPNcvK5iNrFsPRGwTTKKsTgSG6gESCKydPZcjbHw2hygr",
+              "label" : "Toby smoking",
               "fixed-position": {
                 "x": 162,
                 "y": 724
@@ -166,6 +181,7 @@
             },
             {
               "uri": "QmZgNba6WYQHcMBPRJCYM48XmJFWvAtC5vNTs3yUztFY8X",
+              "label" : "Last minute show",
               "fixed-position": {
                 "x": 152,
                 "y": 692

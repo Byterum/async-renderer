@@ -1,7 +1,7 @@
 {
   "name": "Banksta",
-  "description": "",
-  "image": "",
+  "description": "Pump, dump and bump Banksta to death. Demon or dead normal? Print fiat at will. What more do you want?",
+  "image": "QmbXzwTZXyczunMpLoeqJY34ZCB7giWEJvm3ejBR573xvf",
   "attributes": [
     {
       "trait_type": "Artist",
@@ -21,10 +21,12 @@
         "states": {
           "options": [
             {
-              "uri" : "layouts/banker/bg-0.jpg"
+              "uri" : "QmSkA9WxsLmQfLWGSVAXLb5hjCsDJvNqU8Ei2qErM4RuFb",
+              "label" : "Gains"
             },
             {
-              "uri" : "layouts/banker/bg-1.jpg"
+              "uri" : "QmfUddh7FT47PYATAyUUKDDbKZ41BuWhZBVjv6mPCMgNQC",
+              "label" : "Girls"
             }
           ],
           "token-id": 8,
@@ -36,21 +38,24 @@
         "states": {
           "options": [
             {
-              "uri" : "layouts/banker/money-0.png",
+              "uri" : "QmVxyxMwVJS1uKmuZciMkmnn44Hs65AQaFz1RzpdSCuamu",
+              "label" : "Money",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
               }
             },
             {
-              "uri" : "layouts/banker/money-1.png",
+              "uri" : "Qmb81Zq3qUN9RfqcgDacdcbZVZMZcfJJ6tJSdTyRFoZEVE",
+              "label" : "Mo Money",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
               }
             },
             {
-              "uri" : "layouts/banker/money-2.png",
+              "uri" : "QmSGgpd2H18hRYicWqJafWx2Nqgdm51TPqVvWZ41aVZbJH",
+              "label" : "Drugs",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
@@ -66,21 +71,24 @@
         "states": {
           "options": [
             {
-              "uri" : "layouts/banker/socks-0.png",
+              "uri" : "QmZPcAUazkvefxJMzyCiYXUdE1FiTdZJLeCtvjAYj53kd5",
+              "label" : "Checker",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
               }
             },
             {
-              "uri" : "layouts/banker/socks-1.png",
+              "uri" : "QmQxZui9CXDCn5HP6Y8pPhH1aaEb2EcnFNaYGfk7ox3zmR",
+              "label" : "Ethereum",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
               }
             },
             {
-              "uri" : "layouts/banker/socks-2.png",
+              "uri" : "QmNMWfm6J1C9KTYRAmnqSvhozX1eo8Pn2tq8Mad2MeYwmU",
+              "label" : "Bitcoin",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
@@ -96,14 +104,16 @@
         "states": {
           "options": [
             {
-              "uri" : "layouts/banker/trousers-0.png",
+              "uri" : "QmSTpDSx6ZPhE5GbUfPrm6LaoKoCftHZoaU4H19pfD1dnP",
+              "label" : "Black",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
               }
             },
             {
-              "uri" : "layouts/banker/trousers-1.png",
+              "uri" : "QmU2xqGWuDWqVtAudHrkVhRYwnUXcxNfiFXYfcqGEXMcas",
+              "label" : "Casual",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
@@ -119,14 +129,16 @@
         "states": {
           "options": [
             {
-              "uri" : "layouts/banker/left-hand-0.png",
+              "uri" : "QmRcxpfmHe39WbtQjRvszofcCD2qz1xqGhHSvB7fFJG6gD",
+              "label" : "Bonus",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
               }
             },
             {
-              "uri" : "layouts/banker/left-hand-1.png",
+              "uri" : "QmdpgpXvwbNobrmjZctCjjb7VQaQfZWYqDTigAhoQNfQ93",
+              "label" : "Bottle of Fizz",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
@@ -142,14 +154,16 @@
         "states": {
           "options": [
             {
-              "uri" : "layouts/banker/right-hand-0.png",
+              "uri" : "QmdYnRtYDY8N28H82GBQuvjNqnDtktu3FgLPAr1YLX4NBJ",
+              "label" : "Bird Flip",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
               }
             },
             {
-              "uri" : "layouts/banker/right-hand-1.png",
+              "uri" : "Qmci8Mess7fWADrg1qN43thHb6YxHnnxDrkcFqWLndSKrW",
+              "label" : "Cane",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
@@ -165,21 +179,24 @@
         "states": {
           "options": [
             {
-              "uri" : "layouts/banker/shirt-0.png",
+              "uri" : "QmNV43kczjcMPs2G52AMhaZT8Euji6vwCPnEuECCqGfPG9",
+              "label" : "Casual",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
               }
             },
             {
-              "uri" : "layouts/banker/shirt-1.png",
+              "uri" : "QmNskVd6zAXQtgxS4svEftLcaDyoBCwGXiTkFSfrkwBRDR",
+              "label" : "Pink Tie",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
               }
             },
             {
-              "uri" : "layouts/banker/shirt-2.png",
+              "uri" : "QmTxJcsNX9PtqNdEpE9njsN8UZy7fSVaFtZv4UGhhk8bn7",
+              "label" : "Green Tie",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
@@ -195,21 +212,24 @@
         "states": {
           "options": [
             {
-              "uri" : "layouts/banker/head-0.png",
+              "uri" : "QmYs3L8iuE7qvBxF9142VsX4pEnBbR98Biu4sj4MibLV4i",
+              "label" : "Human",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
               }
             },
             {
-              "uri" : "layouts/banker/head-1.png",
+              "uri" : "QmfXfJspTbDT8ouhEmsq2DPx6hhZ8C2rjKE16gjkpvounv",
+              "label" : "Demon",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
               }
             },
             {
-              "uri" : "layouts/banker/head-2.png",
+              "uri" : "QmbaFUpwkttyrmZXkN16EgMvvVwTsnsdZgrfWRjVyAFBAv",
+              "label" : "Skull",
               "fixed-position" : {
                 "x" : 750,
                 "y" : 1200
@@ -226,7 +246,7 @@
           "token-id": 2,
           "lever-id": 0
         },
-        "uri" : "layouts/banker/coat.png",
+        "uri" : "QmW7koNN3LMzVmEFvezXC9PzKe6VbzXbmTzQtTiqLS8QgQ",
         "fixed-position" : {
           "x" : 750,
           "y" : 1200

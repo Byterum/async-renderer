@@ -22,23 +22,60 @@
           "options": [
             {
               "uri" : "layouts/untitled/bg-0.png",
+              "label" : "Normal",
               "fixed-position" : {
                 "x" : 512,
                 "y" : 512
+              },
+              "color" : {
+                "hue" : {
+                  "token-id": 1,
+                  "lever-id": 1
+                }
               }
             },
             {
               "uri" : "layouts/untitled/bg-1.png",
+              "label" : "Greyscale",
               "fixed-position" : {
                 "x" : 512,
                 "y" : 512
+              },
+              "color" : {
+                "red" : {
+                  "token-id": 1,
+                  "lever-id": 2
+                },
+                "green" : {
+                  "token-id": 1,
+                  "lever-id": 3
+                },
+                "blue" : {
+                  "token-id": 1,
+                  "lever-id": 4
+                }
               }
             },
             {
               "uri" : "layouts/untitled/bg-2.png",
+              "label" : "Wireframe",
               "fixed-position" : {
                 "x" : 512,
                 "y" : 512
+              },
+              "color" : {
+                "red" : {
+                  "token-id": 1,
+                  "lever-id": 2
+                },
+                "green" : {
+                  "token-id": 1,
+                  "lever-id": 3
+                },
+                "blue" : {
+                  "token-id": 1,
+                  "lever-id": 4
+                }
               }
             }
           ],
@@ -52,23 +89,60 @@
           "options": [
             {
               "uri" : "layouts/untitled/mask-0.png",
+              "label" : "Normal",
               "fixed-position" : {
                 "x" : 512,
                 "y" : 512
+              },
+              "color" : {
+                "hue" : {
+                  "token-id": 2,
+                  "lever-id": 1
+                }
               }
             },
             {
               "uri" : "layouts/untitled/mask-1.png",
+              "label" : "Greyscale",
               "fixed-position" : {
                 "x" : 512,
                 "y" : 512
+              },
+              "color" : {
+                "red" : {
+                  "token-id": 2,
+                  "lever-id": 2
+                },
+                "green" : {
+                  "token-id": 2,
+                  "lever-id": 3
+                },
+                "blue" : {
+                  "token-id": 2,
+                  "lever-id": 4
+                }
               }
             },
             {
               "uri" : "layouts/untitled/mask-2.png",
+              "label" : "Wireframe",
               "fixed-position" : {
                 "x" : 512,
                 "y" : 512
+              },
+              "color" : {
+                "red" : {
+                  "token-id": 2,
+                  "lever-id": 2
+                },
+                "green" : {
+                  "token-id": 2,
+                  "lever-id": 3
+                },
+                "blue" : {
+                  "token-id": 2,
+                  "lever-id": 4
+                }
               }
             }
           ],
@@ -82,23 +156,60 @@
           "options": [
             {
               "uri" : "layouts/untitled/jacket-0.png",
+              "label" : "Normal",
               "fixed-position" : {
                 "x" : 512,
                 "y" : 512
+              },
+              "color" : {
+                "hue" : {
+                  "token-id": 3,
+                  "lever-id": 1
+                }
               }
             },
             {
               "uri" : "layouts/untitled/jacket-1.png",
+              "label" : "Greyscale",
               "fixed-position" : {
                 "x" : 512,
                 "y" : 512
+              },
+              "color" : {
+                "red" : {
+                  "token-id": 3,
+                  "lever-id": 2
+                },
+                "green" : {
+                  "token-id": 3,
+                  "lever-id": 3
+                },
+                "blue" : {
+                  "token-id": 3,
+                  "lever-id": 4
+                }
               }
             },
             {
               "uri" : "layouts/untitled/jacket-2.png",
+              "label" : "Wireframe",
               "fixed-position" : {
                 "x" : 512,
                 "y" : 512
+              },
+              "color" : {
+                "red" : {
+                  "token-id": 3,
+                  "lever-id": 2
+                },
+                "green" : {
+                  "token-id": 3,
+                  "lever-id": 3
+                },
+                "blue" : {
+                  "token-id": 3,
+                  "lever-id": 4
+                }
               }
             }
           ],

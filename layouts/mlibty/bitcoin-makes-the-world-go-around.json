@@ -1,7 +1,7 @@
 {
   "name": "Bitcoin Makes the World Go Around",
-  "description": "Master Artwork Token description goes here.",
-  "image": "QmPeqNvzxk1tHGrwHgbrwhXVCt4eAUj5AjQ9hxEZud3VE5",
+  "description": "\"Bitcoin makes the world go around\" is the first work for async series \"Money makes the world go around\". It's directed to the people who own and trade Bitcoin. If the token holder moves these Non fungible art tokens in appropriate way and manage to create the right composition for the given moment in time, it will bring him immense luck concerning this cryptocurrency. On the other hands, if the NFT moves are not made wisely, it'll reflect to her/his portfolio. So handle it with care!",
+  "image": "QmfM7Yue13EfzV5qj4qkRXZ36f6yQ47cto2x6XhQXse6PL",
   "attributes": [
     {
       "trait_type": "Artist",
@@ -303,10 +303,12 @@
         "states": {
           "options": [
             {
-              "visible": 0
+              "visible": 0,
+              "label" : "BTC"
             },
             {
               "uri": "QmScvai4qGMxHgyDbLu9Fmv3kcf3N16wgTT7A9iK3fdMq5",
+              "label" : "Green",
               "fixed-position": {
                 "x": 1024,
                 "y": 1024
@@ -324,6 +326,7 @@
             },
             {
               "uri": "QmPzCtzs5RzFWcZJ8cFhXtuJVXWezrq9KxGZd8FzxA6yPN",
+              "label" : "Red",
               "fixed-position": {
                 "x": 1024,
                 "y": 1024
@@ -372,6 +375,7 @@
           "options": [
             {
               "uri": "Qmb955UTJnUrh2MmvZBuh6MezwAyGYMtYYZhgAbzaVSJQn",
+              "label" : "BTC",
               "fixed-position": {
                 "x": 1040,
                 "y": 1006
@@ -388,10 +392,12 @@
               }
             },
             {
-              "visible": 0
+              "visible": 0,
+              "label" : "Green"
             },
             {
-              "visible": 0
+              "visible": 0,
+              "label" : "Red"
             }
           ],
           "token-id": 1,

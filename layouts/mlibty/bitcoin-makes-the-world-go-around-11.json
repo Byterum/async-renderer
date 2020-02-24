@@ -1,12 +1,6 @@
 {
   "name": "Shady connections #2",
-  "description": "",
+  "description": "Some connections are shady.",
   "image": "QmVTN3agQosyJLDnRBCkE62cRymFU65HnEcFTNwpAuk91M",
-  "master" : "QmeE1tKaB3MrrW4ohruWqXWdWm98rez1fVibcw7gB7g1Sy",
-  "attributes": [
-    {
-      "trait_type": "Artist",
-      "value": "Mlibty"
-    }
-  ]
+  "master" : "QmZ21usZyoD9xxreyNRwXdytPHwSRi9QRFZB83AcGNLbUU"
 }

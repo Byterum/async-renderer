@@ -1,12 +1,6 @@
 {
   "name": "Bitcoin makes the world go around",
-  "description": "",
-  "image": "QmXmeCPLdwyTj29HRpY127NFwFeCmZjDyYDLaLnW4uRqDA",
-  "master" : "QmeE1tKaB3MrrW4ohruWqXWdWm98rez1fVibcw7gB7g1Sy",
-  "attributes": [
-    {
-      "trait_type": "Artist",
-      "value": "Mlibty"
-    }
-  ]
+  "description": "B is in the heart of the city",
+  "image": "QmdmHZJz71aqbdgPPDVkkjui5Dk5CSKZnMbgiR7PZJgco7",
+  "master" : "QmZ21usZyoD9xxreyNRwXdytPHwSRi9QRFZB83AcGNLbUU"
 }
