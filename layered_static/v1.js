@@ -28,7 +28,6 @@ const KEY_MIRROR = "mirror";
 
 var blockNum = -1;
 var bufferConnector = null;
-var masterArtTokenId = 0;
 
 var controlTokenCache = {}
 
@@ -36,9 +35,9 @@ function setBufferConnector(_bufferConnector) {
 	bufferConnector = _bufferConnector;
 }
 
-async function render(contract, layout, _blockNum, _masterArtTokenId) {
+async function render(contract, layout, _blockNum, masterArtTokenId) {
 	blockNum = parseInt(_blockNum);
-	masterArtTokenId = parseInt(_masterArtTokenId);
+	masterArtTokenId = parseInt(masterArtTokenId);
 
 	var currentImage = null;
 
@@ -53,14 +52,14 @@ async function render(contract, layout, _blockNum, _masterArtTokenId) {
 		console.log("rendering layer: " + (i + 1) + " of " + layout.layers.length + " (" + layer.id + ")")
 
 		if (KEY_STATES in layer) {
-			var uriIndex = await readIntProperty(contract, layer, KEY_STATES, "Layer Index");
+			var uriIndex = await readIntProperty(contract, layer, KEY_STATES, "Layer Index", masterArtTokenId);
 
 			layer = layer[KEY_STATES].options[uriIndex];
 		}
 
 		// check if this layer has visbility controls
 		if (KEY_VISIBLE in layer) {
-			var isVisible = (await readIntProperty(contract, layer, KEY_VISIBLE, "Layer Visible")) === 1;
+			var isVisible = (await readIntProperty(contract, layer, KEY_VISIBLE, "Layer Visible", masterArtTokenId)) === 1;
 			if (isVisible === false) {
 				console.log("	NOT VISIBLE. SKIPPING.")
 				continue;
@@ -82,7 +81,7 @@ async function render(contract, layout, _blockNum, _masterArtTokenId) {
 		if (currentImage == null) {
 			currentImage = layerImage;
 		} else {
-			currentImage = await renderLayer(contract, currentImage, layout, layer, layerImage);
+			currentImage = await renderLayer(contract, currentImage, layout, layer, layerImage, masterArtTokenId);
 		}
 
 		layerImage = null;
@@ -93,7 +92,7 @@ async function render(contract, layout, _blockNum, _masterArtTokenId) {
 	return currentImage;
 }
 
-async function readIntProperty(contract, object, key, label) {
+async function readIntProperty(contract, object, key, label, masterArtTokenId) {
 	var value = object[key];
 
 	// check if value is an object. If so then we need to check the contract value
@@ -162,14 +161,14 @@ function getLayerWithId(layout, layerId) {
 	return null;
 }
 
-async function renderLayer(contract, currentImage, layout, layer, layerImage) {
+async function renderLayer(contract, currentImage, layout, layer, layerImage, masterArtTokenId) {
 	// scale the layer (optionally)
 	var bitmapWidth = layerImage.bitmap.width;
 	var bitmapHeight = layerImage.bitmap.height;
 
 	if (KEY_SCALE in layer) {
-		var scale_x = (await readIntProperty(contract, layer[KEY_SCALE], KEY_X, "Layer Scale X")) / 100;
-		var scale_y = (await readIntProperty(contract, layer[KEY_SCALE], KEY_Y, "Layer Scale Y")) / 100;
+		var scale_x = (await readIntProperty(contract, layer[KEY_SCALE], KEY_X, "Layer Scale X", masterArtTokenId)) / 100;
+		var scale_y = (await readIntProperty(contract, layer[KEY_SCALE], KEY_Y, "Layer Scale Y", masterArtTokenId)) / 100;
 
 		if ((scale_x == 0) || (scale_y == 0)) {
 			console.log("	Scale X or Y is 0 -- returning currentImage.")
@@ -184,7 +183,7 @@ async function renderLayer(contract, currentImage, layout, layer, layerImage) {
 
 	// rotate the layer (optionally)
 	if (KEY_FIXED_ROTATION in layer) {
-		var rotation = await readIntProperty(contract, layer, KEY_FIXED_ROTATION, "Layer Fixed Rotation");
+		var rotation = await readIntProperty(contract, layer, KEY_FIXED_ROTATION, "Layer Fixed Rotation", masterArtTokenId);
 
 		layerImage.rotate(rotation, true);
 
@@ -195,8 +194,8 @@ async function renderLayer(contract, currentImage, layout, layer, layerImage) {
 
 	// check for mirror
 	if (KEY_MIRROR in layer) {
-		var shouldMirrorHorizontal = ((await readIntProperty(contract, layer[KEY_MIRROR], KEY_X, "Mirror X")) == 1);
-		var shouldMirrorVertical = ((await readIntProperty(contract, layer[KEY_MIRROR], KEY_Y, "Mirror Y")) == 1);
+		var shouldMirrorHorizontal = ((await readIntProperty(contract, layer[KEY_MIRROR], KEY_X, "Mirror X", masterArtTokenId)) == 1);
+		var shouldMirrorVertical = ((await readIntProperty(contract, layer[KEY_MIRROR], KEY_Y, "Mirror Y", masterArtTokenId)) == 1);
 
 		layerImage.mirror(shouldMirrorHorizontal, shouldMirrorVertical);
 	}
@@ -209,7 +208,7 @@ async function renderLayer(contract, currentImage, layout, layer, layerImage) {
 
 		if (typeof anchorLayerId === "object") {
 			// TODO test this
-			var anchorLayerIndex = await readIntProperty(contract, layer, KEY_ANCHOR, "Anchor Layer Index");
+			var anchorLayerIndex = await readIntProperty(contract, layer, KEY_ANCHOR, "Anchor Layer Index", masterArtTokenId);
 
 			anchorLayerId = layer[KEY_ANCHOR].options[anchorLayerIndex];
 		}
@@ -228,18 +227,18 @@ async function renderLayer(contract, currentImage, layout, layer, layerImage) {
 	// position the layer (optionally)
 	if (KEY_FIXED_POSITION in layer) {
 		// Fixed position sets an absolute position
-		x = await readIntProperty(contract, layer[KEY_FIXED_POSITION], KEY_X, "Layer Fixed Position X");
-		y = await readIntProperty(contract, layer[KEY_FIXED_POSITION], KEY_Y, "Layer Fixed Position Y");
+		x = await readIntProperty(contract, layer[KEY_FIXED_POSITION], KEY_X, "Layer Fixed Position X", masterArtTokenId);
+		y = await readIntProperty(contract, layer[KEY_FIXED_POSITION], KEY_Y, "Layer Fixed Position Y", masterArtTokenId);
 	} else {
 		// relative position adjusts xy based on the anchor
 		if (KEY_RELATIVE_POSITION in layer) {
-			relativeX = await readIntProperty(contract, layer[KEY_RELATIVE_POSITION], KEY_X, "Layer Relative Position X");
-			relativeY = await readIntProperty(contract, layer[KEY_RELATIVE_POSITION], KEY_Y, "Layer Relative Position Y");
+			relativeX = await readIntProperty(contract, layer[KEY_RELATIVE_POSITION], KEY_X, "Layer Relative Position X", masterArtTokenId);
+			relativeY = await readIntProperty(contract, layer[KEY_RELATIVE_POSITION], KEY_Y, "Layer Relative Position Y", masterArtTokenId);
 		}
 
 		// relative rotation orbits this layer around an anchor
 		if (KEY_ORBIT_ROTATION in layer) {
-			var relativeRotation = await readIntProperty(contract, layer, KEY_ORBIT_ROTATION, "Layer Orbit Rotation");
+			var relativeRotation = await readIntProperty(contract, layer, KEY_ORBIT_ROTATION, "Layer Orbit Rotation", masterArtTokenId);
 
 			console.log("Orbiting " + relativeRotation + " degrees around anchor");					
 
@@ -268,7 +267,7 @@ async function renderLayer(contract, currentImage, layout, layer, layerImage) {
 	// adjust the color
 	if (KEY_COLOR in layer) {
 		if (KEY_RED in layer[KEY_COLOR]) {
-			var red = await readIntProperty(contract, layer[KEY_COLOR], KEY_RED, "Layer Color Red"); 
+			var red = await readIntProperty(contract, layer[KEY_COLOR], KEY_RED, "Layer Color Red", masterArtTokenId); 
 
 			layerImage.color([
 				{
@@ -277,7 +276,7 @@ async function renderLayer(contract, currentImage, layout, layer, layerImage) {
 			]);
 		}
 		if (KEY_GREEN in layer[KEY_COLOR]) {
-			var green = await readIntProperty(contract, layer[KEY_COLOR], KEY_GREEN, "Layer Color Green"); 
+			var green = await readIntProperty(contract, layer[KEY_COLOR], KEY_GREEN, "Layer Color Green", masterArtTokenId); 
 
 			layerImage.color([
 				{
@@ -286,7 +285,7 @@ async function renderLayer(contract, currentImage, layout, layer, layerImage) {
 			]);
 		}
 		if (KEY_BLUE in layer[KEY_COLOR]) {
-			var blue = await readIntProperty(contract, layer[KEY_COLOR], KEY_BLUE, "Layer Color Blue"); 
+			var blue = await readIntProperty(contract, layer[KEY_COLOR], KEY_BLUE, "Layer Color Blue", masterArtTokenId); 
 
 			layerImage.color([
 				{
@@ -295,7 +294,7 @@ async function renderLayer(contract, currentImage, layout, layer, layerImage) {
 			]);
 		}
 		if (KEY_HUE in layer[KEY_COLOR]) {
-			var hue = await readIntProperty(contract, layer[KEY_COLOR], KEY_HUE, "Layer Color Hue"); 
+			var hue = await readIntProperty(contract, layer[KEY_COLOR], KEY_HUE, "Layer Color Hue", masterArtTokenId); 
 
 			layerImage.color([
 				{
@@ -304,7 +303,7 @@ async function renderLayer(contract, currentImage, layout, layer, layerImage) {
 			]);
 		}
 		if (KEY_ALPHA in layer[KEY_COLOR]) {
-			var alpha = await readIntProperty(contract, layer[KEY_COLOR], KEY_ALPHA, "Layer Color Alpha"); 
+			var alpha = await readIntProperty(contract, layer[KEY_COLOR], KEY_ALPHA, "Layer Color Alpha", masterArtTokenId); 
 
 			layerImage.opacity(alpha / 100);
 		}
