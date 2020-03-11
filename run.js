@@ -18,11 +18,13 @@ if (process.argv.length > 4) {
 }
 console.log("Using block = " + blockNum)
 
+function parseBool(val) { return val === true || val === "true" }
+
 async function main() {
 	// ie "https://rinkeby.infura.io/v3/xxx"
 	const provider = new ethers.providers.JsonRpcProvider(process.env.PROVIDER_URL);
 
-	var finalImageData = await renderer.process(provider, tokenAddress, tokenId, blockNum, process.env.STAMP_DEBUG);
+	var finalImageData = await renderer.process(provider, tokenAddress, tokenId, blockNum, parseBool(process.env.STAMP_DEBUG));
 
 	if (finalImageData.image === null) {
 		console.log(finalImageData.error);
