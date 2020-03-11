@@ -80,6 +80,11 @@ async function render(contract, layout, _blockNum, masterArtTokenId) {
 
 		if (currentImage == null) {
 			currentImage = layerImage;
+
+			// stamp this for future layers that might be anchored to the base image
+			layer.active = true;
+			layer.finalCenterX = layerImage.bitmap.width / 2;
+			layer.finalCenterY = layerImage.bitmap.height / 2;
 		} else {
 			currentImage = await renderLayer(contract, currentImage, layout, layer, layerImage, masterArtTokenId);
 		}
